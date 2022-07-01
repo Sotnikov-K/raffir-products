@@ -48,8 +48,8 @@ Route::name('user.')->group(function(){
 
 
 
-    Route::get('/private/create', [\App\Http\Controllers\ItemController::class, 'create'] );
-    Route::post('/private', [\App\Http\Controllers\ItemController::class, 'store'] );
+    Route::get('/private/create', [\App\Http\Controllers\LotController::class, 'create'] );
+    Route::post('/private', [\App\Http\Controllers\LotController::class, 'store'] );
 
 
 

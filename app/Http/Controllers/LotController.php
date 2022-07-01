@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\Item;
 use App\Models\Image;
 
-class ItemController extends Controller
+class LotController extends Controller
 {
     public function index(){
-        $items = Item::all();
+        $lots = Lot::all();
     }
 
     public function create(){
@@ -33,7 +33,7 @@ class ItemController extends Controller
         ]);
 
 
-        $new_item = Item::create($data); 
+        $new_item = Lot::create($data); 
 
         if ($req->has('images')){
             foreach($req->file('images') as $image){

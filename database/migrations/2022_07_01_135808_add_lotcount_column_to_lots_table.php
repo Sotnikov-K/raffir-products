@@ -14,9 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('lots', function (Blueprint $table) {
-            // $table->dropColumn('lot_grade');
-            // $table->dropColumn('lot_color');    
-            // $table->dropColumn('lot_picture_1');       
+            $table->unsignedInteger('lot_count')->after('lot_annotation')->default(1);
         });
     }
 
@@ -27,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('lots', function (Blueprint $table) {
+            $table->dropColumn('lot_count');
+        });
     }
 };

@@ -33,24 +33,24 @@
     <section class="database-section">
         <div class="database-wrapper">
 
-            @foreach($items as $item)
+            @foreach($lots as $lot)
             
                 <div class="database-item">
-                <a href="/database/{{$item->id}}">
+                <a href="/database/{{$lot->id}}">
                     <div class="database-item-content">
                         <div class="database-item-content-date-wrapper">
-                            <div><p class="database-item-content-date">{{$item->created_at->format('d.m.Y')}}</p></div>
+                            <div><p class="database-item-content-date">{{$lot->created_at->format('d.m.Y')}}</p></div>
                             <div class="database-item-content-date-rigth"></div>
                         </div>
                         <div class="database-item-image-wrapper">
-                            <img class="database-item-content-image" src="{{$item['lot_picture_1']}}" alt="">
+                            <img class="database-item-content-image" src="{{$lot['lot_picture_1']}}" alt="">
                         </div>
                         <div class="database-item-content-text">
-                            <p class="database-item-content-name">type: {{$item['lot_type']}}</p>
-                            <p class="database-item-content-weight">weight: {{$item['lot_weight']}} kg</p>
-                            <p class="database-item-content-grade">grade: {{$item['lot_grade']}}</p>
-                            <p class="database-item-content-price">est. price: {{$item['lot_price']}} usd</p>
-                            <a class="database-item-content-link" href="/database/{{$item->id}}"> > Open item</a>
+                            <p class="database-item-content-name">type: {{$lot['lot_type']}}</p>
+                            <p class="database-item-content-weight">weight: {{$lot['lot_weight']}} kg</p>
+                            <p class="database-item-content-grade">grade: {{$lot['lot_grade']}}</p>
+                            <p class="database-item-content-price">est. price: {{$lot['lot_price']}} usd</p>
+                            <a class="database-item-content-link" href="/database/{{$lot->id}}"> > Open item</a>
                         </div>
                     </div> 
                     </a>       

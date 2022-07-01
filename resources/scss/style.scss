@@ -1,0 +1,111 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+@import "vendor/swiper";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #ffffff;
+    font-size: 1.4rem;
+    font-family: 'Play', sans-serif;
+    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: $white;
+    line-height: 1.5;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+    &.bodyMargin15 {
+        margin-right: 15px;
+    }
+
+    &.searchMargin15 {
+        margin-right: 15px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        &.show-sidebar {
+            overflow: hidden;
+        }
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1 {
+    // font-family: 'Montserrat', sans-serif;
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #dddddd;
+    line-height: 1;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 20px;
+    }
+}
+
+h2 {
+    font-size: 29px;
+    font-weight: 500;
+    color: #dddddd;
+    line-height: 1;
+}
+
+.border {
+    width: 40%;
+    border-bottom: 5px solid #1f1f1f;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    color: #1f1f1f;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+    width: 150px;
+    transition: .1s linear;
+
+    &:hover {
+        color: #f3f3f3;
+        background-color: rgb(43, 43, 43);
+    }
+}
+
+
+
+/*blocks*/
+@import 'blocks/navigation';
+@import 'blocks/upper-header';
+@import 'blocks/header';
+@import 'blocks/section';
+@import 'blocks/database';
+@import 'blocks/databaseItem';
+@import 'blocks/admin';
+@import 'blocks/slider-main';
+@import 'blocks/listing';
+@import 'blocks/services';
+@import 'blocks/login';
+@import 'blocks/footer';
+@import 'blocks/symbols';
+@import 'blocks/input';
+@import 'blocks/form';

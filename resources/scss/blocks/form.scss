@@ -1,0 +1,58 @@
+.form-sellect {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control {
+    padding: 5px;
+    width: 300px;
+}
+
+.form-size-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-size-parameter {
+    margin-right: 10px;
+}
+
+.form-lot-price {
+    width: 300px;
+}
+
+.btn-form {
+    margin: 50px auto;
+    // margin-left: auto;
+    // margin-right: 0px;
+}
+
+.form-btn-wrapper {
+    display: flex;
+    background-color: #eee;
+}
+
+
+
+
+//GROUP
+
+.admin-form-item {
+    display: none;
+}
+
+.admin-form-item-active {
+    display: block;
+}
+
+.admin-form-lot {
+    display: none;
+}
+
+.admin-form-lot-active {
+    display: block;
+}
+
+.form-group-latin {
+    margin-bottom: 0;
+}

@@ -1,0 +1,42 @@
+.listing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-bottom: 50px;
+}
+
+.listing__title {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.listing__title-text {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.listing__title-text span {
+    color: rgb(0 17 255);
+    font-style: italic;
+}
+
+.listing__paragraph-text {
+    width: 40%;
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+}
+
+.btn-listing {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.link-listing {
+    margin-left: auto;
+    margin-right: 100px;
+}

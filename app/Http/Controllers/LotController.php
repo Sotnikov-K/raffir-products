@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Item;
+use App\Models\Lot;
 use App\Models\Image;
 
 class LotController extends Controller
@@ -18,36 +19,50 @@ class LotController extends Controller
 
 
 
-    public function store(Request $req)
+    public function store(Request $request)
     {
-        $data = $req->validate([
-            'lot_type' => 'required',
-            'animal_type' => 'required',
-            'animal_type_latin' => 'required',
-            'lot_origin' => 'required',
-            'lot_weight' => 'required',
-            'lot_size_length',
-            'lot_size_width',
-            'lot_size_height',
-            'lot_size_diameter',
+        $data = $request->validate([
+            'type' => 'required',
         ]);
+        // dd($request->has('items'));
+
+        // DB::table('lot')->insert([
+        //     ['type' => 'lot2'],
+        //     ['type' => 'lot3'],
+        // ]);
+
+      
 
 
-        $new_item = Lot::create($data); 
+        $data = [
+            ['type'=>'lot'],
+            ['type'=>'lot'],
+           
+        ];
 
-        if ($req->has('images')){
-            foreach($req->file('images') as $image){
-                $imageName = $data['lot_type']. '-image-'.time().rand(1,1000).'.'.$image->extension();
-                $image->move(public_path('product_images'), $imageName);
-                Image::create([
-                    'item_id'=>$new_item->id,
-                    'image'=>$imageName
-                ]);
-            }
-        }
+
+
+
+        
+        Lot::insert($data);
+
+
+        // $new_item = Lot::create($data); 
+        
+
+        // if ($req->has('images')){
+        //     foreach($req->file('images') as $image){
+        //         $imageName = $data['lot_type']. '-image-'.time().rand(1,1000).'.'.$image->extension();
+        //         $image->move(public_path('product_images'), $imageName);
+        //         Image::create([
+        //             'item_id'=>$new_item->id,
+        //             'image'=>$imageName
+        //         ]);
+        //     }
+        // }
         
         // return back()->with('success', 'Added');
-        return back();
+        // return back();
     }
 
 }

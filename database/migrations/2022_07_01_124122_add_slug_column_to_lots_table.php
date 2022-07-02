@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
        Schema::table('lots', function (Blueprint $table) {      
-            $table->string('slug')->after('user_id');
+            $table->string('slug')->after('user_id')->nullable();
         });
     }
 

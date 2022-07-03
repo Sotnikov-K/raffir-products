@@ -23,13 +23,10 @@ class LotController extends Controller
     {
         $data = $request->validate([
             'type' => 'required',
+            'lot_weight' => 'required',
+            'lot_price' => 'required',
         ]);
-        // dd($request->has('items'));
-
-        // DB::table('lot')->insert([
-        //     ['type' => 'lot2'],
-        //     ['type' => 'lot3'],
-        // ]);
+       
 
       
 
@@ -39,12 +36,13 @@ class LotController extends Controller
             ['type'=>'lot'],
            
         ];
+        dd($data);
 
 
 
 
-        
         Lot::insert($data);
+        // Lot::insert($data);
 
 
         // $new_item = Lot::create($data); 

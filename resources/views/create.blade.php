@@ -15,35 +15,23 @@
         <div class="admin-form-wrapper">
             <div class="admin-form">
 
-                <div class="form-group">
-                    <div class="form-sellect">
-                        <div class="form_radio_btn">
-                            <input id="type-1" class="form-selector" type="radio" name="type" value="item" checked>
-                            <label for="type-1">LOT</label>
-                        </div>                                             
-                    </div>
-                </div> 
+             
 
                 <form class="admin-form-content" id="add-lot-form" action="/private" method="POST" enctype="multipart/form-data">
                     @csrf
-
                     <div class="form-group">
-                        <label for="type">lot</label>
                         <div class="form-sellect">
                             <div class="form_radio_btn">
-                                <input class="form-type" form="add-lot-form" id="radio-100" type="checkbox" name="type" value="lot" checked>
-                                <label for="radio-100">LOT</label>
+                                <input class="form-type" form="add-lot-form" id="radio-100" type="radio" name="type" value="lot" checked>
+                                <label for="radio-100">Lot</label>
                             </div>                                              
                         </div>
                     </div> 
 
-                    <div class="form-group">
-                        <label for="type">slug</label>
-                        <div class="form-sellect">
-                            <div class="form_radio_btn">
-                                <input class="form-type" form="add-lot-form" id="radio-100" type="checkbox" name="slug" value="slug" checked>
-                                <label for="radio-100">slug</label>
-                            </div>                                              
+                    <div class="form-group-item">
+                        <div class="form-group">
+                            <label for="lot_price">lot weight</label>
+                            <input form="add-lot-form" type="number" class="form-control form-lot-price" name="lot_weight" value="20" placeholder="20">
                         </div>
                     </div>
 
@@ -52,26 +40,12 @@
                             <label for="lot_price">item's price in USD</label>
                             <input form="add-lot-form" type="number" class="form-control form-lot-price" name="lot_price" value="100" placeholder="100">
                         </div>
-
-                        <!-- <div class="form-group">
-                            <label for="files">upload item's files</label>
-                            <input 
-                                type="file" 
-                                class="form-control" 
-                                name="images[]"
-                                accept="image/*" 
-                                multiple
-                            >
-                        </div> -->
-
-                        
-
-
-
+                    </div>
+                       
+                    <div class="form-group-item">
                         <div class="form-btn-wrapper">
                             <button class="btn btn-form" type="submit">save item</button>
                         </div>
-
                     </div>
                 </form>
 
@@ -79,10 +53,9 @@
 
 
 
-
+                
                 <form class="admin-form-content form-item admin-form-item" id="add-item-form" action="/private" method="POST" enctype="multipart/form-data">
                     @csrf
-
                     <div class="form-group">
                         <label for="animal_type">animal's type</label>
                         <div class="form-sellect">
@@ -104,6 +77,12 @@
                         <button class="btn btn-form" type="submit">save item</button>
                     </div>
                 </form>
+
+
+
+
+
+
 
 
 

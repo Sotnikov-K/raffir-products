@@ -1,0 +1,61 @@
+.field__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.field__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.field__file-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.field__file-fake {
+    height: 100%;
+    width: calc(80% - 43px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.field__file-button {
+    height: 100%;
+    width: 20%;
+    background: rgb(196, 196, 196);
+    overflow: hidden;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.input__file-icon-wrapper {
+    opacity: .5;
+    width: 43px;
+    padding-left: 10px;
+    cursor: pointer;
+}

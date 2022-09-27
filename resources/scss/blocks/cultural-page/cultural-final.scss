@@ -1,0 +1,52 @@
+.cultural-history {
+    z-index: 1;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0px auto 20px;
+    background-color: $background-section;
+}
+
+.cultural-history__data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.cultural-history__text-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 45px;
+
+    @include breakpoint($navigation-bp) {
+        padding-left: 15px;
+    }
+}
+
+.cultural-history__title {
+    font-size: 33px;
+    font-weight: 700;
+
+    @include breakpoint($mobile-bp) {
+        font-size: 27px;
+        width: 70%;
+    }
+}
+
+.cultural-history__title span {
+    color: rgb(0 17 255);
+    font-style: italic;
+}
+
+.cultural-history__paragraph {
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    width: 50%;
+
+    @include breakpoint($mobile-bp) {
+        font-size: 17px;
+        background-color: $background-paragraph;
+        padding: 3px;
+    }
+}

@@ -1,22 +1,26 @@
-let servicesItem = document.querySelectorAll('.services__item');
+let expanders = document.querySelectorAll('.services__expander');
 
-servicesItem.forEach((element) => {
+expanders.forEach((element) => {
     element.addEventListener('click', e => {
 
-        let item = e.currentTarget;
-        let item2 = item.querySelector('.services__item-description-list-wrapper');
-        item2.classList.toggle("services__item-description-list-wrapper-active");
+        let item = e.currentTarget.parentElement.parentElement.querySelector('.services__item-description-list-wrapper');
+        item.classList.toggle("services__item-description-list-wrapper--active");
 
-        let materialSymbols = element.querySelector('.material-symbols-outlined');
+        let curentExpander = e.currentTarget.querySelector('.expander__icon');
+        let curentServiceItem = e.currentTarget.closest('.services__item');
 
-        if (item2.classList.contains('services__item-description-list-wrapper-active')) {
-            element.classList.add('services__item-active');
-            materialSymbols.innerHTML = 'expand_more';
+
+        if (item.classList.contains('services__item-description-list-wrapper--active')) {
+
+            curentExpander.setAttribute('src', '/images/icons/expand/expand_less.png');
+            curentServiceItem.classList.add('services__item--active')
+
         } else {
-            element.classList.remove('services__item-active');
-            materialSymbols.innerHTML = 'expand_less';
+
+            curentExpander.setAttribute('src', '/images/icons/expand/expand_more.png');
+            curentServiceItem.classList.remove('services__item--active');
+
         }
 
     })
 })
-

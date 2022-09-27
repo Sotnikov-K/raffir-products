@@ -1,41 +1,61 @@
 .services {
+    z-index: 1;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0px auto 20px;
+    background-color: $background-section;
+}
+
+.services__data {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.services__text-wrapper {
+    max-width: 1200px;
     width: 100%;
-    background-color: #f8f8f8;
-    margin-bottom: 500px;
-    color: black;
+    margin: 0px auto;
+    padding-top: 45px;
+
+    @include breakpoint($navigation-bp) {
+        padding-left: 15px;
+    }
+}
+
+.services__title {
+    font-size: 33px;
+    font-weight: 700;
+
+    @include breakpoint($mobile-bp) {
+        font-size: 27px;
+        width: 70%;
+    }
+}
+
+.services__paragraph {
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    width: 50%;
+
+    @include breakpoint($mobile-bp) {
+        font-size: 17px;
+        background-color: rgba(240, 248, 255, 0.548);
+        padding: 3px;
+    }
 }
 
 .services__listing {
     display: flex;
     flex-direction: column;
-    margin: 30px 20px 0px 100px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 30px auto;
+    padding: 0 10px;
 }
 
-.services__listing:last-child {
-    margin-bottom: 50px;
-}
-
-
-.services__title {
-    margin-top: 50px;
-    margin-left: 100px;
-    max-width: 1200px;
-    text-align: left;
-}
-
-.services__title-text {
-    color: black;
-    margin-bottom: 20px;
-}
-
-.services__paragraph-text {
-    width: 40%;
-    font-size: 19px;
-    font-weight: 500;
-    color: black;
-}
+//***** services__item *****
 
 .services__item {
     padding: 15px;
@@ -50,94 +70,92 @@
         transition: background-color .2s ease-in-out;
 
         .services__item-title-text {
-            color: rgb(0, 17, 255);
+            color: $blue;
             transition: color .2s ease-in-out;
         }
     }
-
 }
 
-.services__item-active {
+.services__item--active {
     border-bottom: 1px solid black;
     background-color: #cfd8dc8e;
 
     .services__item-title-text {
-        color: rgb(0, 17, 255);
+        color: $blue;
     }
 
-    // cursor: auto;
 }
 
-
-
 .services__item-title {
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(145, 145, 145);
     width: 25%;
+
+    @include breakpoint($tablet-bp) {
+        width: 35%;
+        padding-right: 15px;
+    }
+}
+
+.services__item-title-text {
+    font-size: 15px;
 }
 
 .services__item-description {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    width: 70%;
+    width: 75%;
+    padding: 0px 75px 0px 35px;
+
+    @include breakpoint($navigation-bp) {
+        padding: 0px 0px 0px 15px;
+    }
 }
 
 .services__item-description-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 15px;
+}
+
+.services__item-description-text {
+    font-size: 16px;
+
+    @include breakpoint($mobile-bp) {
+        font-size: 14px;
+    }
 }
 
 .services__item-description-list-wrapper {
     display: none;
     flex-direction: column;
     margin-left: 20px;
-    // visibility: hidden;
-    // opacity: 0;
+
+    @include breakpoint($mobile-bp) {
+        margin-left: 0px;
+    }
 }
 
-.services__item-description-list-wrapper-active {
+.services__item-description-list-wrapper--active {
     display: flex;
-    // visibility: visible;
-    // opacity: 1;
-    // transition: visibility .9s, opacity 0.9s linear;
-}
-
-
-
-.services__item-title-text {
-    font-size: 16px;
-}
-
-.services__item-description-text {
-    font-size: 16px;
 }
 
 .services__item-description-list {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    margin-right: 60px;
+    margin-right: 200px;
+
+    @include breakpoint($tablet-bp) {
+        margin-right: 20px;
+    }
 }
 
 .services__item-description-list-item {
     font-size: 15px;
     margin: 5px 0;
-}
 
-.btn-services {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: 50px;
-}
-
-
-.material-symbols-outlined {
-    font-size: 10px;
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 600,
-        'GRAD' 0,
-        'opsz' 48
+    @include breakpoint($mobile-bp) {
+        font-size: 13px;
+    }
 }

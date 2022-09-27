@@ -7,11 +7,17 @@ html {
     font-size: 62.5%;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #ffffff;
+    background-color: $background-app;
     font-size: 1.4rem;
     font-family: 'Play', sans-serif;
-    // font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
     color: $white;
     line-height: 1.5;
 
@@ -34,12 +40,6 @@ body {
     }
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none;
 
@@ -49,11 +49,10 @@ a {
 }
 
 h1 {
-    // font-family: 'Montserrat', sans-serif;
     font-family: 'Play', sans-serif;
     font-size: 30px;
     font-weight: 500;
-    color: #dddddd;
+    color: black;
     line-height: 1;
 
     @include breakpoint($tablet-bp) {
@@ -64,8 +63,23 @@ h1 {
 h2 {
     font-size: 29px;
     font-weight: 500;
-    color: #dddddd;
+    color: black;
     line-height: 1;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 20px;
+    }
+}
+
+p {
+    font-family: 'Play', sans-serif;
+    color: black;
+}
+
+sup {
+    color: black;
+    vertical-align: super;
+    font-size: 9px;
 }
 
 .border {
@@ -75,37 +89,54 @@ h2 {
     padding-bottom: 10px;
 }
 
-.btn {
-    color: #1f1f1f;
-    padding: 10px 20px;
-    border: 1px solid black;
-    background-color: white;
-    font-family: 'Play', sans-serif;
-    font-size: 15px;
-    width: 150px;
-    transition: .1s linear;
-
-    &:hover {
-        color: #f3f3f3;
-        background-color: rgb(43, 43, 43);
-    }
-}
-
-
-
 /*blocks*/
-@import 'blocks/navigation';
 @import 'blocks/upper-header';
 @import 'blocks/header';
-@import 'blocks/section';
+@import 'blocks/breadcrumbs';
 @import 'blocks/database';
 @import 'blocks/databaseItem';
-@import 'blocks/admin';
-@import 'blocks/slider-main';
+@import 'blocks/intro';
+
+@import 'blocks/home-page/home-intro';
+
+
+
+@import 'blocks/cultural-page/cultural-intro';
+@import 'blocks/cultural-page/cultural-history';
+
+
+@import 'blocks/contacts-page/contacts-intro';
+@import 'blocks/contacts-page/contacts-general-info';
+@import 'blocks/contacts-page/contacts-team.scss';
+@import 'blocks/contacts-page/contacts-info.scss';
+
+@import 'blocks/login-page/login-intro';
+@import 'blocks/registration-page/registration-intro';
+
+@import 'blocks/admin-page/admin-intro';
+@import 'blocks/admin-page/admin-common-settings';
+@import 'blocks/admin-page/admin-lot-settings';
+
+@import 'blocks/admin-page/lot-create/lot-create-intro';
+@import 'blocks/admin-page/lot-create/lot-create-data';
+
 @import 'blocks/listing';
 @import 'blocks/services';
-@import 'blocks/login';
-@import 'blocks/footer';
-@import 'blocks/symbols';
-@import 'blocks/input';
+
 @import 'blocks/form';
+@import 'blocks/footer';
+
+
+
+@import 'components/database/database-filter';
+@import 'components/database/nouislider';
+@import 'components/pagination';
+@import 'components/buttons';
+@import 'components/expanders';
+@import 'components/tothetop';
+
+
+@import 'elements/input';
+@import 'elements/input-checkbox';
+@import 'elements/input-text';
+@import 'elements/input-test';

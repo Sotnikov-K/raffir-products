@@ -19,6 +19,7 @@
         "sass-loader": "^13.0.0"
     },
     "dependencies": {
+        "nouislider": "^15.6.0",
         "swiper": "^8.1.6"
     }
 }

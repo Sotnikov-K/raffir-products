@@ -1,0 +1,11 @@
+.intro__data--lot-create {
+    // background-image: url(/images/pages_images/home_images/home-intro1.jpg);
+    height: 200px;
+}
+
+.intro__paragraph--lot-create {
+    @include breakpoint($mobile-bp) {
+        background-color: rgba(255, 255, 255, 0.123);
+        backdrop-filter: blur(2px);
+    }
+}

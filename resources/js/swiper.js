@@ -4,8 +4,9 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: "auto",
-    spaceBetween: 5,
+    spaceBetween: 7,
     grabCursor: true,
+    lazy: true,
     // centeredSlides: true,
 
 

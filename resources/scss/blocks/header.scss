@@ -1,79 +1,79 @@
 .header {
+    position: sticky;
+    top: -2px;
     display: flex;
-    background-color: rgb(50 50 50);
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $background-black;
     z-index: 100;
 }
 
-.header_logo-and-name {
+.header__logo {
     padding: 0 35px;
     cursor: pointer;
+
+    @include breakpoint($mobile-bp) {
+        padding: 0 15px;
+    }
+
+    &:hover {
+        background-color: rgb(65, 65, 65);
+    }
 }
 
-.header_logo-and-name:hover {
-    background-color: rgb(65, 65, 65);
-}
-
-.header_brand-logo {
+.header__logo-icon {
     transform: translateY(-3px);
     height: 50px;
     width: 30px;
+
+    @include breakpoint($mobile-bp) {
+        transform: translateY(0px);
+        width: 28px;
+    }
 }
 
-.header_brand-name {
+.header__logo-name {
     display: inline-block;
     padding-left: 20px;
     font-family: 'Play', sans-serif;
     font-size: 20px;
     color: white;
     line-height: 2.5;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
 }
 
-.header-left {
+.header__left-section {
+    cursor: pointer;
     display: flex;
 }
 
-.header-left li {
+.header__left-section li {
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
 }
 
-.header-right {
+.header__right-section {
     display: flex;
     margin-right: 0px;
     margin-left: auto;
 }
 
-.header-right a {
-    padding: 0 35px;
-    font-family: 'Play', sans-serif;
-    font-size: 20px;
-    line-height: 2.5;
-    color: white;
-    transition: all 0.1s ease-in-out;
-}
-
-
-.header-right a:hover {
-    background-color: rgb(65, 65, 65);
-    color: white;
-    text-decoration: none;
-}
-
-
-
-
-
-.nav-item {
+.header__item {
     position: relative;
 
     &:hover {
-        .nav-link {
+        .header__link {
             text-decoration: none;
             background-color: rgb(65, 65, 65);
         }
 
-        >.subnav {
+        >.header__subnav-links {
             display: block;
         }
 
@@ -86,7 +86,7 @@
     }
 }
 
-.nav-link {
+.header__link {
     padding: 0px 55px 0px 35px;
     font-family: 'Play', sans-serif;
     font-size: 20px;
@@ -98,7 +98,7 @@
     text-decoration: none;
     transition: background-color .2s linear;
 
-    &.has-subnav {
+    &.header__link--has-subnav {
         position: relative;
         padding-right: 40px;
 
@@ -116,26 +116,51 @@
             transform: translateY(-70%);
         }
     }
+
+
+    @include breakpoint($mobile-bp) {
+        font-size: 16px;
+        line-height: 3.1;
+        padding: 0px 55px 0px 15px;
+    }
+
 }
 
 
-.subnav {
+.header__link--contacts {
+    padding: 0 35px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px;
+    line-height: 2.5;
+    color: white;
+    transition: all 0.1s ease-in-out;
+
+    @include breakpoint($mobile-bp) {
+        font-size: 16px;
+        line-height: 3.1;
+        padding: 0px 25px 0px 15px;
+    }
+
+    &:hover {
+        background-color: rgb(65, 65, 65);
+        text-decoration: none;
+    }
+}
+
+
+.header__subnav-links {
     z-index: 50;
     display: none;
-
     width: 300px;
-
     background-color: rgb(65, 65, 65);
-
     padding: 0 0 20px 0;
-
     position: absolute;
     top: 100%;
     left: 0;
 }
 
 
-.subnav-link {
+.header__subnav-link {
     width: 100%;
     position: relative;
     z-index: 51;
@@ -151,5 +176,11 @@
     &:hover {
         text-decoration: none;
         background-color: rgb(24, 24, 24);
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 16px;
+        line-height: 3.1;
+        padding: 0px 55px 0px 15px;
     }
 }

@@ -54,7 +54,11 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    // 'url' => env('APP_URL', 'http://localhost'),
+
+    'url' => env('APP_URL', '127.0.0.1'),
+
+    
 
     'asset_url' => env('ASSET_URL'),
 
@@ -195,6 +199,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Intervention\Image\ImageServiceProvider::class,
+
     ],
 
     /*
@@ -211,5 +217,7 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
+
+    'Image' => Intervention\Image\Facades\ImageIntervention::class,
 
 ];

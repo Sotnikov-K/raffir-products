@@ -1,0 +1,15 @@
+.intro__data--cultural {
+    background-image: url(/images/pages_images/heritage_images/intro_images/heritage_picture-3.jpg);
+
+    //sunrise background
+    // background: rgb(0, 57, 115);
+    // background: linear-gradient(163deg, rgba(0, 57, 115, 1) 0%, rgba(229, 229, 190, 1) 100%);
+    height: 500px;
+}
+
+.intro__paragraph--cultural {
+    @include breakpoint($mobile-bp) {
+        background-color: rgba(255, 255, 255, 0.123);
+        backdrop-filter: blur(2px);
+    }
+}

@@ -1,0 +1,28 @@
+.expander {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+
+    :hover {
+        background-color: rgb(236, 236, 236);
+    }
+}
+
+.expander--item {
+    background-color: none;
+    border: none;
+    margin-left: auto;
+
+}
+
+.expander__icon {
+    height: 25px;
+    width: 25px;
+}
+
+.expander__icon--item {
+    opacity: .5;
+    height: 25px;
+    width: 25px;
+    transform: rotateY(0);
+    transition: transform $transition-fast $transition;
+}

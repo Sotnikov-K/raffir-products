@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,15 +16,14 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::name('home')->get('/', function () {
+//     return view('home');
+// });
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::name('home')->get('/', [PagesController::Class, 'home']);
+Route::name('cultHeritage')->get('/cultural-heritage', [PagesController::Class, 'cultHeritage']);
 
-Route::get('/contacts', function () {
+Route::name('contacts')->get('/contacts', function () {
     return view('contacts');
 });
 
@@ -32,9 +32,8 @@ Route::get('/login', function () {
 });
 
 
-Route::get('/database', [PagesController::class, 'database']);
-
-Route::get('database/{id}', [PagesController::class, 'databaseItem']);
+Route::name('database')->get('/database', [PagesController::class, 'database']);
+Route::name('databaseItem')->get('database/{slug}', [PagesController::class, 'databaseItem']);
 
 
 
@@ -44,16 +43,8 @@ Route::get('database/{id}', [PagesController::class, 'databaseItem']);
 Route::name('user.')->group(function(){
     Route::view('/private', 'private')->middleware('auth')->name('private');
 
-
-
-
-
-    Route::get('/private/create', [\App\Http\Controllers\LotController::class, 'create'] );
+    Route::get('/private/create', [\App\Http\Controllers\LotController::class, 'create'] )->middleware('auth')->name('private/create');
     Route::post('/private', [\App\Http\Controllers\LotController::class, 'store'] );
-
-
-
-
 
     Route::get('/login', function(){
 

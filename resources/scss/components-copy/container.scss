@@ -1,0 +1,18 @@
+.container {
+    max-width: 130rem;
+    width: 100%;
+    margin: 0 auto;
+
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    @include breakpoint($tablet-bp) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}

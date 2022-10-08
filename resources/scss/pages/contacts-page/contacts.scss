@@ -1,0 +1,114 @@
+.contacts {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.contacts__title-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 150px auto 50px;
+}
+
+.contacts__title-h1 {
+    margin-left: 15px;
+}
+
+.contacts__title-p {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.contact__info-email {
+    margin-bottom: 30px;
+}
+
+.aboutus {
+    max-width: 80%;
+    margin-bottom: 70px;
+}
+
+.aboutus__info-feedback {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+
+
+.feedback__section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.feedback__section-textarea {
+    width: 80%;
+}
+
+
+.feedback__input[type="text"] {
+    border: 1px solid #1f1f1f;
+    background: #1f1f1f;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Tahoma;
+}
+
+.contact__text-area {
+    padding: 10px;
+    width: 100%;
+    color: #cccccc;
+    background: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    border-radius: 5px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.contact__text-area-input {
+    width: 50%;
+
+    @include breakpoint($mobile-bp) {
+        width: 80%;
+    }
+}
+
+.contact__text-area.contact__text-area-input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(165, 165, 165);
+    // -webkit-box-shadow: 0 0 0px 1000px rgb(27, 27, 27) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.thankyou {
+    position: absolute;
+    top: -15px;
+    left: 10%;
+    width: 80%;
+    height: 80vh;
+    background-color: #7e7e7e;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.thankyou__text {
+    padding: 10px;
+    font-size: 20px;
+}

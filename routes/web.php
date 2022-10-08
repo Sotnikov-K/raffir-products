@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PagesController;
-
-
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,62 +16,72 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-// Route::name('home')->get('/', function () {
-//     return view('home');
-// });
-
-Route::name('home')->get('/', [PagesController::Class, 'home']);
-Route::name('cultHeritage')->get('/cultural-heritage', [PagesController::Class, 'cultHeritage']);
-
-Route::name('contacts')->get('/contacts', function () {
-    return view('contacts');
+Route::get('/', function () {
+    return view('pages/home-page/home');
 });
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/store', [PageController::class, 'store']);
+Route::name('product')->get('/store/{slug}', [PageController::class, 'product']);
+
+
+
+Route::get('/cart', function () {
+    return view('pages/cart-page/cart');
 });
 
-
-Route::name('database')->get('/database', [PagesController::class, 'database']);
-Route::name('databaseItem')->get('database/{slug}', [PagesController::class, 'databaseItem']);
-
-
-
-
+Route::get('/contacts', function () {
+    return view('pages/contacts-page/contacts');
+});
 
 
 Route::name('user.')->group(function(){
-    Route::view('/private', 'private')->middleware('auth')->name('private');
-
-    Route::get('/private/create', [\App\Http\Controllers\LotController::class, 'create'] )->middleware('auth')->name('private/create');
-    Route::post('/private', [\App\Http\Controllers\LotController::class, 'store'] );
+    Route::view('/dashboard', 'pages/dashboard-page/dashboard')->middleware('auth')->name('dashboard');
 
     Route::get('/login', function(){
-
         if(Auth::check()){
-            return redirect(route('user.private'));
+            return redirect(route('user.dashboard'));
         }
-
-        return view('login');
+        return view('pages/login-page/login');
     })->name('login');
 
-    Route::post('/login', [\App\Http\Controllers\LoginController::class, 'login']);
+    Route::post('/login', [LoginController::Class, 'login']);
+        
 
     Route::get('/logout', function(){
-        Auth::logout();
-        return redirect('/');
-        })->name('logout');
+        if(Auth::check()){
+            Auth::logout();
+            return redirect('/');
+        }
+    })->name('logout');
+
 
     Route::get('/registration', function(){
-
         if(Auth::check()){
-            return redirect(route('user.private'));
+            return redirect(route('user.dashboard'));
         }
-
-        return view('registration');
-
+        return view('/pages/registration-page/registration');
     })->name('registration');
-
-    Route::post('/registration', [\App\Http\Controllers\RegisterController::class, 'save']);
-
+    Route::post('/registration', [RegisterController::Class, 'save']);
+    
 });
+
+
+
+
+Route::get('/dashboard/create-product-composite', [\App\Http\Controllers\ProductController::class, 'create'])->
+middleware(['auth'])->name('dashboard-create-product-composite');
+Route::post('/dashboard', [\App\Http\Controllers\ProductController::class, 'store']);
+
+Route::get('/dashboard/create-product-wood', function () {
+    return view('pages/dashboard-page/create-product/create-product-wood');
+});
+
+Route::get('/dashboard/create-product-mammoth', function () {
+    return view('pages/dashboard-page/create-product/create-product-mammoth');
+});
+
+Route::get('/dashboard/create-product-blade', function () {
+    return view('pages/dashboard-page/create-product/create-product-blade');
+});
+
+

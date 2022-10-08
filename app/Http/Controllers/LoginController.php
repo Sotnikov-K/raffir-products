@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
@@ -12,19 +11,20 @@ class LoginController extends Controller
     public function login(Request $request){
 
         if(Auth::check()){
-            return redirect()->intended(route('user.private'));
+            return redirect(route('user.dashboard'));
         }
 
-
-        $formFields = $request->only(['email', 'password']);
+        $data = $request->only(['email', 'password',]);
         
-        if (Auth::attempt($formFields)){
-            return redirect()->intended(route('user.private'));
+        if (Auth::attempt($data)) {
+            $request->session()->regenerate();
+ 
+            return redirect()->intended('user.dashboard');
         }
-
-        return redirect(route('user.login'))->withErrors([
-            'formError' => 'Error during authorisation process'
-        ]);
+ 
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ])->onlyInput('email');
 
 
     }

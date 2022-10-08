@@ -1,0 +1,88 @@
+@import "vars";
+@import 'mixins';
+@import "vendor/reset";
+@import 'common-style';
+
+
+/*pages*/
+@import 'pages/home-page/home';
+
+@import 'pages/store-page/store';
+@import 'pages/product-page/product';
+
+@import 'pages/cart-page/cart';
+
+@import 'pages/dashboard-page/dashboard';
+@import 'pages/dashboard-page/create-product';
+@import 'pages/contacts-page/contacts';
+
+@import 'pages/login-page/login';
+
+@import "components/button";
+@import "components/input";
+
+
+
+/*blocks*/
+@import "components-copy/page";
+@import "components-copy/loader";
+@import "components-copy/pageLoader";
+
+@import "components-copy/header";
+@import "components-copy/footer";
+@import "components-copy/nav";
+
+
+@import "components-copy/swiper";
+@import "components-copy/swiper-bundle";
+
+@import "components-copy/simplebar";
+// @import "components-copy/cart";
+
+@import "components-copy/knives";
+@import "components-copy/offer";
+@import "components-copy/iconsnav";
+@import "components-copy/storenav";
+@import "components-copy/product-description";
+@import "components-copy/burger";
+@import "components-copy/subnav";
+@import "components-copy/search";
+@import "components-copy/sidebar";
+@import "components-copy/main";
+@import "components-copy/container";
+@import "components-copy/profile";
+@import "components-copy/social";
+@import "components-copy/btn";
+@import "components-copy/stories";
+@import "components-copy/add-post";
+@import "components-copy/post";
+@import "components-copy/embed";
+@import "components-copy/pagination";
+@import "components-copy/related";
+@import "components-copy/comments";
+
+@import "components-copy/form";
+@import "components-copy/work";
+@import "components-copy/textures";
+@import "components-copy/tags";
+@import "components-copy/cabinet";
+@import "components-copy/map";
+
+
+@import "components-copy/comparison";
+
+@import "components-copy/auth";
+
+
+
+@import "components-copy/modal";
+@import "components-copy/modalPic";
+@import "components-copy/modalUran";
+@import "components-copy/gallery";
+
+
+
+
+@import "components-copy/link";
+@import "components-copy/divisions";
+@import "components-copy/example";

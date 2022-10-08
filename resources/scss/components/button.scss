@@ -1,0 +1,102 @@
+.button {
+    display: flex;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1f1f1f;
+    transition: background-color .2s linear;
+    color: white;
+
+    &:hover {
+        transition: background-color .2s linear;
+        background: rgb(35, 35, 35);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.button--dashboard__create-product-p {
+    opacity: .6;
+    font-size: 15px;
+    padding-right: 20px;
+    transition: opacity $transition-fast $transition;
+}
+
+.button--dashboard__create-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 15px 40px;
+    border-radius: 15px;
+
+    background-color: rgba(24, 24, 24, 0.65);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+    transition: background-color $transition-fast $transition,
+        border-color $transition-fast $transition;
+    cursor: pointer;
+
+    @include breakpoint($mobile-bp) {
+        padding: 20px 30px;
+    }
+
+    &:hover {
+        background: rgba(30, 30, 30, 0.88);
+        backdrop-filter: blur(6.8px);
+        -webkit-backdrop-filter: blur(6.8px);
+        -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+        transition: border-color $transition-fast $transition;
+
+        .button--dashboard__create-product-p {
+            opacity: 1;
+            transition: opacity $transition-fast $transition;
+        }
+
+        .link__icon {
+            opacity: 1;
+            transform: translateX(5px);
+            transition: transform $transition-fast $transition, opacity $transition-fast $transition;
+        }
+    }
+}
+
+.button--login {
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+
+    border-radius: 15px;
+    box-shadow: none;
+    background-color: #1f1f1f;
+    transition: background-color $transition-fast $transition;
+
+    &:hover {
+        background-color: #0f0f0f;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        transition: background-color $transition-fast $transition;
+
+        .link__icon {
+            opacity: 1;
+            transform: translateX(5px);
+            transition: transform $transition-fast $transition, opacity $transition-fast $transition;
+        }
+    }
+
+    @include breakpoint($mobile-bp) {
+        text-align: left;
+    }
+
+
+}

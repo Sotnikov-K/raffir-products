@@ -1,0 +1,300 @@
+.dashboard-create {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.dashboard-create__title-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 150px auto 50px;
+}
+
+.dashboard-create__title-h1 {
+    margin-left: 15px;
+}
+
+.dashboard-create__title-p {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+.dashboard-create__control-panel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color: #334449;
+    border-radius: 15px;
+
+
+    @include breakpoint($tablet-bp) {
+        padding: 0px;
+    }
+}
+
+.dashboard-create__form {
+    width: 100%;
+}
+
+.dashboard-create__form-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+.dashboard-create__form-button {
+    display: block;
+    position: relative;
+    width: 25%;
+    margin: 50px 5px 20px 10px;
+
+    @include breakpoint($tablet-bp) {
+        width: 50%;
+        margin: 50px 5px 20px 5px;
+    }
+}
+
+.dashboard-create__product-input {
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    padding: 25px 15px;
+    color: azure;
+}
+
+
+
+.product-input {
+    background-color: #1f1f1f;
+    transition: box-shadow $transition-time $transition;
+
+    &::placeholder {
+        font-weight: 100;
+        color: rgba(102, 102, 102, 0.486);
+    }
+
+    &:hover {
+        transition: box-shadow $transition-time $transition;
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+        transition: box-shadow $transition-time $transition;
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+.dashboard-create__product-parameters-title {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+
+.dashboard-create__product-title {
+    color: #c4c4c4;
+    margin-left: 20px;
+    border-radius: 10px;
+    transform: translateY(12px);
+    // background-color: #334449;
+    background-color: #242424;
+    border: 1px solid #1f1f1f;
+    display: flex;
+    width: 50%;
+    font-size: 12px;
+    padding: 2px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+
+    @include breakpoint($tablet-bp) {
+        width: 80%;
+    }
+}
+
+
+.dashboard-create__product-parameters-wrapper-outer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: #29363a;
+}
+
+.dashboard-create__product-parameters-wrapper-inner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dashboard-create__input-wrapper--parameters {
+    display: flex;
+    width: 50%;
+    padding: 5px;
+}
+
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.form-group-hidden {
+    margin-bottom: 0;
+}
+
+.lot-create-data__input--active {
+    width: 25%;
+
+
+    @include breakpoint($tablet-bp) {
+        width: 50%;
+    }
+}
+
+.lot-create-data__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 25%;
+
+    @include breakpoint($tablet-bp) {
+        padding: 5px;
+        width: 50%;
+    }
+}
+
+.lot-create-data__input-wrapper--image {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.lot-create-data__image-input-wrapper {
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+    padding: 5px;
+    line-height: 20px;
+    font-size: 15px;
+    outline: none;
+    height: 80px;
+    border: 1px dashed rgb(196, 196, 196);
+    border-radius: 15px;
+    background-color: #334449;
+    overflow: hidden;
+    transition: box-shadow 0.2s linear;
+
+    &:hover {
+        transition: box-shadow $transition-time $transition;
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+
+        .field__file-button {
+            transition: background-color $transition-time $transition;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
+    &:focus {
+        transition: box-shadow $transition-time $transition;
+        -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    @include breakpoint($tablet-bp) {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.field__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.field__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.field__file-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.field__file-fake {
+    height: 100%;
+    // width: calc(80% - 43px);
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.field__file-button {
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+    background: rgb(196, 196, 196);
+    transition: background-color $transition-time $transition;
+    overflow: hidden;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.input__file-icon-wrapper {
+    opacity: .5;
+    // width: 43px;
+    width: 10%;
+    padding-left: 10px;
+    cursor: pointer;
+}

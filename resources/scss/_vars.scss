@@ -2,18 +2,15 @@ $primary: #202020;
 $secondary: #121212;
 $white: #fff;
 $black: #000;
-$darkgray: rgb(169, 169, 169);
 $red: #ed3024;
-
-$blue: rgb(0, 17, 255);
-$deepblue: #0d007a;
+$blue: #334449;
+$deepblue: #1d2629;
 
 $z-index-sidebar: 1011;
 $z-index-header: 1002;
 $z-index-modal: 1010;
 
 $sidebar-width: 100%;
-
 
 $width-bp: 1410px;
 $navigation-bp: 1220px;
@@ -26,6 +23,15 @@ $mobile-bp2: 460px;
 $mobile-bp3: 350px;
 
 
+$transition: linear;
+$transition-fast: 0.1s;
+$transition-time: 0.2s;
+
+$border_radius-5: 0px;
+$border_radius-10: 0px;
+$border_radius-15: 0px;
+
+
 $background-app: #fff;
 $background-black: rgb(50 50 50);
 $background-section: #f8f8f8;
@@ -33,18 +39,8 @@ $background-item: #ededed;
 $background-item-hover: #dddddd;
 $background-paragraph: rgba(233, 233, 233, 0.548);
 
-
-
-$background-header-custom-3: rgb(116, 116, 116);
-
-
-$background-input: #ffffff;
 $background-custom-1: #64B5F6;
 $background-custom-1-hover: #4aa0f1;
-
-
-$border_radius-5: 5px;
-$border_radius-15: 15px;
 
 
 

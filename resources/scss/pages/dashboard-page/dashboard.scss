@@ -1,0 +1,94 @@
+.dashboard {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.dashboard__title-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin: 150px auto 50px;
+}
+
+.dashboard__title-h1 {
+    margin-left: 15px;
+}
+
+.dashboard__title-p {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.dashboard__control-panel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    background-color: #334449;
+    border-radius: 15px;
+}
+
+
+
+.dashboard__control-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+    }
+}
+
+.dashboard__control-title {
+    display: flex;
+    width: 30%;
+    margin: 30px 10px;
+    font-size: 20px;
+
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+.dashboard__control-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.dashboard__control-link-data {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 25px;
+
+    border-radius: 15px;
+    box-shadow: none;
+    background-color: #1f1f1f;
+    transition: background-color $transition-fast $transition;
+
+    &:hover {
+        background-color: #0f0f0f;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        transition: background-color $transition-fast $transition;
+    }
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+        text-align: left;
+    }
+
+}

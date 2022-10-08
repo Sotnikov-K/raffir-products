@@ -1,0 +1,59 @@
+.storenav {
+	max-width: 16.2%;
+	padding: 10px 5px 15px 5px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 10px;
+	margin: 0.2% 0.2%;
+
+	// background: $deepblue;
+	background: #222222;
+
+	// box-shadow: 0 0 5px $deepblue;
+	transition: background-color .1s linear;
+
+	@include breakpoint($tablet-bp) {
+		max-width: 31.33%;
+		margin: 1%;
+	}
+
+	@include breakpoint($mobile-bp) {
+		width: 33%;
+		text-align: center;
+		align-items: center;
+		flex-wrap: wrap;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.store__iconsnav {
+	padding: 10px 25px 15px 25px;
+}
+
+
+
+.storenav:hover {
+	background-color: rgb(29, 29, 29);
+	// background: rgb(35, 35, 35);
+	// box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.storenav img {
+	width: 60px;
+}
+
+.storenavwraper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	margin-bottom: 50px;
+}
+
+.icon__info {
+	display: block;
+
+	@include breakpoint($mobile-bp) {
+		display: none;
+	}
+}

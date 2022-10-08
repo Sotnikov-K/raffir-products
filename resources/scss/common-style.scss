@@ -1,0 +1,76 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #363636;
+    font-size: 1.4rem;
+    color: $white;
+    line-height: 1.5;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+
+    &.bodyMargin15 {
+        margin-right: 15px;
+    }
+
+    &.searchMargin15 {
+        margin-right: 15px;
+    }
+
+
+    @include breakpoint($tablet-bp) {
+        &.show-sidebar {
+            overflow: hidden;
+        }
+    }
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Play', sans-serif;
+}
+
+p {
+    font-family: 'Play', sans-serif;
+    color: rgb(196, 196, 196);
+}
+
+
+h1 {
+    font-family: 'Play', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #dddddd;
+    line-height: 1;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 20px;
+    }
+}
+
+h2 {
+    font-family: 'Play', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #dddddd;
+    line-height: 1;
+
+}
+
+.border {
+    width: 40%;
+    border-bottom: 5px solid #1f1f1f;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}

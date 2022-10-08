@@ -3,40 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-
-        <title>Raffir Mammoth Sourcing LLC</title>
+        <title>Раффир - материалы для ножей</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&family=Play&display=swap" rel="stylesheet">
-
-
         
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="/css/style.css">
-
-
+        <link rel="stylesheet" href="/css/app.css">
+        
     </head>
 
     <body>
-        
-        @include('upper-header') 
 
-        @include('header')
-        
+        @include('components/common-components/header')
         @yield('content')
+        @include('components/common-components/footer')
 
-        @include('footer')
 
-        
         <script src="{{ mix('/js/app.js') }}"></script>
-        
     </body>
 </html>

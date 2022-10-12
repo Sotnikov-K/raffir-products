@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BasketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,14 +21,34 @@ Route::get('/', function () {
     return view('pages/home-page/home');
 });
 
-Route::get('/store', [PageController::class, 'store']);
+Route::get('/store', [PageController::class, 'store'])->name('store');
 Route::name('product')->get('/store/{slug}', [PageController::class, 'product']);
 
 
 
-Route::get('/cart', function () {
-    return view('pages/cart-page/cart');
-});
+Route::get('/cart', [BasketController::class, 'index'])->name('basket.index');
+Route::get('/checkout', [BasketController::class, 'checkout'])->name('basket.checkout');
+
+Route::post('/cart/add/{id}', [BasketController::class, 'add'])
+    ->where('id', '[0-9]+')
+    ->name('basket.add');
+
+Route::post('/cart/plus/{id}', [BasketController::class, 'plus'])
+    ->where('id', '[0-9]+')
+    ->name('basket.plus');
+Route::post('/cart/minus/{id}', [BasketController::class, 'minus'])
+    ->where('id', '[0-9]+')
+    ->name('basket.minus');
+
+Route::post('/cart/remove/{id}', [BasketController::class, 'remove'])
+    ->where('id', '[0-9]+')
+    ->name('basket.remove');
+Route::post('/cart/clear', [BasketController::class, 'clear'])->name('basket.clear');
+
+
+
+    
+
 
 Route::get('/contacts', function () {
     return view('pages/contacts-page/contacts');

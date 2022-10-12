@@ -61,14 +61,25 @@
                 </div>   
 
                 <div class="databaseItem__content-noticeWrapper">
-                    <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Цена</span> {{$product->product_price}}руб.</p>
+                    <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Цена</span> {{number_format($product->product_price, 0, ',', '')}} руб.</p>
                 </div>
 
 
-                <div class="link link--product">
+                <form action="{{ route('basket.add', ['id' => $product->id]) }}"
+                    method="post" class="form-inline">
+                    @csrf
+                    <label for="input-quantity">Количество</label>
+                    <input type="text" name="quantity" id="input-quantity" value="1"
+                        class="form-control mx-2 w-25">
+                    <button type="submit" class="btn btn-success">Добавить в корзину</button>
+                </form>
+
+
+
+                <!-- <div class="link link--product">
                     <p class="link__text">Добавить в корзину</p>
                     <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png">
-                </div>
+                </div> -->
 
             </div>
         </div>

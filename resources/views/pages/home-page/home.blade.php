@@ -8,7 +8,30 @@
 <section class="work-offer">
     <article class="work">
         <div class="work__data">
-           <img class="work__data-image" src="/images/1. MainSliderPicture/test.png" alt="">
+
+
+
+
+            <!-- <img class="work__data-image" src="/images/1. MainSliderPicture/test.png"  alt=""> -->
+
+            <picture>
+                <!-- <source srcset="https://place-hold.it/500x300 1x, https://place-hold.it/500x300 2x"> -->
+                <img class="work__data-image" src="/images/1. MainSliderPicture/test.png" loading="lazy">
+            </picture>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
             <div class="work__data-title">
                 <h1 class="work__data-title-h1">Композиты Раффир</h1>
                 <p class="work__data-title-p1">Раффир Нобл - Желтая бронза</p>
@@ -22,7 +45,7 @@
     </article>
     <article class="work">
         <div class="work__data">
-           <img class="work__data-image" src="/images/1. MainSliderPicture/test2.png" alt="">
+           <img class="work__data-image" src="/images/1. MainSliderPicture/test2.png" loading="lazy" alt="">
             <div class="work__data-title">
                 <h2 class="work__data-title-h1">Информация</h2>
                 <p class="work__data-title-p1">по работе с материалом</p>
@@ -109,7 +132,7 @@
 
                     <div class="swiper-slide">
                         <div class="slide-wrapper">
-                            <img class="slider-wrapper-img" src="/images/pages/wave/offer/slidewave1.jpg" alt="">
+                            <img class="slider-wrapper-img" src="/images/pages/wave/offer/slidewave1.jpg" loading="lazy" alt="">
                             <p>нож от Берёzа найфс</p>
                             <p>нобл латунь</p>
                         </div>
@@ -118,7 +141,7 @@
 
                     <div class="swiper-slide">
                         <div class="slide-wrapper">
-                            <img class="slider-wrapper-img" src="/images/pages/wave/offer/slidewave2.jpg" alt="">
+                            <img class="slider-wrapper-img" src="/images/pages/wave/offer/slidewave2.jpg" loading="lazy" alt="">
                             <p>нож от АИР Златоуст</p>
                             <p>нобл бронза латунь</p>
                         </div>
@@ -127,7 +150,7 @@
 
                     <div class="swiper-slide">
                         <div class="slide-wrapper">
-                            <img class="slider-wrapper-img" src="/images/pages/wave/offer/slidewave3.jpg" alt="">
+                            <img class="slider-wrapper-img" src="/images/pages/wave/offer/slidewave3.jpg" loading="lazy" alt="">
                             <p>нож от SpiderCo</p>
                             <p>нобл бронза латунь</p>
                         </div>

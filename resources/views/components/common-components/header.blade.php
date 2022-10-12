@@ -54,7 +54,6 @@
 
             </div>
 
-
             <div class="header__right">
                 <nav class="nav">
                     <ul class="nav__list">
@@ -76,15 +75,8 @@
                     </ul>
                 </nav>
 
-                
-
-                
-
-
-               
-
+                 
             </div>
-
         </header>
     </div>
 </header>

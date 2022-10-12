@@ -98,5 +98,58 @@
         text-align: left;
     }
 
+}
 
+
+.button--store {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    margin: 20px auto 30px;
+    padding: 15px 30px;
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 0px;
+    background: none;
+    color: white;
+
+    @include breakpoint($mobile-bp) {
+        width: 80%;
+    }
+
+    &:hover {
+        border-color: rgb(128, 128, 128);
+        transition: border-color $transition-fast $transition;
+
+        .link__text {
+            opacity: 1;
+            transition: opacity $transition-fast $transition;
+        }
+
+        .link__icon {
+            opacity: 1;
+            transform: translateX(5px);
+            transition: transform $transition-fast $transition, opacity $transition-fast $transition;
+        }
+    }
+}
+
+.button--cart-cleaner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border: 1px solid rgb(54, 54, 54);
+    background: none;
+    color: rgb(189, 189, 189);
+    opacity: .5;
+
+    &:hover {
+        .link__text {
+            opacity: 1;
+            transition: opacity $transition-fast $transition;
+        }
+    }
 }

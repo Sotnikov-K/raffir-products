@@ -4,24 +4,28 @@
 
     <main class="cart">
 
-        <section class="cart__title-container">
+        <!-- <section class="cart__title-container">
             <h1 class="cart__title-h1">Корзина товаров</h1>
-        </section>
+        </section> -->
 
     
         <section class="cart__product-container">
 
+            <section class="cart__title-container">
+                <h1 class="cart__title-h1">Корзина товаров</h1>
+            </section>
+
             <ul class="cart__product-list">
                 <li class="cart__product-item cart__product-item--title">
-                    <p class="cart__product-title-number">#</p>
-                    <p class="cart__product-title-image-wrapper">изображение</p>
-                    <p class="cart__product-title-name">название</p>
-                    <p class="cart__product-title-color">цвет</p>
-                    <p class="cart__product-title-category">тип</p>
-                    <p class="cart__product-title-price">цена</p>
-                    <p class="cart__product-title-quantity">количество</p>
-                    <p class="cart__product-title-sum">сумма</p>
-                    <p class="cart__product-title-delete">удалить</p> 
+                    <p class="cart__product-title cart__product-title--number">#</p>
+                    <p class="cart__product-title cart__product-title--image-wrapper">изображение</p>
+                    <p class="cart__product-title cart__product-title--name">название</p>
+                    <p class="cart__product-title cart__product-title--color">цвет</p>
+                    <p class="cart__product-title cart__product-title--category">тип</p>
+                    <p class="cart__product-title cart__product-title--price">цена</p>
+                    <p class="cart__product-title cart__product-title--quantity">количество</p>
+                    <p class="cart__product-title cart__product-title--sum">сумма</p>
+                    <p class="cart__product-title cart__product-title--delete">удалить</p> 
                 </li>
 
 

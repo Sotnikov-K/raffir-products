@@ -19,12 +19,13 @@
     </head>
 
     <body>
+        <div class="page">
+            
+            @include('components/common-components/header')
+            @yield('content')
+            @include('components/common-components/footer')
 
-        @include('components/common-components/header')
-        @yield('content')
-        @include('components/common-components/footer')
-
-
-        <script src="{{ mix('/js/app.js') }}"></script>
+            <script src="{{ mix('/js/app.js') }}"></script>
+        </div>
     </body>
 </html>

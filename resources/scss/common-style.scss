@@ -2,6 +2,12 @@ html {
     font-size: 62.5%;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #363636;
     font-size: 1.4rem;
@@ -28,13 +34,6 @@ body {
     }
 }
 
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none;
     font-family: 'Play', sans-serif;
@@ -48,7 +47,6 @@ p {
 
 h1 {
     font-family: 'Play', sans-serif;
-    // font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     font-weight: 500;
     color: #dddddd;

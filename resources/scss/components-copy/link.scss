@@ -72,6 +72,11 @@
     margin: 0 auto;
     border: 1px solid rgb(104, 104, 104);
 
+    &:hover {
+        border: 1px solid rgb(126, 126, 126);
+    }
+
+
     @include breakpoint($mobile-bp) {
         display: none;
     }
@@ -81,10 +86,10 @@
     display: none;
 
     @include breakpoint($mobile-bp) {
-        margin: 0 auto;
         display: flex;
+        margin: 0 auto 30px;
         width: 100%;
-        margin-bottom: 30px;
+        border: 1px solid rgb(104, 104, 104);
     }
 }
 

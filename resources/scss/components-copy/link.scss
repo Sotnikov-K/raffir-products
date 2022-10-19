@@ -156,7 +156,7 @@
 
 .link--cart {
     display: flex;
-    width: 50%;
+    width: 100%;
     margin: 10px 0 20px;
     margin-left: auto;
     margin-right: 0px;
@@ -164,9 +164,15 @@
     margin-top: auto;
     padding: 20px 20px;
     border: 1px solid rgb(104, 104, 104);
+    transition: border-color $transition-fast $transition;
 
     @include breakpoint($mobile-bp) {
         padding: 20px 20px;
+    }
+
+    &:hover {
+        border: 1px solid rgb(192, 192, 192);
+        transition: border-color $transition-fast $transition;
     }
 }
 

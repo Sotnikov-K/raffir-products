@@ -46,6 +46,12 @@ Route::post('/cart/remove/{id}', [BasketController::class, 'remove'])
 Route::post('/cart/clear', [BasketController::class, 'clear'])->name('basket.clear');
 
 
+// Route::get('/basket/checkout', [CheckoutController::class, 'index'])->name('checkout');
+
+Route::get('/checkout', function(){
+    return view('/pages/checkout-page/checkout');
+})->name('basket.checkout');
+
 
     
 

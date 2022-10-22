@@ -46,7 +46,7 @@
 
             @foreach($products as $product)
             
-                <a class="store__product" href="store/{{$product->slug}}">
+                <a class="store__product" id="targetclass" href="store/{{$product->slug}}">
                     <div class="store__product-data">
                         <div class="store__product-image">
                             

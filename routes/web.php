@@ -48,9 +48,14 @@ Route::post('/cart/clear', [BasketController::class, 'clear'])->name('basket.cle
 
 // Route::get('/basket/checkout', [CheckoutController::class, 'index'])->name('checkout');
 
-Route::get('/checkout', function(){
-    return view('/pages/checkout-page/checkout');
-})->name('basket.checkout');
+// Route::get('/checkout', function(){
+//     return view('/pages/checkout-page/checkout');
+// })->name('basket.checkout');
+
+Route::post('/basket/saveorder', [BasketController::Class, 'saveOrder'])->name('basket.saveorder');
+
+
+Route::get('/basket/success', [BasketController::class, 'success'])->name('basket.success');
 
 
     

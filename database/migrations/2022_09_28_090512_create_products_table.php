@@ -19,23 +19,14 @@ return new class extends Migration
             $table->string('slug');
 
             $table->string('product_category', 50)->nullable();
-            $table->string('product_category_eng', 50)->nullable();
+            $table->string('product_category_slug', 50)->nullable();
 
             $table->string('product_name', 50)->nullable();
-            $table->string('product_name_eng', 50)->nullable();
-
             $table->string('product_shape', 50)->nullable(); //блок, фрагмент
-            $table->string('product_shape_eng', 50)->nullable();
-
             $table->string('product_pattern', 50)->nullable();
-            $table->string('product_pattern_eng', 50)->nullable();
-
             $table->string('product_color', 50)->nullable();
-            $table->string('product_color_eng', 50)->nullable();
-
             $table->string('product_status', 50)->nullable();
-            $table->string('product_status_eng', 50)->nullable();
-
+           
             $table->unsignedInteger('product_length')->nullable();
             $table->unsignedInteger('product_width')->nullable();
             $table->unsignedInteger('product_height')->nullable();

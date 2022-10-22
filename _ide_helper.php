@@ -16815,64 +16815,332 @@
      
 }
 
-    namespace Intervention\Image\Facades { 
+    namespace Livewire { 
             /**
      * 
      *
+     * @see \Livewire\LivewireManager
      */ 
-        class Image {
+        class Livewire {
                     /**
-         * Overrides configuration settings
+         * 
          *
-         * @param array $config
-         * @return self 
          * @static 
          */ 
-        public static function configure($config = [])
+        public static function component($alias, $viewClass = null)
         {
-                        /** @var \Intervention\Image\ImageManager $instance */
-                        return $instance->configure($config);
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->component($alias, $viewClass);
         }
                     /**
-         * Initiates an Image instance from different input types
+         * 
          *
-         * @param mixed $data
-         * @return \Intervention\Image\Image 
          * @static 
          */ 
-        public static function make($data)
+        public static function getAlias($class, $default = null)
         {
-                        /** @var \Intervention\Image\ImageManager $instance */
-                        return $instance->make($data);
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->getAlias($class, $default);
         }
                     /**
-         * Creates an empty image canvas
+         * 
          *
-         * @param int $width
-         * @param int $height
-         * @param mixed $background
-         * @return \Intervention\Image\Image 
          * @static 
          */ 
-        public static function canvas($width, $height, $background = null)
+        public static function getComponentAliases()
         {
-                        /** @var \Intervention\Image\ImageManager $instance */
-                        return $instance->canvas($width, $height, $background);
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->getComponentAliases();
         }
                     /**
-         * Create new cached image and run callback
-         * (requires additional package intervention/imagecache)
+         * 
          *
-         * @param \Closure $callback
-         * @param int $lifetime
-         * @param boolean $returnObj
-         * @return \Image 
          * @static 
          */ 
-        public static function cache($callback, $lifetime = null, $returnObj = false)
+        public static function getClass($alias)
         {
-                        /** @var \Intervention\Image\ImageManager $instance */
-                        return $instance->cache($callback, $lifetime, $returnObj);
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->getClass($alias);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getInstance($component, $id)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->getInstance($component, $id);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function mount($name, $params = [])
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->mount($name, $params);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function dummyMount($id, $tagName)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->dummyMount($id, $tagName);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function test($name, $params = [])
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->test($name, $params);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function visit($browser, $class, $queryString = '')
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->visit($browser, $class, $queryString);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function actingAs($user, $driver = null)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->actingAs($user, $driver);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function addPersistentMiddleware($middleware)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->addPersistentMiddleware($middleware);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setPersistentMiddleware($middleware)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->setPersistentMiddleware($middleware);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getPersistentMiddleware()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->getPersistentMiddleware();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function styles($options = [])
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->styles($options);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function scripts($options = [])
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->scripts($options);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function isLivewireRequest()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->isLivewireRequest();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function isDefinitelyLivewireRequest()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->isDefinitelyLivewireRequest();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function isProbablyLivewireRequest()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->isProbablyLivewireRequest();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function originalUrl()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->originalUrl();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function originalPath()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->originalPath();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function originalMethod()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->originalMethod();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getRootElementTagName($dom)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->getRootElementTagName($dom);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function dispatch($event, ...$params)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->dispatch($event, ...$params);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function listen($event, $callback)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->listen($event, $callback);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function isOnVapor()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->isOnVapor();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function isRunningServerless()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->isRunningServerless();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function withQueryParams($queryParams)
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->withQueryParams($queryParams);
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setBackButtonCache()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->setBackButtonCache();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function disableBackButtonCache()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->disableBackButtonCache();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function enableBackButtonCache()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->enableBackButtonCache();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function shouldDisableBackButtonCache()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->shouldDisableBackButtonCache();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function flushState()
+        {
+                        /** @var \Livewire\LivewireManager $instance */
+                        return $instance->flushState();
         }
          
     }
@@ -17320,6 +17588,155 @@
         public static function hasValidSignatureWhileIgnoring($ignoreQuery = [], $absolute = true)
         {
                         return \Illuminate\Http\Request::hasValidSignatureWhileIgnoring($ignoreQuery, $absolute);
+        }
+         
+    }
+     
+}
+
+    namespace Illuminate\Testing { 
+            /**
+     * 
+     *
+     * @mixin \Illuminate\Http\Response
+     */ 
+        class TestResponse {
+                    /**
+         * 
+         *
+         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
+         * @param mixed $component
+         * @static 
+         */ 
+        public static function assertSeeLivewire($component)
+        {
+                        return \Illuminate\Testing\TestResponse::assertSeeLivewire($component);
+        }
+                    /**
+         * 
+         *
+         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
+         * @param mixed $component
+         * @static 
+         */ 
+        public static function assertDontSeeLivewire($component)
+        {
+                        return \Illuminate\Testing\TestResponse::assertDontSeeLivewire($component);
+        }
+         
+    }
+            /**
+     * 
+     *
+     */ 
+        class TestView {
+                    /**
+         * 
+         *
+         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
+         * @param mixed $component
+         * @static 
+         */ 
+        public static function assertSeeLivewire($component)
+        {
+                        return \Illuminate\Testing\TestView::assertSeeLivewire($component);
+        }
+                    /**
+         * 
+         *
+         * @see \Livewire\LivewireServiceProvider::registerTestMacros()
+         * @param mixed $component
+         * @static 
+         */ 
+        public static function assertDontSeeLivewire($component)
+        {
+                        return \Illuminate\Testing\TestView::assertDontSeeLivewire($component);
+        }
+         
+    }
+     
+}
+
+    namespace Illuminate\View { 
+            /**
+     * 
+     *
+     */ 
+        class ComponentAttributeBag {
+                    /**
+         * 
+         *
+         * @see \Livewire\LivewireServiceProvider::registerViewMacros()
+         * @param mixed $name
+         * @static 
+         */ 
+        public static function wire($name)
+        {
+                        return \Illuminate\View\ComponentAttributeBag::wire($name);
+        }
+         
+    }
+            /**
+     * 
+     *
+     */ 
+        class View {
+                    /**
+         * 
+         *
+         * @see \Livewire\Macros\ViewMacros::extends()
+         * @param mixed $view
+         * @param mixed $params
+         * @static 
+         */ 
+        public static function extends($view, $params = [])
+        {
+                        return \Illuminate\View\View::extends($view, $params);
+        }
+                    /**
+         * 
+         *
+         * @see \Livewire\Macros\ViewMacros::layout()
+         * @param mixed $view
+         * @param mixed $params
+         * @static 
+         */ 
+        public static function layout($view, $params = [])
+        {
+                        return \Illuminate\View\View::layout($view, $params);
+        }
+                    /**
+         * 
+         *
+         * @see \Livewire\Macros\ViewMacros::layoutData()
+         * @param mixed $data
+         * @static 
+         */ 
+        public static function layoutData($data = [])
+        {
+                        return \Illuminate\View\View::layoutData($data);
+        }
+                    /**
+         * 
+         *
+         * @see \Livewire\Macros\ViewMacros::section()
+         * @param mixed $section
+         * @static 
+         */ 
+        public static function section($section)
+        {
+                        return \Illuminate\View\View::section($section);
+        }
+                    /**
+         * 
+         *
+         * @see \Livewire\Macros\ViewMacros::slot()
+         * @param mixed $slot
+         * @static 
+         */ 
+        public static function slot($slot)
+        {
+                        return \Illuminate\View\View::slot($slot);
         }
          
     }
@@ -21078,7 +21495,7 @@ namespace  {
             class Validator extends \Illuminate\Support\Facades\Validator {}
             class View extends \Illuminate\Support\Facades\View {}
             class Breadcrumbs extends \Diglactic\Breadcrumbs\Breadcrumbs {}
-            class Image extends \Intervention\Image\Facades\Image {}
+            class Livewire extends \Livewire\Livewire {}
             class Flare extends \Spatie\LaravelIgnition\Facades\Flare {}
      
 }

@@ -68,14 +68,16 @@
 
 
 
-                        <form action="{{ route('basket.add', ['id' => $product->id]) }}" 
+                        
+
+                        <!-- <form action="{{ route('basket.add', ['id' => $product->id]) }}" 
                             method="post">
                             @csrf
-                            <button type="submit" class="button--store">
+                            <button wire:submit="add" type="submit" class="button--store">
                                 <p class="link__text">В корзину</p>
                                 <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png">
                             </button>
-                        </form>
+                        </form> -->
 
 
 
@@ -85,6 +87,9 @@
                     
             @endforeach
 
+
+            @include('livewire/add-buttom')
+            
         </section>
  
     </main>

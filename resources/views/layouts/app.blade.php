@@ -15,6 +15,8 @@
         
 
         <link rel="stylesheet" href="/css/app.css">
+
+        @livewireStyles
         
     </head>
 
@@ -22,10 +24,17 @@
         <div class="page">
             
             @include('components/common-components/header')
+
+
+            
+
+
             @yield('content')
             @include('components/common-components/footer')
 
             <script src="{{ mix('/js/app.js') }}"></script>
+
+            @livewireScripts
         </div>
     </body>
 </html>

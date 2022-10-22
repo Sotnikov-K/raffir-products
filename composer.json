@@ -15,7 +15,8 @@
         "intervention/image": "^2.7",
         "laravel/framework": "^9.11",
         "laravel/sanctum": "^2.14.1",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "livewire/livewire": "^2.10"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.12",
@@ -24,7 +25,8 @@
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0"
+        "spatie/laravel-ignition": "^1.0",
+        "livewire/livewire": "^2.10"
     },
     "autoload": {
         "psr-4": {

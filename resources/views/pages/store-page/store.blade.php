@@ -80,6 +80,7 @@
                         </form> -->
 
 
+                        <livewire:add-buttom/>
 
 
                     </div>
@@ -88,7 +89,7 @@
             @endforeach
 
 
-            @include('livewire/add-buttom')
+            
             
         </section>
  

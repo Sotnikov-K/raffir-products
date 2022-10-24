@@ -42,6 +42,8 @@ class BasketController extends Controller
         //?? сокращенный тернарный оператор - если первая переменная установлена то используется она, иначе вторая сравниваемая
         // dd($request->input('quantity'));
         $quantity = $request->input('quantity') ?? 1;
+
+        // dd($this->basket);
         $this->basket->increase($id, $quantity);
 
         // выполняем редирект обратно на ту страницу,

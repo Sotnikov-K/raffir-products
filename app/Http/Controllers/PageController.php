@@ -11,9 +11,7 @@ class PageController extends Controller{
 
 
     public function store(){
-        $products = Product::all();
-        $imagesAll = Image::all();
-        return view('pages/store-page/store', compact('products', 'imagesAll'));
+        return view('pages/store-page/store');
     }
 
 

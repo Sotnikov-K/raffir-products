@@ -7,13 +7,15 @@ use Livewire\Component;
 
 class CartCounter extends Component
 {
-    public $counter = 0;
+    // public $quantity = 0;
     public $basket;
     public $products;
 
     public function mount()
     {
         $this->basket = Basket::getBasket();
+        $this->counter();
+
     }
 
    
@@ -22,9 +24,9 @@ class CartCounter extends Component
     //метод должен получить все товары в корзине
     //посчитать количество каждого товара в корзине
     //метод возвращает сумму количества каждого товара в корзине пользователя
-    public function quantityCounter()
+    public function counter()
     {
-        $quantity = 0;
+        $quantity = 15;
         // dd($this->products);
         // foreach ($this->products as $product) {
         //     $quantity = $quantity + $product->pivot->quantity;
@@ -34,10 +36,9 @@ class CartCounter extends Component
 
     public function render()
     {
-        $counter = $this->quantityCounter();
-
-        // dd($counter);
-        return view('livewire.cart-counter', compact(['counter']));
+        $quantity = $this->counter();
+    
+        return view('livewire.cart-counter', compact('quantity'));
     }
 }
 

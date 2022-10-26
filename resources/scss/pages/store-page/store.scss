@@ -103,14 +103,18 @@
 
     &:hover {
         .store__product-data {
-
             background: rgb(35, 35, 35);
-            box-shadow: 0px 0px 10px 0px rgba(15, 15, 15, 1);
         }
 
         .image-switch__img img {
             opacity: 0.9;
         }
+
+        .store__product-img {
+            transform: translateY(-5px);
+            transition: transform $transition-fast $transition;
+        }
+
     }
 
     @include breakpoint($tablet-bp) {
@@ -142,6 +146,7 @@
     display: flex;
     margin: 20px auto;
     width: 70%;
+    transition: transform $transition-fast $transition;
 
     @include breakpoint($tablet-bp) {
         width: 80%;

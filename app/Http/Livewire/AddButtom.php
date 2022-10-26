@@ -4,14 +4,11 @@ namespace App\Http\Livewire;
 
 use Illuminate\Http\Request;
 use App\Models\Basket;
-
-
 use Livewire\Component;
 
 
 class AddButtom extends Component
 {
-    
     public $product_id = 3456;
 
     public function add(Request $request, $product_id) {

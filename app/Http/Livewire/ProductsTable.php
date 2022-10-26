@@ -22,6 +22,10 @@ class ProductsTable extends Component
         $this->basket->increase($id, $quantity);
     }
 
+    public function refreshCartCountBar(){
+        $this->emit('refreshCartCountBar');
+    }
+
 
     public function render()
     {

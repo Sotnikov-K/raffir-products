@@ -42,24 +42,8 @@
 
         </section>
 
-        
-
-
-
-
-
         @livewire('products-table')
 
-
-
-
-
-
-
-
-
-
- 
     </main>
 @endsection
 

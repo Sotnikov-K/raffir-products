@@ -13,7 +13,7 @@
                 
 
                 <form wire:submit.prevent="add( {{ $product->id }} )">
-                    <button type="submit" class="button--store">
+                    <button type="submit" wire:click="refreshCartCountBar" class="button--store">
                         <p class="link__text">В корзину</p>
                         <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png">
                     </button>

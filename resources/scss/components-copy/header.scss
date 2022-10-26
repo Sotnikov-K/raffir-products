@@ -83,6 +83,26 @@
     opacity: .9;
 }
 
+.header__cart-quantity-wrapper {
+    position: absolute;
+    left: 106px;
+    top: 10px;
+    line-height: 0px;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+
+    border: 1px solid #334449;
+    border-radius: 5px;
+    overflow: hidden;
+
+    background-color: #334449;
+}
+
+.header__cart-quantity {
+    color: white;
+    padding: 10px 0px;
+}
 
 
 

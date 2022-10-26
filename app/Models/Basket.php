@@ -85,6 +85,20 @@ class Basket extends Model
         return $basket;
     }
 
+    public function getQuantity(){
+
+        $quantity = 0;
+
+        $basket = $this::getBasket();
+
+        foreach ($basket->products as $product) {
+            $quantity = $quantity + $product->pivot->quantity;
+        }
+
+        return $quantity;
+
+    }
+
     // public function getAmount() {
     //     $amount = 0.0;
     //     foreach ($this->products as $product) {

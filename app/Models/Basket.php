@@ -99,15 +99,6 @@ class Basket extends Model
 
     }
 
-    // public function getAmount() {
-    //     $amount = 0.0;
-    //     foreach ($this->products as $product) {
-    //         $amount = $amount + $product->price * $product->pivot->quantity;
-    //     }
-    //     return $amount;
-    // }
-
-
     public function getAmount() {
         $amount = 0.0;
         foreach ($this->products as $product) {

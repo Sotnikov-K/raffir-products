@@ -8,12 +8,9 @@ use App\Models\Image;
 
 class PageController extends Controller{
 
-
-
     public function store(){
         return view('pages/store-page/store');
     }
-
 
 
     public function product($slug){
@@ -29,9 +26,4 @@ class PageController extends Controller{
         return view('pages/product-page/product', compact('product', 'images', 'imageArray') );
     }
 
-
-
-
 }
-
-

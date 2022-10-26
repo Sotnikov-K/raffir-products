@@ -7,8 +7,6 @@ use Livewire\Component;
 
 class CartCounter extends Component
 {
-
-
     protected $listeners = [
         'refreshCartCountBar' => 'refresher',
     ];

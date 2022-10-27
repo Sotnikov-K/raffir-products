@@ -10,6 +10,7 @@
                 <h1 class="cart__title-h1">Корзина товаров</h1>
             </section>
 
+
             <ul class="cart__product-list">
                 <li class="cart__product-item-title">
                     <p class="cart__product-title cart__product-title--number">#</p>
@@ -30,9 +31,6 @@
                         $basketCost = 0;
                     @endphp
 
-
-                    
-                    
                         @foreach($products as $product)
                             @php
                                 $itemPrice = $product->product_price;
@@ -53,11 +51,8 @@
                                 <p class="cart__product-price"><span class="cart__product-span">цена за ед.</span>{{ number_format($itemPrice, 2, '.', '') }} руб.</p>
                                 <div class="cart__product-quantity-wrapper">
                                     
-                                    <form action="{{ route('basket.plus', ['id' => $product->id]) }}"
-                                        method="post">
-                                        @csrf
-                                        <button type="submit" class="cart__product-quantity-button cart__product-quantity-button--plus">&#43;</button>
-                                    </form>
+
+                                    @livewire('cart.cart-table', ['product_id' => $product->id] )
 
                                     <form action="{{ route('basket.minus', ['id' => $product->id]) }}"
                                         method="post">
@@ -82,18 +77,17 @@
                                 </div>
                             </li>
 
-
-                           
                         @endforeach
                         
-                            <li class="cart__product-item">   
-                                <div class="cart__product-total cart__product-total--left">
-                                    <p class="cart__product-total-p">ИТОГО</p>
-                                </div>
-                                <div class="cart__product-total cart__product-total--right">
-                                    <p class="cart__product-totalresult">{{ number_format($basketCost, 2, '.', '') }} руб.</p>
-                                </div>
-                            </li>
+
+                        <li class="cart__product-item">   
+                            <div class="cart__product-total cart__product-total--left">
+                                <p class="cart__product-total-p">ИТОГО</p>
+                            </div>
+                            <div class="cart__product-total cart__product-total--right">
+                                <p class="cart__product-totalresult">{{ number_format($basketCost, 2, '.', '') }} руб.</p>
+                            </div>
+                        </li>
                     
                 @else
                     <li class="cart__product-item">   
@@ -102,8 +96,14 @@
                         </div>
                     </li>
                 @endif
- 
+
             </ul>
+
+
+
+            
+
+
 
             @if (count($products))
 
@@ -130,49 +130,6 @@
                     <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png">
                 </div>
             @endif
-
-
-
-            
-        @php
-            class user {
-
-                private $name;
-                private $job;
-                private $age;
-
-                function __construct($name, $job, $age){
-                    $this->name = $name;
-                    $this->job = $job;
-                    $this->age = $age;
-                }
-
-                public function __set($name, $value){
-                    $this->name = $value;
-                }
-
-
-
-
-
-            }
-
-
-            $agent = new User('Kirill', 'it', '34');
-            
-           
-
-           
-
-
-
-
-
-        @endphp
-
-
-
-
 
         </section>
     </main>

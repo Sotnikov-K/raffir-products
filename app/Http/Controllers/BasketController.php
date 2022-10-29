@@ -37,26 +37,26 @@ class BasketController extends Controller
     /**
      * Добавляет товар с идентификатором $id в корзину
      */
-    public function add(Request $request, $id) {
-        //?? сокращенный тернарный оператор - если первая переменная установлена то используется она, иначе вторая сравниваемая 
-        $quantity = $request->input('quantity') ?? 1;
+    // public function add(Request $request, $id) {
+    //     //?? сокращенный тернарный оператор - если первая переменная установлена то используется она, иначе вторая сравниваемая 
+    //     $quantity = $request->input('quantity') ?? 1;
 
-        $this->basket->increase($id, $quantity);
+    //     $this->basket->increase($id, $quantity);
 
-        // выполняем редирект обратно на ту страницу,
-        // где была нажата кнопка «В корзину»
-        return back();
-        // return redirect(url()->previous().'#targetclass');
-    }
+    //     // выполняем редирект обратно на ту страницу,
+    //     // где была нажата кнопка «В корзину»
+    //     return back();
+    //     // return redirect(url()->previous().'#targetclass');
+    // }
 
     /**
      * Увеличивает кол-во товара $id в корзине на единицу
      */
-    public function plus($id) {
-        $this->basket->increase($id);
-        // выполняем редирект обратно на страницу корзины
-        return redirect()->route('basket.index');
-    }
+    // public function plus($id) {
+    //     $this->basket->increase($id);
+    //     // выполняем редирект обратно на страницу корзины
+    //     return redirect()->route('basket.index');
+    // }
 
     /**
      * Уменьшает кол-во товара $id в корзине на единицу

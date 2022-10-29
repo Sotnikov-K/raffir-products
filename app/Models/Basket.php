@@ -45,6 +45,7 @@ class Basket extends Model
         if ($this->products->contains($id)) {
             // получаем объект строки таблицы `basket_product`
             $pivotRow = $this->products()->where('product_id', $id)->first()->pivot;
+           
             $quantity = $pivotRow->quantity + $count;
             if ($quantity > 0) {
                 // обновляем количество товара $id в корзине
@@ -59,6 +60,7 @@ class Basket extends Model
         // обновляем поле `updated_at` таблицы `baskets`
         $this->touch();
     }
+
 
     /**
      * Удаляет товар с идентификатором $id из корзины покупателя
@@ -85,18 +87,14 @@ class Basket extends Model
         return $basket;
     }
 
+
     public function getQuantity(){
-
         $quantity = 0;
-
         $basket = $this::getBasket();
-
         foreach ($basket->products as $product) {
             $quantity = $quantity + $product->pivot->quantity;
         }
-
         return $quantity;
-
     }
 
     public function getAmount() {

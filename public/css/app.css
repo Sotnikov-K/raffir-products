@@ -1733,8 +1733,7 @@ h2 {
 }
 @media screen and (max-width: 575px) {
   .cart__product-item {
-    border-top: 1px solid rgb(58, 58, 58);
-    margin-bottom: 5px;
+    border-top: 1px solid rgb(150, 150, 150);
   }
 }
 

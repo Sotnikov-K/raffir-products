@@ -61,11 +61,11 @@ class BasketController extends Controller
     /**
      * Уменьшает кол-во товара $id в корзине на единицу
      */
-    public function minus($id) {
-        $this->basket->decrease($id);
-        // выполняем редирект обратно на страницу корзины
-        return redirect()->route('basket.index');
-    }
+    // public function minus($id) {
+    //     $this->basket->decrease($id);
+    //     // выполняем редирект обратно на страницу корзины
+    //     return redirect()->route('basket.index');
+    // }
 
      /**
      * Удаляет товар с идентификаторм $id из корзины

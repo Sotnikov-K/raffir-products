@@ -5,55 +5,57 @@ namespace App\Http\Livewire\Cart;
 use Livewire\Component;
 use App\Models\Basket;
 
-// $basketCost = $basketCost + $itemCost;
-
 class CartTable extends Component
 {
     public $basket;
     public $products;
-    
-    
+
     public function mount() 
     {
-        $this->basket = Basket::getBasket(); 
-        
+        $this->basket = Basket::getBasket();  
     }
 
-  
-
-    private function change($id, $count = 0) {
-        // получаем объект строки таблицы `basket_product`
+    
+    public function change($id, $count) 
+    {
+        $this->emit('refreshCartCountBar');
         $pivotRow = $this->basket->products()->where('product_id', $id)->first()->pivot;
+        $this->quantity = $pivotRow->quantity + $count;
         
-        $quantity = $pivotRow->quantity + $count;
-        if ($quantity > 0) {
+        if ($this->quantity > 0) {
             // обновляем количество товара $id в корзине
-            $pivotRow->update(['quantity' => $quantity]);
+            $pivotRow->update(['quantity' => $this->quantity]);
+            $this->basket = Basket::getBasket();
+
         } else {
             // кол-во равно нулю — удаляем товар из корзины
+            $this->basket = Basket::getBasket();
             $pivotRow->delete();
         }
-       
-
+        
         // обновляем поле `updated_at` таблицы `baskets`
+        $this->basket->touch();
         // Basket::touch();
     }
-
-
 
     public function plus($id, $count = 1)
     {
         $this->change($id, $count);
     }
 
+    public function minus($id, $count = 1)
+    {
+        $this->change($id, -1 * $count);
+    }
+
+
     public function render()
     {
         // dd($this->basket->products()->where('product_id', $id)->first()->pivot);
         
-
         $products = $this->basket->products;
         $this->products = $products;
-        
+ 
         return view('livewire.cart.cart-table');
     }
 }

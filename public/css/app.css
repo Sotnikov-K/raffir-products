@@ -512,7 +512,7 @@ h2 {
 
 /*pages*/
 .home {
-  max-width: 1300px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1019,7 +1019,7 @@ h2 {
 .store {
   margin: 50px auto;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .store__title-container {
@@ -1113,6 +1113,7 @@ h2 {
   max-width: 1300px;
   margin: 0 auto;
   width: 100%;
+  min-height: 430px;
 }
 
 .store__product {
@@ -1186,7 +1187,7 @@ h2 {
 .product {
   margin: 115px auto 50px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .product__title-container {
@@ -1683,7 +1684,7 @@ h2 {
 .cart {
   margin: 110px auto 50px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 @media screen and (max-width: 575px) {
   .cart {
@@ -2182,12 +2183,14 @@ h2 {
   flex-direction: row;
 }
 
-.cart__link-checkout {
+.cart__link {
   display: flex;
   justify-content: flex-end;
   max-width: 1000px;
   margin: 50px auto 10px;
   width: 100%;
+  margin-bottom: 0px;
+  margin-top: auto;
   flex-direction: row;
 }
 
@@ -2200,7 +2203,7 @@ h2 {
 .checkout {
   margin: 110px auto 50px;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 @media screen and (max-width: 770px) {
   .checkout {
@@ -2884,7 +2887,7 @@ h2 {
 .contacts {
   margin: 50px auto;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 .contacts__title-container {

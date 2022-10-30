@@ -48,6 +48,13 @@ class CartTable extends Component
         $this->change($id, -1 * $count);
     }
 
+    public function remove($id) {
+        $this->basket = Basket::getBasket();
+        // удаляем товар из корзины (разрушаем связь)
+        $this->basket->products()->detach($id);
+        // обновляем поле `updated_at` таблицы `baskets`
+        $this->basket->touch();
+    }
 
     public function render()
     {

@@ -62,15 +62,15 @@ class Basket extends Model
     }
 
 
-    /**
-     * Удаляет товар с идентификатором $id из корзины покупателя
-     */
-    public function remove($id) {
-        // удаляем товар из корзины (разрушаем связь)
-        $this->products()->detach($id);
-        // обновляем поле `updated_at` таблицы `baskets`
-        $this->touch();
-    }
+    // /**
+    //  * Удаляет товар с идентификатором $id из корзины покупателя
+    //  */
+    // public function remove($id) {
+    //     // удаляем товар из корзины (разрушаем связь)
+    //     $this->products()->detach($id);
+    //     // обновляем поле `updated_at` таблицы `baskets`
+    //     $this->touch();
+    // }
 
     public static function getBasket() {
         $basket_id = request()->cookie('basket_id');

@@ -45,8 +45,6 @@
                         <p class="cart__product-category"><span class="cart__product-span">категория</span>{{ $product->product_category }}</p>
                         <p class="cart__product-price"><span class="cart__product-span">цена за ед.</span>{{ $itemPrice }} руб.</p>
                         
-                        
-
                         <div class="cart__product-quantity-wrapper">
                         
                             <button wire:click="plus({{$product->id}})" class="cart__product-quantity-button cart__product-quantity-button--plus">
@@ -58,19 +56,20 @@
                             
                         </div>
 
-
-
-
                         <p class="cart__product-sum"><span class="cart__product-span">сумма</span>{{ $itemCost }} руб.</p>
                         
-                        
+
                         <div class="cart__product-delete-wrapper">
+                            <button wire:click="remove({{$product->id}})" class="cart__product-delete-button">&#10006;</button>
+                        </div>
+                        
+                        <!-- <div class="cart__product-delete-wrapper">
                             <form action="{{ route('basket.remove', ['id' => $product->id]) }}"
                                 method="post">
                                 @csrf
                                 <button type="submit" class="cart__product-delete-button">&#10006;</button>
                             </form> 
-                        </div>
+                        </div> -->
 
                     </li>
 
@@ -109,7 +108,7 @@
             </button>
         </form>
 
-        <div class="cart__link-checkout">
+        <div class="cart__link">
             <a class="cart__link-a" href="/checkout">
                 <div class="link link--cart">
                     <p class="link__text">Оформить заказ</p>
@@ -118,9 +117,13 @@
             </a>
         </div>
     @else
-        <div class="link link--cart">
-            <p class="link__text">Перейти в Магазин</p>
-            <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png">
+        <div class="cart__link">
+            <a class="cart__link-a" href="/store">
+                <div class="link link--cart">
+                    <p class="link__text">Перейти в Магазин</p>
+                    <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png">
+                </div>
+            </a>
         </div>
     @endif
 

@@ -29,8 +29,14 @@ class ProductsTable extends Component
 
     public function render()
     {
-        $products = Product::all();
+        // $products = Product::all();
+
+        $products = Product::where('product_category', 'композит')->get();
+        // $products = Product::where('product_category', 'брусок')->get();
+
         $imagesAll = Image::all();
+
+        // dd($products);
 
         return view('livewire.products-table', compact('products', 'imagesAll'));
     }

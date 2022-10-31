@@ -409,6 +409,12 @@
 .product__description-p--span {
     font-size: 12px;
     color: #6d6d6d;
+
+    @include breakpoint($tablet-bp) {
+        display: block;
+        padding-bottom: -28px;
+        margin-bottom: -6px;
+    }
 }
 
 .product__description-info-wrapper {

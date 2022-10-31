@@ -11,6 +11,10 @@
     max-width: 1200px;
     width: 100%;
     margin: 150px auto 50px;
+
+    @include breakpoint($tablet-bp) {
+        margin: 50px auto 50px;
+    }
 }
 
 .store__title-h1 {
@@ -48,6 +52,19 @@
     }
 }
 
+.store__filter-price {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: auto;
+    padding: 5px;
+
+    @include breakpoint($tablet-bp) {
+        width: 50%;
+    }
+}
+
+
 
 .store__filter-data {
     display: flex;
@@ -63,21 +80,23 @@
 }
 
 .store__filter-input {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(59, 59, 59);
+    padding: 15px 20px;
+    // border: none;
+    // background-color: rgb(31 31 31);
+    background: none;
+    border: 2px solid rgb(40 40 40);
+    ;
     transition: background-color $transition-fast $transition;
-    color: black;
+    color: rgb(255, 255, 255);
 
     cursor: pointer;
 
     &::placeholder {
-        color: black;
+        color: rgb(255, 255, 255);
     }
 
     &:hover {
-        background-color: rgb(94, 94, 94);
+        background-color: rgb(49, 49, 49);
         transition: background-color $transition-fast $transition;
 
         .store__filter-label {

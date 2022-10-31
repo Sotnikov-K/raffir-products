@@ -12,8 +12,8 @@
 
             <div class="store__filter-type">
                 <div class="store__filter-data">
-                    <label class="store__filter-label" for="type">Фильтр по типу</label>
-                    <input class="store__filter-input" type="text" id="name" name="name" list="type" required minlength="4" maxlength="8" size="10" placeholder="Все типы">
+                    <label class="store__filter-label" for="type">Фильтр по категории</label>
+                    <input class="store__filter-input" type="text" id="name" name="name" list="type" required minlength="4" maxlength="8" size="10" placeholder="Все категории">
                     <datalist id="type">
                         <option>Все типы</option>
                         <option>Композиты</option>
@@ -36,6 +36,18 @@
                         <option>Красный</option>
                         <option>Зеленый</option>
                         <option>Желтый</option>
+                    </datalist>
+                </div>
+            </div>
+
+            <div class="store__filter-price">
+                <div class="store__filter-data">
+                    <label class="store__filter-label" for="color">Сортировка по цене</label>
+                    <input class="store__filter-input" type="text" id="price" name="price" list="price" required size="10" placeholder="не выбрано">
+                    <datalist id="price">
+                        <option>не выбрано</option>
+                        <option>сначало дешевле</option>
+                        <option>сначало дороже</option>
                     </datalist>
                 </div>
             </div>

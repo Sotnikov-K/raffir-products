@@ -13,7 +13,9 @@
 // require('./status');
 __webpack_require__(/*! ./choosingLotImage */ "./resources/js/choosingLotImage.js");
 
-__webpack_require__(/*! ./itemGallery */ "./resources/js/itemGallery.js"); // require('./input');
+__webpack_require__(/*! ./itemGallery */ "./resources/js/itemGallery.js");
+
+__webpack_require__(/*! ./dropdown-input */ "./resources/js/dropdown-input.js"); // require('./input');
 // require('./admin-create-lot/createLot');
 // require('./admin-create-lot/createLot-setLotSizeTitle');
 // require('./admin-create-lot/createLot-weightCounter');
@@ -62,6 +64,50 @@ if (document.querySelector('.databaseItem-image-section')) {
 }
 
 ;
+
+/***/ }),
+
+/***/ "./resources/js/dropdown-input.js":
+/*!****************************************!*\
+  !*** ./resources/js/dropdown-input.js ***!
+  \****************************************/
+/***/ (() => {
+
+document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
+  var dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
+  var dropDownList = dropDownWrapper.querySelector('.dropdown__list');
+  var dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
+  var dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden'); //Клик по кнопке. Открыть/Закрыть select.
+
+  dropDownBtn.addEventListener('click', function () {
+    dropDownList.classList.toggle('dropdown__list--visible');
+    this.classList.add('dropdown__button--active');
+  }); //Выбор элемента списка. Запомнить выбранное значение. Закрыть дропдаун.
+
+  dropDownListItems.forEach(function (listItem) {
+    listItem.addEventListener('click', function (e) {
+      e.stopPropagation();
+      dropDownBtn.innerText = this.innerText;
+      dropDownBtn.focus();
+      dropDownInput.value = this.dataset.value;
+      dropDownList.classList.remove('dropdown__list--visible');
+    });
+  }); //клик снаружи Дропдауна. Закрыть дропдаун.
+
+  document.addEventListener('click', function (e) {
+    if (e.target !== dropDownBtn) {
+      dropDownList.classList.remove('dropdown__list--visible');
+      dropDownBtn.classList.remove('dropdown__button--active');
+    }
+  }); //Нажатие на Tab или Escape. Закрыть дропдаун.
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Tab' || e.key === 'Escape') {
+      dropDownList.classList.remove('dropdown__list--visible');
+      dropDownBtn.classList.remove('dropdown__button--active');
+    }
+  });
+});
 
 /***/ }),
 

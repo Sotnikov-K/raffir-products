@@ -1,0 +1,184 @@
+.select {
+    width: 100%;
+
+    /*Убираем браузерную стрелку*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    padding: 10px 35px 10px 15px;
+    border: 2px solid rgb(40, 40, 40);
+    background-color: white;
+    cursor: pointer;
+
+    /*Убираем рамку поля выбора при фокусе*/
+    outline: none;
+}
+
+.select:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+.select::-ms-expand {
+    /*Убираем браузерную стрелку в IE в 10 и 11 версии*/
+    display: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-40%);
+    display: block;
+
+    /*рисуем треугольник*/
+    width: 0;
+    height: 0;
+    border-width: 10.4px 6px 0 6px;
+    border-color: #6E6E6E transparent transparent transparent;
+    border-style: solid;
+
+    /*снимаем клик с треугольника*/
+    pointer-events: none;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown__button {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: left;
+
+    font-family: "Play", sans-serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(54 54 54);
+    border: 2px solid rgb(40, 40, 40);
+    height: 50px;
+
+    padding: 3px 35px 3px 20px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+
+    transition: background-color 0.1s linear, box-shadow 0.1s linear;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(49, 49, 49);
+        transition: background-color 0.1s linear, box-shadow 0.1s linear;
+
+        -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+        outline: none;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-45%);
+
+        /*рисуем треугольник*/
+        width: 0;
+        height: 0;
+        border-width: 10.4px 6px 0 6px;
+        border-color: #b6b6b6 transparent transparent transparent;
+        border-style: solid;
+
+        /*снимаем клик с треугольника*/
+        pointer-events: none;
+    }
+}
+
+.dropdown__button--active {
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+
+    background-color: rgb(49, 49, 49);
+    transition: background-color 0.1s linear, box-shadow 0.1s linear;
+
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.dropdown__list {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: rgb(54 54 54);
+    transition: background-color 0.1s linear;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown__list--visible {
+    display: block;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown__list-item {
+    margin: 0;
+    padding: 0;
+    border: 2px solid rgb(0, 0, 0);
+    border-top: none;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    padding: 13px 20px;
+
+    font-family: "Play", sans-serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(202, 202, 202);
+
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(49, 49, 49);
+        transition: background-color 0.1s linear;
+    }
+
+    &:first-child {
+        overflow: hidden;
+    }
+
+    &:last-child {
+        border-bottom: 2px solid black;
+        overflow: hidden;
+    }
+}
+
+.dropdown__input-hidden {
+    // display: none;
+}

@@ -1,13 +1,17 @@
 input::placeholder {
     color: rgb(116, 116, 116);
     font-size: 12px;
+    font-family: 'Play', sans-serif;
     font-style: italic;
-    letter-spacing: normal;
+    letter-spacing: 1.5px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
     margin: 0;
 }
 
@@ -23,7 +27,7 @@ input[type=number] {
     padding: 5px 10px;
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     outline: none;
     color: #ffffff;
     border: 1px solid rgb(70, 70, 70);
@@ -84,7 +88,7 @@ input:-webkit-autofill:active {
 }
 
 .label {
-    font-family: Play;
+    font-family: 'Play', sans-serif;
     font-size: 12px;
     margin-bottom: 2px;
     opacity: .8;

@@ -6,6 +6,7 @@
 
 require('./choosingLotImage');
 require('./itemGallery');
+require('./dropdown-input');
 
 
 

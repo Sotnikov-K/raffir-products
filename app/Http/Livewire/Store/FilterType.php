@@ -10,13 +10,7 @@ class FilterType extends Component
 {
 
     public $category_name;
-    public $query;
-
-
-    public function filter(){
-        $this->emitTo('products-table', 'reloadProducts', $this->category_name, $this->query);
-    }
-
+    // public $query;
 
     public function render()
     {
@@ -24,5 +18,16 @@ class FilterType extends Component
         // $products = Product::all();
 
         return view('livewire.store.filter-type', compact('categories'));
+    }
+
+    public function filter(){
+        // dd($this->query);
+
+        //query - строка поиска товара по вводу слов
+        // $this->emitTo('products-table', 'reloadProducts', $this->category_name, $this->query);
+
+
+        // $this->emitTo('products-table', 'reloadProducts', $this->category_name);
+        $this->emitTo('products-table', 'reloadProducts', $this->category_name);
     }
 }

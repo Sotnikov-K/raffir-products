@@ -3,7 +3,7 @@
         <label class="store__filter-label" for="type">Фильтр по категориям</label>
 
 
-        <input wire:model="query" wire:keyup.debounce="filter" class="store__filter-input" type="text" id="name" name="name" list="type" required minlength="4" maxlength="18" size="10" placeholder="Все категории">
+        <!-- <input wire:model="query" wire:keyup.debounce="filter" class="store__filter-input" type="text" id="name" name="name" list="type" required minlength="4" maxlength="18" size="10" placeholder="Все категории"> -->
 
         <div class="select-wrapper">
             <select class="select" wire:model="category_name" wire:change="filter" >   

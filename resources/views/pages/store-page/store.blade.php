@@ -11,10 +11,9 @@
         <section class="store__filter-container">
 
 
-
             @livewire('store.filter-type')
-            
 
+            
             <div class="store__filter-color">
                 <div class="store__filter-data">
                     <label class="store__filter-label" for="color">Фильтр по цвету</label>

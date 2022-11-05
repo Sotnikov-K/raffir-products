@@ -26,8 +26,8 @@ class FilterType extends Component
         //query - строка поиска товара по вводу слов
         // $this->emitTo('products-table', 'reloadProducts', $this->category_name, $this->query);
 
-
         // $this->emitTo('products-table', 'reloadProducts', $this->category_name);
         $this->emitTo('products-table', 'reloadProducts', $this->category_name);
+        
     }
 }

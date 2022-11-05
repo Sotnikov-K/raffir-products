@@ -1,4 +1,10 @@
+
 <section class="store__product-container">
+
+    <!-- {{$category_name}} -->
+    {{$products}} 
+
+    
     @foreach($products as $product)
     
         <a class="store__product" id="targetclass" href="store/{{$product->slug}}">
@@ -22,4 +28,5 @@
             </div>
         </a>        
     @endforeach
+
 </section>

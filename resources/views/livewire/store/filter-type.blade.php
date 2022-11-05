@@ -6,7 +6,7 @@
         <!-- <input wire:model="query" wire:keyup.debounce="filter" class="store__filter-input" type="text" id="name" name="name" list="type" required minlength="4" maxlength="18" size="10" placeholder="Все категории"> -->
 
         <div class="select-wrapper">
-            <select class="select" wire:model="category_name" wire:change="filter" >   
+            <select class="select" wire:model="category_name" wire:change="filter">   
                 <option value="">Выбрать категорию...</option>
                 @foreach($categories as $category)
                     <option value="{{$category->product_category}}">{{$category->product_category}}</option>

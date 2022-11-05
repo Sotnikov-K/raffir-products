@@ -13,16 +13,21 @@ class ProductsTable extends Component
 {
     public $basket;
     public $products;
-    public $category_name;
+    public $category_name = 'композит';
+    public $imagesAll;
+
     protected $listeners = ['reloadProducts' => 'reloadProducts'];
     
-
     public function mount()
     {
         $this->basket = Basket::getBasket();
-        // $this->products = Product::all();
-        // $this->products = Product::where('product_category', '=', 'композит')->get();
+        $this->imagesAll = Image::all();
+
+        $this->getProducts();
     }
+
+
+
 
     public function add(Request $request, $id) 
     {
@@ -30,41 +35,40 @@ class ProductsTable extends Component
         $this->basket->increase($id, $quantity);
     }
 
-
     public function refreshCartCountBar()
     {
         $this->emit('refreshCartCountBar');
     }
 
-    public function hydrate(){
-        // $this->cat
+
+    public function getProducts()
+    {
+        $products = Product::where('product_category', $this->category_name)->get();
+        $this->products = $products;
+        // dd($products);
     }
-
-
+    
     public function reloadProducts($category_name)
     {
-        // $this->products = Product::query();
-        // dd($this->products);
-        // if($category_name){
-        //     $this->products = $this->products->where('product_category', $category_name);
-        //     $this->products = Product::where('product_category', '=', $category_name)->get();
-        //     dd($this->products);
-        // } 
-        
-        // $this->products = $this->products->get();
-        // dd($this->products);
-
+        $products = Product::query();
+    
         $this->category_name = $category_name;
-    }
+        
+        if($category_name){
+            $products = $products->where('product_category', $category_name);
+            // dd($products);
+        } 
+        
+        
+        $this->products = $products->get();
+        //  dd($this->products);
 
+        // $this->category_name = $category_name;
+    }
 
     public function render()
     {
-        // dd($this->products);
-        
-        $this->products = Product::where('product_category', '=', $this->category_name)->get();
-
-        $imagesAll = Image::all();
-        return view('livewire.products-table', compact('imagesAll'));
+        // return view('livewire.products-table', compact('imagesAll'));
+        return view('livewire.products-table');
     }
 }

@@ -1,33 +1,31 @@
 <?php
 
 namespace App\Http\Livewire\Store;
-
 use Livewire\Component;
 use App\Models\Product;
 
-
 class FilterType extends Component
 {
-
-    public $category_name;
-    // public $query;
+    // public $category_name;
+    // public $categories;
+   
 
     public function render()
     {
-        $categories = Product::distinct()->get(['product_category']);
-        // $products = Product::all();
+        // $this->categories = Product::distinct()->get(['product_category']);
+       
+        // dd($this->colors);
 
-        return view('livewire.store.filter-type', compact('categories'));
+        // return view('livewire.store.filter-type');
     }
 
     public function filter(){
-        // dd($this->query);
-
-        //query - строка поиска товара по вводу слов
-        // $this->emitTo('products-table', 'reloadProducts', $this->category_name, $this->query);
-
-        // $this->emitTo('products-table', 'reloadProducts', $this->category_name);
         $this->emitTo('products-table', 'reloadProducts', $this->category_name);
-        
+        $this->emitTo('products-table', 'getCurrentColors', $this->category_name);
     }
+
+    // public function currentColor(){
+    //     $this->emitTo('products-table', 'getCurrentColors', $this->category_name);
+    // }
+
 }

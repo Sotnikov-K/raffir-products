@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Collection;
 use App\Models\Product;
 use App\Models\Image;
 use App\Models\Basket;
@@ -12,22 +13,25 @@ use Livewire\Component;
 class ProductsTable extends Component
 {
     public $basket;
-    public $products;
-    public $category_name = 'композит';
-    public $imagesAll;
+    public Collection $products;
+    public string $selected_category;
 
-    protected $listeners = ['reloadProducts' => 'reloadProducts'];
+
+    public string $color_name = '';
+    public array $colorArray;
+    public $product_color;
     
+
+    public $imagesAll;
+    protected $listeners = ['reloadProducts' => 'reloadProducts'];
+   
+
     public function mount()
     {
         $this->basket = Basket::getBasket();
         $this->imagesAll = Image::all();
-
-        $this->getProducts();
+        $this->products = Product::all();
     }
-
-
-
 
     public function add(Request $request, $id) 
     {
@@ -40,35 +44,27 @@ class ProductsTable extends Component
         $this->emit('refreshCartCountBar');
     }
 
-
-    public function getProducts()
-    {
-        $products = Product::where('product_category', $this->category_name)->get();
-        $this->products = $products;
-        // dd($products);
-    }
-    
-    public function reloadProducts($category_name)
+    public function reloadProducts($selected_category, $selected_color, $selected_price)
     {
         $products = Product::query();
-    
-        $this->category_name = $category_name;
-        
-        if($category_name){
-            $products = $products->where('product_category', $category_name);
-            // dd($products);
-        } 
-        
-        
-        $this->products = $products->get();
-        //  dd($this->products);
 
-        // $this->category_name = $category_name;
+        if(!is_null($selected_category) && $selected_category !== 'all'){
+            $products = $products->where('product_category', '=', $selected_category);
+        } else $products->where('product_category', '!=', '');
+       
+        if(!is_null($selected_color) && $selected_color !== 'all'){
+            $products = $products->where('product_color', '=', $selected_color);
+        } else $products->where('product_color', '!=', '');
+
+        if($selected_price == 'low'){
+            $this->products = $products->orderBy('product_price', 'ASC')->get();
+        } elseif ($selected_price == 'high') {
+            $this->products = $products->orderBy('product_price', 'DESC')->get();
+        } else $this->products = $products->get();
     }
 
     public function render()
-    {
-        // return view('livewire.products-table', compact('imagesAll'));
+    { 
         return view('livewire.products-table');
     }
 }

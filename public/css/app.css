@@ -1052,8 +1052,7 @@ h2 {
 
 .store__filter-type {
   display: flex;
-  flex-direction: column;
-  width: 20%;
+  width: 100%;
   padding: 5px;
 }
 @media screen and (max-width: 991px) {
@@ -1090,6 +1089,7 @@ h2 {
 .store__filter-data {
   display: flex;
   flex-direction: column;
+  max-width: 25%;
 }
 
 .store__filter-label {
@@ -1391,6 +1391,9 @@ h2 {
 }
 
 .databaseItem-image-wrapper {
+  max-height: 350px;
+  display: flex;
+  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -3188,6 +3191,111 @@ h2 {
   transition: opacity 0.1s linear;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: "Play", sans-serif;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(54, 54, 54);
+  border: 2px solid rgb(40, 40, 40);
+  height: 50px;
+  padding: 3px 35px 3px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  transition: background-color 0.1s linear, box-shadow 0.1s linear, border-color 0.1s linear;
+  cursor: pointer;
+}
+.dropdown__button:hover {
+  border-color: rgb(122, 122, 122);
+  background-color: rgb(49, 49, 49);
+  transition: background-color 0.1s linear, box-shadow 0.1s linear, border-color 0.1s linear;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown__button:focus {
+  outline: none;
+  border: 2px solid rgb(122, 122, 122);
+}
+.dropdown__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-45%);
+  /*рисуем треугольник*/
+  width: 0;
+  height: 0;
+  border-width: 10.4px 6px 0 6px;
+  border-color: #e2e2e2 transparent transparent transparent;
+  border-style: solid;
+  /*снимаем клик с треугольника*/
+  pointer-events: none;
+}
+
+.dropdown__button--active {
+  outline: none;
+  border: 2px solid rgb(122, 122, 122);
+  background-color: rgb(49, 49, 49);
+  transition: background-color 0.1s linear, box-shadow 0.1s linear;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: rgb(54, 54, 54);
+  transition: background-color 0.1s linear;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dropdown__list--visible {
+  display: block;
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown__list-item {
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgb(0, 0, 0);
+  border-top: none;
+  border-bottom: 1px solid rgb(61, 61, 61);
+  padding: 13px 20px;
+  font-family: "Play", sans-serif;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(202, 202, 202);
+  overflow: hidden;
+  cursor: pointer;
+}
+.dropdown__list-item:hover {
+  background-color: rgb(49, 49, 49);
+  transition: background-color 0.1s linear;
+}
+.dropdown__list-item:first-child {
+  overflow: hidden;
+}
+.dropdown__list-item:last-child {
+  border-bottom: 2px solid black;
+  overflow: hidden;
+}
+
 input::-moz-placeholder {
   color: rgb(116, 116, 116);
   font-size: 12px;
@@ -3333,108 +3441,71 @@ input:-webkit-autofill:active {
   pointer-events: none;
 }
 
-.dropdown {
-  position: relative;
+.width {
+  width: 100%;
 }
 
-.dropdown__button {
-  position: relative;
-  display: block;
+.sellect {
   width: 100%;
-  text-align: left;
-  font-family: "Play", sans-serif;
-  font-style: italic;
-  letter-spacing: 1.5px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(54, 54, 54);
-  border: 2px solid rgb(40, 40, 40);
-  height: 50px;
-  padding: 3px 35px 3px 20px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  transition: background-color 0.1s linear, box-shadow 0.1s linear;
+  position: relative;
+  z-index: 100;
+}
+.sellect.open .sellect__dropdown {
+  display: block;
+}
+.sellect.open .sellect__backdrop {
+  display: block;
+}
+.sellect__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  height: 46px;
+  padding: 0 20px;
+  font-family: Play;
+  color: white;
   cursor: pointer;
 }
-.dropdown__button:hover {
-  background-color: rgb(49, 49, 49);
-  transition: background-color 0.1s linear, box-shadow 0.1s linear;
-  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
-}
-.dropdown__button:focus {
-  outline: none;
-  border: 2px solid rgb(0, 0, 0);
-}
-.dropdown__button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-45%);
-  /*рисуем треугольник*/
-  width: 0;
-  height: 0;
-  border-width: 10.4px 6px 0 6px;
-  border-color: #b6b6b6 transparent transparent transparent;
-  border-style: solid;
-  /*снимаем клик с треугольника*/
-  pointer-events: none;
-}
-
-.dropdown__button--active {
-  outline: none;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: rgb(49, 49, 49);
-  transition: background-color 0.1s linear, box-shadow 0.1s linear;
-  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown__list {
+.sellect__dropdown {
   display: none;
   position: absolute;
+  border: 1px solid white;
+  top: 46px;
   left: 0;
-  top: 50px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background-color: rgb(54, 54, 54);
-  transition: background-color 0.1s linear;
-  overflow: hidden;
-  z-index: 1;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: Play;
+  color: white;
+  background-color: #363636;
 }
-
-.dropdown__list--visible {
-  display: block;
-  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown__list-item {
-  margin: 0;
+.sellect__list {
   padding: 0;
-  border: 2px solid rgb(0, 0, 0);
-  border-top: none;
-  border-bottom: 1px solid rgb(61, 61, 61);
-  padding: 13px 20px;
-  font-family: "Play", sans-serif;
-  font-style: italic;
-  letter-spacing: 1.5px;
-  font-weight: 500;
-  font-size: 14px;
-  color: rgb(202, 202, 202);
-  overflow: hidden;
+  margin: 0;
+  list-style: none;
+}
+.sellect__backdrop {
+  z-index: -1;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+.sellect__item {
+  padding: 10px 20px;
+  border-bottom: 1px solid white;
+}
+.sellect__item.selected {
+  background-color: #29303b;
+}
+.sellect__item:hover {
+  background-color: #272727;
   cursor: pointer;
-}
-.dropdown__list-item:hover {
-  background-color: rgb(49, 49, 49);
-  transition: background-color 0.1s linear;
-}
-.dropdown__list-item:first-child {
-  overflow: hidden;
-}
-.dropdown__list-item:last-child {
-  border-bottom: 2px solid black;
-  overflow: hidden;
+  transition: background-color linear 0.1s;
 }
 
 /*blocks*/

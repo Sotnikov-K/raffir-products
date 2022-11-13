@@ -8,6 +8,9 @@ require('./choosingLotImage');
 require('./itemGallery');
 require('./dropdown-input');
 
+require('./select/select-class');
+require('./select');
+
 
 
 // require('./input');

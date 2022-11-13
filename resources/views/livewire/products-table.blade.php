@@ -1,22 +1,15 @@
-
 <section class="store__product-container">
-
-    <!-- {{$category_name}} -->
-    {{$products}} 
-
-    
     @foreach($products as $product)
-    
-        <a class="store__product" id="targetclass" href="store/{{$product->slug}}">
+        <a wire:key="item-{{ $product->id }}" class="store__product" id="targetclass" href="store/{{$product->slug}}">
             <div class="store__product-data">
+
                 <div class="store__product-image">        
                     <img class="store__product-img" src="/images/product_images/thumbnail_images/{{$product->getImageTime()}}/{{$product->getImage()}}" alt="">
                 </div>    
+
                 <p class="store__product-title">{{$product->product_name}}</p>
                 <p class="store__product-term">{{$product->product_color}}</p>
                 <p class="store__product-price">{{$product->product_price}} руб.</p>
-
-                
 
                 <form wire:submit.prevent="add( {{ $product->id }} )">
                     <button type="submit" wire:click="refreshCartCountBar" class="button--store">
@@ -28,5 +21,4 @@
             </div>
         </a>        
     @endforeach
-
 </section>

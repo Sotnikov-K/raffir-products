@@ -249,6 +249,11 @@
 }
 
 .databaseItem-image-wrapper {
+
+    max-height: 350px;
+    display: flex;
+    margin: auto;
+
     display: flex;
     justify-content: center;
 

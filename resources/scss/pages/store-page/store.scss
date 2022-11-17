@@ -35,10 +35,11 @@
     width: 100%;
     // flex-direction: column;
     // width: 20%;
-    padding: 5px;
+    // padding: 5px;
 
     @include breakpoint($tablet-bp) {
-        width: 50%;
+        width: 100%;
+        flex-wrap: wrap;
     }
 }
 
@@ -70,7 +71,16 @@
 .store__filter-data {
     display: flex;
     flex-direction: column;
-    max-width: 25%;
+    width: 25%;
+    padding: 5px;
+
+    @include breakpoint($tablet-bp) {
+        width: 33.333%;
+    }
+
+    @include breakpoint($mobile-bp) {
+        width: 50%;
+    }
 }
 
 .store__filter-label {
@@ -79,11 +89,10 @@
     letter-spacing: .7px;
     display: flex;
     margin-bottom: 10px;
-    margin-left: 5px;
-    opacity: .8;
+    opacity: .5;
 
     @include breakpoint($tablet-bp) {
-        margin-bottom: 5px;
+        margin-bottom: 3px;
     }
 }
 

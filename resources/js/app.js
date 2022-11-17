@@ -8,8 +8,10 @@ require('./choosingLotImage');
 require('./itemGallery');
 require('./dropdown-input');
 
-require('./select/select-class');
-require('./select');
+
+// минин
+// require('./select/select-class');
+// require('./select');
 
 
 

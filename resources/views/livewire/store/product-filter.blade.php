@@ -10,23 +10,6 @@
                 @endforeach
             </select>
         </div>
-
-        <!-- <div class="form-group">
-            <div class="dropdown">
-                <button wire:model="category_name" wire:change="filter" class="dropdown__button">Все категории</button>
-                <ul class="dropdown__list">
-                    @foreach($categories as $category)
-                        <li class="dropdown__list-item" value="{{$category->product_category}} data-value="{{$category->product_category}}">{{$category->product_category}}</li>
-                    @endforeach
-                </ul>
-            </div>
-        </div> -->
-
-    </div>
-
-
-    <div class="store__filter-data width">
-        <div id="select"></div>
     </div>
 
     <div class="store__filter-data">
@@ -38,10 +21,11 @@
                     <option wire:key="color-{{ $loop->index + 1 }}" value="{{$color->product_color}}">{{$color->product_color}}</option>
                 @endforeach
             </select>
-        </div>
+
+            <!-- {{ $selected_color }} -->
+           
+        </div> 
     </div>
-
-
 
     <div class="store__filter-data">
         <label class="store__filter-label">Сортировка по цене</label>
@@ -53,7 +37,5 @@
             </select>
         </div>
     </div>
-
-
 
 </div>

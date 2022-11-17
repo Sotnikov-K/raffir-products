@@ -44,24 +44,32 @@ class ProductsTable extends Component
         $this->emit('refreshCartCountBar');
     }
 
+    public function refreshFilter(){
+
+
+    }
+
     public function reloadProducts($selected_category, $selected_color, $selected_price)
     {
         $products = Product::query();
-
-        if(!is_null($selected_category) && $selected_category !== 'all'){
+       
+        if(!is_null($selected_category) && $selected_category !== 'all' ){
             $products = $products->where('product_category', '=', $selected_category);
         } else $products->where('product_category', '!=', '');
-       
+
         if(!is_null($selected_color) && $selected_color !== 'all'){
             $products = $products->where('product_color', '=', $selected_color);
         } else $products->where('product_color', '!=', '');
 
+        // фильтр по цене
         if($selected_price == 'low'){
             $this->products = $products->orderBy('product_price', 'ASC')->get();
         } elseif ($selected_price == 'high') {
             $this->products = $products->orderBy('product_price', 'DESC')->get();
         } else $this->products = $products->get();
+
     }
+
 
     public function render()
     { 

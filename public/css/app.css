@@ -1053,11 +1053,11 @@ h2 {
 .store__filter-type {
   display: flex;
   width: 100%;
-  padding: 5px;
 }
 @media screen and (max-width: 991px) {
   .store__filter-type {
-    width: 50%;
+    width: 100%;
+    flex-wrap: wrap;
   }
 }
 
@@ -1089,7 +1089,18 @@ h2 {
 .store__filter-data {
   display: flex;
   flex-direction: column;
-  max-width: 25%;
+  width: 25%;
+  padding: 5px;
+}
+@media screen and (max-width: 991px) {
+  .store__filter-data {
+    width: 33.333%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .store__filter-data {
+    width: 50%;
+  }
 }
 
 .store__filter-label {
@@ -1098,12 +1109,11 @@ h2 {
   letter-spacing: 0.7px;
   display: flex;
   margin-bottom: 10px;
-  margin-left: 5px;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 @media screen and (max-width: 991px) {
   .store__filter-label {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
   }
 }
 
@@ -3403,16 +3413,23 @@ input:-webkit-autofill:active {
   -webkit-appearance: none;
   appearance: none;
   padding: 10px 35px 10px 15px;
-  border: 2px solid rgb(40, 40, 40);
-  background-color: white;
+  border: 2px solid rgb(83, 83, 83);
+  background-color: rgb(83, 83, 83);
   cursor: pointer;
   /*Убираем рамку поля выбора при фокусе*/
   outline: none;
+  font-family: "Play";
+  color: aliceblue;
+  transition: border-color linear 0.1s;
+}
+.select:hover {
+  border: 2px solid rgb(112, 112, 112);
+  transition: border-color linear 0.1s;
 }
 
 .select:focus {
   outline: none;
-  border: 1px solid red;
+  border: 2px solid rgb(228, 228, 228);
 }
 
 .select::-ms-expand {
@@ -3435,14 +3452,10 @@ input:-webkit-autofill:active {
   width: 0;
   height: 0;
   border-width: 10.4px 6px 0 6px;
-  border-color: #6E6E6E transparent transparent transparent;
+  border-color: #dadada transparent transparent transparent;
   border-style: solid;
   /*снимаем клик с треугольника*/
   pointer-events: none;
-}
-
-.width {
-  width: 100%;
 }
 
 .sellect {
@@ -3452,6 +3465,9 @@ input:-webkit-autofill:active {
 }
 .sellect.open .sellect__dropdown {
   display: block;
+}
+.sellect.open .sellect__input {
+  border-bottom: none;
 }
 .sellect.open .sellect__backdrop {
   display: block;

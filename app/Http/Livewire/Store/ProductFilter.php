@@ -17,37 +17,41 @@ class ProductFilter extends Component
     public $categories;
     public $colors;
     
-    protected $listeners = ['currentColors' => 'currentColors'];
-
-
     public function mount(){
         $this->categories = Product::distinct()->get(['product_category']);
         $this->colors = Product::distinct()->get(['product_color']);
     }
    
-
     public function filter(){
         $this->emitTo('products-table', 'reloadProducts', $this->selected_category, $this->selected_color, $this->selected_price);
     }
 
-
-    public function updatedSelected_category($selected_category)
-    {
-        $this->colors = Product::select('product_color')->where('product_category', '=', $this->selected_category)->distinct()->get();
-    }
-
-
     public function render()
     {
-        // Список всех категорий в инпуте категорий
-        $this->categories = Product::distinct()->get(['product_category']);
 
+        // Определить Список всех категорий в инпуте категорий
+        $this->categories = Product::distinct()->get(['product_category']);
+    
         if(is_null($this->selected_category)){
+
             $this->colors = Product::distinct()->get(['product_color']);
+
         } elseif ($this->selected_category == "all") {
+
+            // $this->resetSelectedColor();
+
             $this->colors = Product::distinct()->get(['product_color']);
-        } else $this->colors = Product::select('product_color')->where('product_category', '=', $this->selected_category)->distinct()->get();
+
+        } else {
+
+            // $this->resetSelectedColor();
+
+            $this->colors = Product::select('product_color')->where('product_category', '=', $this->selected_category)->distinct()->get();
+
+        }
+
         
+
         return view('livewire.store.product-filter');
     }
 }

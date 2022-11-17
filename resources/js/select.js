@@ -5,8 +5,6 @@ const select = new Select('#select', {
     placeholder: 'Все категории',
     // selectedId: '4',
     data: [
-
-
         { id: '1', value: 'React' },
         { id: '2', value: 'Angular' },
         { id: '3', value: 'Vue' },

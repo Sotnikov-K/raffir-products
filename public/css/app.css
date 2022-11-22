@@ -1395,7 +1395,6 @@ h2 {
   }
 }
 .databaseItem-image-section:hover {
-  background-color: rgb(35, 35, 35);
   border: 1px solid rgb(66, 66, 66);
   transition: border-color 0.1s linear, background-color 0.1s linear;
 }

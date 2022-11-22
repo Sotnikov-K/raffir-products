@@ -13,8 +13,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&family=Play&display=swap" rel="stylesheet">
         
-
         <link rel="stylesheet" href="/css/app.css">
+
+       
+
+
+
 
         @livewireStyles
         
@@ -30,6 +34,7 @@
             @include('components/common-components/footer')
 
             <script src="{{ mix('/js/app.js') }}"></script>
+            
 
             @livewireScripts
         </div>

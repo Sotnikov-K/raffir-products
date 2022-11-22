@@ -127,7 +127,6 @@ class ProductController extends Controller
                 $thumbnailImage->save(resource_path('images\product_images\thumbnail_images').$timeYm.('\\').$imageName, 80, 'png');
 
 
-
                 // create main image 500x500
                 $mainImage = ImageIntervention::make(resource_path('images\product_images\original_images').$timeYm.('\\').$imageName);
                 $mainImage->resize(500, 500, function($constraint) {

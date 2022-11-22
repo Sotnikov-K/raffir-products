@@ -32,9 +32,17 @@ return new class extends Migration
             $table->unsignedInteger('product_height')->nullable();
             $table->unsignedInteger('product_weight')->nullable();
 
-            $table->decimal('product_price',8,2)->nullable();
+            $table->unsignedInteger('product_price')->nullable();
             $table->string('product_description')->nullable();
-            $table->string('product_description_eng')->nullable();
+
+            $table->unsignedInteger('product_rating')->nullable();
+
+            $table->string('product_tag_1')->nullable();
+            $table->string('product_tag_2')->nullable();
+            $table->string('product_tag_3')->nullable();
+            $table->string('product_tag_4')->nullable();
+            $table->string('product_tag_5')->nullable();
+
             $table->timestamps();
         });
     }

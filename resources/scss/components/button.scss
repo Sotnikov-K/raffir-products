@@ -115,11 +115,12 @@
     color: white;
 
     @include breakpoint($navigation-bp) {
-        width: 70%;
+        width: 80%;
     }
 
     @include breakpoint($mobile-bp) {
-        width: 85%;
+        width: 100%;
+        padding: 25px 20px;
     }
 
     &:hover {

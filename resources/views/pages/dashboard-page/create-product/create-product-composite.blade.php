@@ -100,11 +100,14 @@
                                 <option value="продается по акции">
                             </datalist>
                         </div>
+
                         <!-- Количество на остатке -->
                         <div class="form-group lot-create-data__input-wrapper">
-                            <label for="product_status" class="dashboard-create__product-title">Количество на остатке</label>   
+                            <label for="product_quantity" class="dashboard-create__product-title">Количество на остатке</label>   
                             <input form="add-product" type="number" class="product-input dashboard-create__product-input" name="product_quantity" placeholder="Количество на остатке">          
                         </div>
+
+                        
                     <div class="dashboard-create__product-parameters-wrapper-outer">           
                         <p class="dashboard-create__product-parameters-title">Основные параметры</p>
                         <div class="dashboard-create__product-parameters-wrapper-inner">

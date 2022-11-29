@@ -75,7 +75,7 @@ class ProductController extends Controller
         elseif($data['product_shape'] == 'блок' && $data['product_category'] == 'композит' ) {
             $data['slug'] = 'id' . '-' . $data['product_index'] . '_' . 'composite-block';
         }
-        elseif($data['product_shape'] == 'блок' && $data['product_category'] == 'брусок' ) {
+        elseif($data['product_shape'] == 'блок' && $data['product_category'] == 'дерево' ) {
             $data['slug'] = 'id' . '-' . $data['product_index'] . '_' . 'stabilized-wood-block';
         }
         // dd($data['slug']);

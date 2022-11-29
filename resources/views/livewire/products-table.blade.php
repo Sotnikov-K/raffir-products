@@ -5,14 +5,11 @@
             <a wire:key="item-{{ $product->id }}" class="store__product" id="targetclass" href="store/{{$product->slug}}">
                 <div class="store__product-data">
                     
-                    <div class="store__product-image">        
-                        <img class="store__product-img lazy" src="/images/product_images/thumbnail_images/{{$product->getImageTime()}}/{{$product->getImage()}}" alt="Image">
+                    <div class="store__product-image"> 
+                        <img class="store__product-img" loading="lazy" src="/images/product_images/thumbnail_images/{{$product->getImageTime()}}/{{$product->getImage()}}" alt="Image">   
                     </div>    
 
-                    
-
-
-
+                
                     <p class="store__product-title">{{$product->product_name}}</p>
                     <p class="store__product-term">{{$product->product_color}}</p>
                     <p class="store__product-price">{{$product->product_price}} руб.</p>

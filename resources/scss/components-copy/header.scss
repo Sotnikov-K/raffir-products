@@ -22,15 +22,8 @@
     margin: 0 10px;
 }
 
-
-
-
-
-
-
-
 .header__left {
-    width: 60%;
+    // width: 60%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -43,8 +36,9 @@
 }
 
 .header__right {
-    width: 40%;
+    // width: 40%;
     display: flex;
+    margin-left: auto;
     justify-content: flex-end;
     align-items: center;
 

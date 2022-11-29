@@ -25,7 +25,7 @@
                         </div>            
                     </div>
                         <!-- категория товара -->
-                        <input form="add-product" type="hidden" name="product_category" value="брусок">   
+                        <input form="add-product" type="hidden" name="product_category" value="дерево">   
                         <!-- Артикул товара -->
                         <div class="form-group lot-create-data__input-wrapper">
                             <label for="product_name" class="dashboard-create__product-title">Артикул товара</label>

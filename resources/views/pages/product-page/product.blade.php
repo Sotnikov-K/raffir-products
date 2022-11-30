@@ -47,16 +47,10 @@
                     <p class="product__price-p"><span class="product__price-span">Цена</span> {{$product->product_price}} руб.</p>
                 </div>
 
-                <form action="{{ route('basket.add', ['id' => $product->id]) }}"
-                    method="post" class="product__button-wrapper">
-                    @csrf
-                    
-                    <button type="submit" class="product__button-add">
-                        <p class="product__button-p">Добавить в корзину</p>
-                        <img class="product__button-icon" src="/images/icons/footer-arrow-circle-right-white.png">
-                    </button>
-                </form>
+               
+                @livewire('add-button', ['product_id' => $product->id])
 
+                
                 <div class="product__description-wrapper">
                     <div class="product__description-parameter">
                         <p class="product__description-title">тип</p>

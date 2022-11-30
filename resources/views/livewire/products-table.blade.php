@@ -9,7 +9,6 @@
                         <img class="store__product-img" loading="lazy" src="/images/product_images/thumbnail_images/{{$product->getImageTime()}}/{{$product->getImage()}}" alt="Image">   
                     </div>    
 
-                
                     <p class="store__product-title">{{$product->product_name}}</p>
                     <p class="store__product-term">{{$product->product_color}}</p>
                     <p class="store__product-price">{{$product->product_price}} руб.</p>

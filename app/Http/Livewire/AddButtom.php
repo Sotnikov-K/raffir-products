@@ -14,7 +14,7 @@ class AddButtom extends Component
     public function add(Request $request, $product_id) {
         $this->product_id = $product_id;
         $quantity = $request->input('quantity') ?? 1;
-        
+
         Basket::class->increase($product_id, $quantity);
     }
 

@@ -22,9 +22,9 @@ return new class extends Migration
             $table->string('color', 100)->nullable();
             $table->string('category', 100);
             
-            $table->decimal('price', 10, 2)->unsigned();
-            $table->tinyInteger('quantity')->unsigned()->default(1);
-            $table->decimal('cost', 10, 2)->unsigned();
+            $table->integer('price')->unsigned();
+            $table->integer('quantity')->unsigned()->default(1);
+            $table->integer('cost')->unsigned();
 
             // внешний ключ, ссылается на поле id таблицы orders
             $table->foreign('order_id')

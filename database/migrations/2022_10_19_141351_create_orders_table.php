@@ -16,23 +16,19 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id')->unsigned()->nullable();
-            $table->string('name');
-            $table->string('surname');
-            $table->string('patronymic')->nullable();
+            $table->string('name')->nullable();
+            
+            $table->string('country')->nullable();
+            $table->string('address')->nullable();
+           
 
-            $table->string('country');
-            $table->string('region');
-            $table->string('city');
-            $table->string('street');
-            $table->string('building');
-            $table->string('flat')->nullable();
-
-            $table->integer('index');
+            $table->integer('index')->nullable();
             $table->string('email')->nullable();
-            $table->string('phone');
+            $table->string('phone')->nullable();
             
+            $table->string('comment')->nullable();
             
-            $table->decimal('amount', 10, 2)->unsigned();
+            $table->integer('amount')->unsigned()->nullable();
             $table->timestamps();
 
             // внешний ключ, ссылается на поле id таблицы users

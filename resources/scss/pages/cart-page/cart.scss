@@ -31,6 +31,10 @@
     width: 100%;
     padding: 20px 10px;
     background-color: rgb(31, 31, 31);
+
+    @include breakpoint($mobile-bp) {
+        padding: 20px 0px;
+    }
 }
 
 .cart__product-list {
@@ -315,7 +319,7 @@
 .cart__product-quntity {
     padding: 5px 40px;
     color: aliceblue;
-    border: 1px solid rgb(82, 82, 82);
+    border: 3px solid rgb(82, 82, 82);
     margin-left: 15px;
 
     @include breakpoint($navigation-bp) {
@@ -390,7 +394,7 @@
     height: 60px;
     width: 60px;
     background: none;
-    border: 1px solid rgb(54, 54, 54);
+    border: 3px solid rgb(54, 54, 54);
     border-radius: 10%;
     margin: 0 3px;
     font-size: 15px;
@@ -418,7 +422,7 @@
     height: 60px;
     width: 60px;
     background: none;
-    border: 1px solid rgb(54, 54, 54);
+    border: 3px solid rgb(54, 54, 54);
     border-radius: 10%;
     margin: 0 3px;
     font-size: 20px;
@@ -491,7 +495,11 @@
 
 
 
-
+.cart__form-clear {
+    @include breakpoint($mobile-bp) {
+        padding: 0 20px;
+    }
+}
 
 
 
@@ -504,10 +512,20 @@
     margin-bottom: 0px;
     margin-top: auto;
     flex-direction: row;
+
+    @include breakpoint($mobile-bp) {
+        padding: 0 20px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
 }
 
 .cart__link-a {
     display: flex;
     flex-direction: row;
     width: 50%;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
 }

@@ -18,6 +18,10 @@
     width: 100%;
     padding: 20px 10px;
     background-color: rgb(31, 31, 31);
+
+    @include breakpoint($mobile-bp) {
+        padding: 20px 0px;
+    }
 }
 
 .success__title-container {
@@ -48,7 +52,7 @@
 .success__data-item {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 100%;
     flex-direction: column;
 
     &--right {
@@ -66,14 +70,21 @@
 
 .success__ordered-item {
     display: flex;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px dotted #5a5a5a;
 
     &--result {
         width: 15%;
         flex-direction: column;
         margin-left: auto;
+
+        @include breakpoint($mobile-bp) {
+            width: 30%;
+            flex-direction: column;
+            margin-left: auto;
+        }
     }
 }
+
 
 .success__order-item-p {
     display: flex;
@@ -99,30 +110,60 @@
 
     &--number {
         width: 10%;
+
+        @include breakpoint($mobile-bp) {
+            width: 7%;
+        }
+
     }
 
     &--name {
         width: 15%;
+
+        @include breakpoint($mobile-bp) {
+            width: 24%;
+        }
     }
 
     &--color {
         width: 15%;
+
+        @include breakpoint($mobile-bp) {
+            width: 24%;
+        }
     }
 
     &--category {
         width: 15%;
+
+        @include breakpoint($mobile-bp) {
+            display: none;
+        }
     }
 
     &--price {
         width: 15%;
+
+        @include breakpoint($mobile-bp) {
+            width: 15%;
+        }
     }
 
     &--quantity {
         width: 15%;
+        text-align: center;
+
+        @include breakpoint($mobile-bp) {
+            width: 15%;
+        }
     }
 
     &--sum {
         width: 15%;
+
+        @include breakpoint($mobile-bp) {
+            width: 15%;
+        }
     }
 }
 
@@ -163,4 +204,43 @@
 
 .success__order-title {
     margin-bottom: 30px;
+}
+
+
+
+
+.success__link {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1000px;
+    margin: 50px auto 10px;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: auto;
+    flex-direction: row;
+
+    @include breakpoint($mobile-bp) {
+        padding: 0 20px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+}
+
+.success__link-a {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
+}
+
+
+.success__your-data-h2 {
+    margin-bottom: 10px;
+}
+
+.success__your-data-p {
+    margin-bottom: 5px;
 }

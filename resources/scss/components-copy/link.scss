@@ -156,6 +156,7 @@
 
 .link--cart {
     display: flex;
+    align-items: center;
     width: 100%;
     margin: 10px 0 20px;
     margin-left: auto;
@@ -163,15 +164,11 @@
     margin-bottom: 0px;
     margin-top: auto;
     padding: 20px 20px;
-    border: 1px solid rgb(104, 104, 104);
+    border: 3px solid rgb(104, 104, 104);
     transition: border-color $transition-fast $transition;
 
-    @include breakpoint($mobile-bp) {
-        padding: 20px 20px;
-    }
-
     &:hover {
-        border: 1px solid rgb(192, 192, 192);
+        border-color: rgb(192, 192, 192);
         transition: border-color $transition-fast $transition;
     }
 }
@@ -179,12 +176,12 @@
 .link__text {
     color: white;
     opacity: .7;
-    font-size: 12px;
+    font-size: 18px;
     transition: opacity $transition-fast $transition;
 }
 
 .link__icon {
     opacity: .3;
-    height: 20px;
+    height: 25px;
     transition: transform $transition-fast $transition, opacity $transition-fast $transition;
 }

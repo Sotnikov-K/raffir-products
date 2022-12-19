@@ -98,7 +98,7 @@ class Basket extends Model
     }
 
     public function getAmount() {
-        $amount = 0.0;
+        $amount = 0;
         foreach ($this->products as $product) {
             $amount = $amount + $product->product_price * $product->pivot->quantity;
         }

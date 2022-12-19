@@ -150,7 +150,7 @@
     flex-direction: row;
     padding: 15px 0px;
     margin-bottom: 50px;
-    border: 1px solid rgb(116 116 116);
+    border: 3px solid rgb(116 116 116);
     justify-content: space-around;
     background: #222222;
     align-items: center;
@@ -158,7 +158,7 @@
     transition: border-color 0.1s linear;
 
     &:hover {
-        border: 1px solid rgb(218, 218, 218);
+        border-color: rgb(218, 218, 218);
         transition: border-color 0.1s linear;
 
         .product__button-p {

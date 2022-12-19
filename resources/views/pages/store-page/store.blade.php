@@ -9,12 +9,7 @@
         </section>
 
         <section class="store__filter-container">
-
-            {{-- @livewire('store.filter-type') --}}
-            {{-- @livewire('store.filter-color')  --}}
-            
             @livewire('store.product-filter')
-           
         </section>
 
         @livewire('products-table')

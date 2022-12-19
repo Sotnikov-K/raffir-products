@@ -15,7 +15,9 @@ __webpack_require__(/*! ./choosingLotImage */ "./resources/js/choosingLotImage.j
 
 __webpack_require__(/*! ./itemGallery */ "./resources/js/itemGallery.js");
 
-__webpack_require__(/*! ./dropdown-input */ "./resources/js/dropdown-input.js"); // минин
+__webpack_require__(/*! ./dropdown-input */ "./resources/js/dropdown-input.js");
+
+__webpack_require__(/*! ./selectSaver */ "./resources/js/selectSaver.js"); // минин
 // require('./select/select-class');
 // require('./select');
 // require('./input');
@@ -134,6 +136,19 @@ if (document.querySelector('.databaseItem-images-wrapper')) {
       });
     });
   }
+}
+
+/***/ }),
+
+/***/ "./resources/js/selectSaver.js":
+/*!*************************************!*\
+  !*** ./resources/js/selectSaver.js ***!
+  \*************************************/
+/***/ (() => {
+
+if (document.querySelector('.select')) {
+  var selectedCategory = document.querySelector('.select-category');
+  console.log(selectedCategory);
 }
 
 /***/ }),

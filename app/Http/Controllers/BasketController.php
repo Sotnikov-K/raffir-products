@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Basket;
 use App\Models\Order;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\OrderCreated;
+use App\Mail\OrderReceived;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Cookie;
 
@@ -87,31 +90,25 @@ class BasketController extends Controller
 
 
     public function saveOrder(Request $request){
+
+
         // проверяем данные формы оформления
         $this->validate($request, [
-            'surname' => 'required|max:255',
             'name' => 'required|max:255',
-            'patronymic' => 'max:255',
-
             'country' => 'required|max:255',
-
-            'region' => 'required|max:255',
-            'city' => 'required|max:255',
-            'street' => 'required|max:255',
-            'building' => 'required|max:255',
-            'flat' => 'max:255',
+            'address' => 'required|max:255',
 
             'index' => 'required|max:255',
             'email' => 'email|max:255',
             'phone' => 'required|max:255',
+            'comment' => 'max:255',
         ]);
 
+        
         // валидация пройдена, сохраняем заказ
         $basket = Basket::getBasket();
         $user_id = auth()->check() ? auth()->user()->id : null;
-
         
-
         $order = Order::create(
             $request->all() + ['amount' => $basket->getAmount(), 'user_id' => $user_id]
         );
@@ -129,12 +126,27 @@ class BasketController extends Controller
             ]);
         }
 
+        // dd($order->items);
+        // dd($order->id);
+        // dd($request->name);
+        
+        // Mail::to($request->email)->send(new OrderCreated($request->name));
+        Mail::to($request->email)->send(new OrderReceived(
+            $request->name,
+            $order->items,
+            $request->country,
+            $request->address,
+            $order->id,
+            $order->created_at,
+            $order->amount  
+        ));
+        // Mail::to('raffirus@yandex.ru')->send(new OrderCreated($request->name));
+
         // уничтожаем корзину
         $basket->delete();
 
         return redirect()->route('basket.success')->with('order_id', $order->id);
     }
-
 
     /**
      * Сообщение об успешном оформлении заказа
@@ -145,7 +157,6 @@ class BasketController extends Controller
             $order_id = $request->session()->pull('order_id');
             $order = Order::findOrFail($order_id);
             
-            // return view('basket.success', compact('order'));
             return view('pages.success-page.success', compact('order'));
         } else {
             // если покупатель попал сюда случайно, не после оформления заказа,
@@ -153,8 +164,6 @@ class BasketController extends Controller
             return redirect()->route('basket.index');
         }
     }
-
-
 }
 
 

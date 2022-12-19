@@ -63,14 +63,6 @@
                             <button wire:click="remove({{$product->id}})" class="cart__product-delete-button">&#10006;</button>
                         </div>
                         
-                        <!-- <div class="cart__product-delete-wrapper">
-                            <form action="{{ route('basket.remove', ['id' => $product->id]) }}"
-                                method="post">
-                                @csrf
-                                <button type="submit" class="cart__product-delete-button">&#10006;</button>
-                            </form> 
-                        </div> -->
-
                     </li>
 
                 @endforeach
@@ -101,7 +93,7 @@
     </ul>
 
     @if (count($products))
-        <form action="{{ route('basket.clear') }}" method="post" class="text-right">
+        <form action="{{ route('basket.clear') }}" method="post" class="cart__form-clear">
             @csrf
             <button type="submit" class="button--cart-cleaner">
                 <p class="link__text">Очистить корзину</p>

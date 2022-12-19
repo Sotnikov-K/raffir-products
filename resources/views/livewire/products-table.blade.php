@@ -37,7 +37,7 @@
                 <p class="store__product-price">--- /// ---</p>
 
                 <form>
-                    <button wire:click="refreshFilter" class="button--store">
+                    <button wire:click="reloadProducts" class="button--store">
                         <p class="link__text">Сбросить</p>
                         <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png">
                     </button>

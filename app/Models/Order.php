@@ -11,23 +11,13 @@ class Order extends Model
 
     protected $fillable = [
         'user_id',
-        'surname',
         'name',
-        'patronymic',
-
         'country',
-        'region',
-        'city',
-        'street',
-        'building',
-        'flat',
-
+        'address',
         'index',
-
         'email',
         'phone',
-        'address',
-        
+        'comment',
         'amount',
     ];
 

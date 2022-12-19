@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('products', function($table) {
-            $table->unsignedInteger('product_quantity')->after('product_status');
+            $table->unsignedInteger('product_quantity')->after('product_status')->nullable();
         });
     }
 

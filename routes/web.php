@@ -117,3 +117,14 @@ Route::get('/dashboard/create-product-blade', function () {
 });
 
 
+
+
+
+
+
+
+Route::get('/mail', function () {
+    $order = App\Models\Order::find(50);
+    // dd($order);
+    return new App\Mail\OrderCreated($order);
+});

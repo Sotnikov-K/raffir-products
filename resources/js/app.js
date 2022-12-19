@@ -7,7 +7,7 @@
 require('./choosingLotImage');
 require('./itemGallery');
 require('./dropdown-input');
-
+require('./selectSaver');
 
 // минин
 // require('./select/select-class');

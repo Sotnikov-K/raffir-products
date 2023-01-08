@@ -58,7 +58,11 @@ Route::post('/basket/saveorder', [BasketController::Class, 'saveOrder'])->name('
 Route::get('/basket/success', [BasketController::class, 'success'])->name('basket.success');
 
 
-    
+
+
+
+
+
 
 
 Route::get('/contacts', function () {
@@ -119,12 +123,22 @@ Route::get('/dashboard/create-product-blade', function () {
 
 
 
-
-
-
-
 Route::get('/mail', function () {
     $order = App\Models\Order::find(50);
-    // dd($order);
     return new App\Mail\OrderCreated($order);
+});
+
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Product Routes
+|--------------------------------------------------------------------------
+| 
+*/
+
+Route::get('/composites', function(){
+    return view('pages/composites-page/composites');
 });

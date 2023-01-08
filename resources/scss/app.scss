@@ -10,6 +10,33 @@
 @import 'pages/store-page/store';
 @import 'pages/product-page/product';
 
+
+@import 'pages/composites-page/composites';
+
+/*new Blocks*/
+@import "blocks/site-page/caption.scss";
+@import "blocks/site-page/mover.scss";
+@import "blocks/site-page/gallery.scss";
+@import "blocks/site-page/title.scss";
+@import "blocks/site-page/mesh.scss";
+@import "blocks/site-page/comparison";
+@import "blocks/site-page/lumi-comparison";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import 'pages/cart-page/cart';
 @import 'pages/checkout-page/checkout';
 @import 'pages/success-page/success';
@@ -32,6 +59,7 @@
 
 
 
+
 /*blocks*/
 @import "components-copy/page";
 @import "components-copy/loader";
@@ -46,7 +74,7 @@
 @import "components-copy/swiper-bundle";
 
 @import "components-copy/simplebar";
-// @import "components-copy/cart";
+
 
 @import "components-copy/knives";
 @import "components-copy/offer";
@@ -78,7 +106,7 @@
 @import "components-copy/map";
 
 
-@import "components-copy/comparison";
+
 
 @import "components-copy/auth";
 

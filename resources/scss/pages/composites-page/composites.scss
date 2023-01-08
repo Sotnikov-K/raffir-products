@@ -1,0 +1,11 @@
+.composites {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 110px auto 50px;
+
+    @include breakpoint($tablet-bp2) {
+        margin: 80px auto 50px;
+    }
+}

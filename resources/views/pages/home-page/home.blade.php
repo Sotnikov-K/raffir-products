@@ -2,14 +2,14 @@
 
 @section('content')
 <main class="home">
-        <section class="home__caption">
-            <article class="home__caption-item home__caption-item--left">
-                <div class="home__caption-data">   
-                    <img class="home__caption-image" src="/images/1. MainSliderPicture/test.png" loading="lazy" alt="Композиты Раффир">
-                    <div class="home__caption-title">
-                        <h1 class="home__caption-title-h1">Композиты Раффир</h1>
-                        <p class="home__caption-title-p1">Раффир Нобл - Желтая бронза</p>
-                        <p class="home__caption-title-p2">Нож Станислава Стругунова</p>
+        <section class="caption">
+            <article class="caption__item caption__item--left">
+                <div class="caption__data">   
+                    <img class="caption__image" src="/images/1. MainSliderPicture/test.png" loading="lazy" alt="Композиты Раффир">
+                    <div class="caption__title">
+                        <h1 class="caption__title-h1">Композиты Раффир</h1>
+                        <p class="caption__title-p1">Раффир Нобл - Желтая бронза</p>
+                        <p class="caption__title-p2">Нож Станислава Стругунова</p>
                     </div>
                     <a href="#" class="link link--offer">
                         <p class="link__text">Смотреть</p>
@@ -17,13 +17,13 @@
                     </a>
                 </div>
             </article>
-            <article class="home__caption-item home__caption-item--right">
-                <div class="home__caption-data">
-                    <img class="home__caption-image" src="/images/1. MainSliderPicture/test2.png" loading="lazy" alt="Информация">
-                    <div class="home__caption-title">
-                        <h2 class="home__caption-title-h1">Информация</h2>
-                        <p class="home__caption-title-p1">по работе с материалом</p>
-                        <p class="home__caption-title-p2">Обработка, шлифовка, полировка</p>
+            <article class="caption__item caption__item--right">
+                <div class="caption__data">
+                    <img class="caption__image" src="/images/1. MainSliderPicture/test2.png" loading="lazy" alt="Информация">
+                    <div class="caption__title">
+                        <h2 class="caption__title-h1">Информация</h2>
+                        <p class="caption__title-p1">по работе с материалом</p>
+                        <p class="caption__title-p2">Обработка, шлифовка, полировка</p>
                     </div>
                     <a href="#" class="link link--offer">
                         <p class="link__text">Подробнее</p>
@@ -33,40 +33,40 @@
             </article>
         </section>
 
-        <div class="home__link-wrapper">
-            <a class="home__link home__link--one scroll_link" data-link="composites">
-                <div class="home__link-data">
-                    <img class="home__link-img" src="/images/navimages/categoriesComposites.svg">
-                    <div class="home__link-title"><strong>Композиты</strong></div>
-                    <div class="home__link-desc-wrapper">
-                        <p class="home__link-desc">Композитные материалы с микросеткой и разными текстурами</p>
+        <div class="mover__link-wrapper">
+            <a class="mover__link mover__link--one scroll_link" data-link="composites">
+                <div class="mover__link-data">
+                    <img class="mover__link-img" src="/images/navimages/categoriesComposites.svg">
+                    <div class="mover__link-title"><strong>Композиты</strong></div>
+                    <div class="mover__link-desc-wrapper">
+                        <p class="mover__link-desc">Композитные материалы с микросеткой и разными текстурами</p>
                     </div>
                 </div>
             </a>
-            <a class="home__link home__link--two scroll_link" data-link="wood">
-                <div class="home__link-data">
-                    <img class="home__link-img" src="/images/navimages/categoriesPoplarBurl.svg">
-                    <div class="home__link-title"><strong>Древесина</strong></div>
-                    <div class="home__link-desc-wrapper">
-                        <p class="home__link-desc">Стабилизированные блоки разных пород дерева и окрашенные в 10 цветов.</p>
+            <a class="mover__link mover__link--two scroll_link" data-link="wood">
+                <div class="mover__link-data">
+                    <img class="mover__link-img" src="/images/navimages/categoriesPoplarBurl.svg">
+                    <div class="mover__link-title"><strong>Древесина</strong></div>
+                    <div class="mover__link-desc-wrapper">
+                        <p class="mover__link-desc">Стабилизированные блоки разных пород дерева и окрашенные в 10 цветов.</p>
                     </div>
                 </div>
             </a>
-            <a class="home__link home__link--three scroll_link" data-link="mammoth">
-                <div class="home__link-data">
-                    <img class="home__link-img" src="/images/navimages/categoriesWasp.svg">
-                    <div class="home__link-title"><strong>Мамонт</strong></div>
-                    <div class="home__link-desc-wrapper">
-                        <p class="home__link-desc">Бивень и зуб мамонта в блоках и небольших фрагментах в разных цветах.</p>
+            <a class="mover__link mover__link--three scroll_link" data-link="mammoth">
+                <div class="mover__link-data">
+                    <img class="mover__link-img" src="/images/navimages/categoriesWasp.svg">
+                    <div class="mover__link-title"><strong>Мамонт</strong></div>
+                    <div class="mover__link-desc-wrapper">
+                        <p class="mover__link-desc">Бивень и зуб мамонта в блоках и небольших фрагментах в разных цветах.</p>
                     </div>
                 </div>
             </a>
-            <a class="home__link home__link--four scroll_link" data-link="divisionss">
-                <div class="home__link-data">
-                    <img class="home__link-img" src="/images/navimages/categoriesSFX.svg">
-                    <div class="home__link-title"><strong>Примеры</strong></div>
-                    <div class="home__link-desc-wrapper">
-                        <p class="home__link-desc">Примеры ножей с использованием наших материалов.</p>
+            <a class="mover__link mover__link--four scroll_link" data-link="divisionss">
+                <div class="mover__link-data">
+                    <img class="mover__link-img" src="/images/navimages/categoriesSFX.svg">
+                    <div class="mover__link-title"><strong>Примеры</strong></div>
+                    <div class="mover__link-desc-wrapper">
+                        <p class="mover__link-desc">Примеры ножей с использованием наших материалов.</p>
                     </div>
                 </div>
             </a>
@@ -89,7 +89,7 @@
                     <div class="home__product-category-data">
                         <p class="home__product-category-text-a">Композиты</p>
                         <p class="home__product-category-text-b">Современный и технологичный материал для изготовления рукоятей ножей</p>
-                        <a href="https://raffir.net/wave.html" class="link link--category">
+                        <a href="https://raffir.net/composites" class="link link--category">
                             <p class="link__text">Смотреть раздел</p>
                             <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png" alt="" srcset="">
                         </a>

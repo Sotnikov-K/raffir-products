@@ -1,0 +1,71 @@
+.caption {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+
+    @include breakpoint($tablet-bp2) {
+        flex-wrap: wrap;
+    }
+}
+
+.caption__item {
+    width: 50%;
+
+    &--left {
+        padding: 0px 4px 4px 0px;
+    }
+
+    &--right {
+        padding: 0px 0px 4px 4px;
+    }
+
+    @include breakpoint($tablet-bp2) {
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 4px;
+    }
+}
+
+.caption__data {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 550px;
+    background-color: #1f1f1f;
+
+    @include breakpoint($tablet-bp) {
+        height: 350px;
+        padding: 20px;
+    }
+}
+
+.caption__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caption__title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    box-shadow: 0 6px 9px #1a1a1a;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.caption__title-h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.caption__title-p1 {
+    opacity: .7;
+    font-size: 12px;
+}
+
+.caption__title-p2 {
+    opacity: .7;
+    font-size: 12px;
+}

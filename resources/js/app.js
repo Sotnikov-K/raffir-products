@@ -8,6 +8,7 @@ require('./choosingLotImage');
 require('./itemGallery');
 require('./dropdown-input');
 require('./selectSaver');
+require('./fslightbox');
 
 // минин
 // require('./select/select-class');
@@ -24,7 +25,7 @@ require('./selectSaver');
 // require('./databaseItemOpener');
 
 // require('./hideHomeBreadcrumb');
-// require('./fslightbox');
+
 // require('./filter');
 // require('./range-slider');
 // require('./fastPageLinks');

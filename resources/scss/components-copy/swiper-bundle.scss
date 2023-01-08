@@ -32,6 +32,11 @@
   z-index: 1;
 }
 
+.swiper--productslider {
+  padding: 0px 30px 30px 20px;
+  background-color: #1f1f1f;
+}
+
 .swiper-vertical>.swiper-wrapper {
   flex-direction: column;
 }
@@ -302,7 +307,7 @@
 .swiper-pagination-custom,
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 10px;
+  bottom: 0px;
   left: 70px;
   width: 100%;
 }

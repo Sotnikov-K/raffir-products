@@ -1,0 +1,114 @@
+.product-description-uran {
+    position: relative;
+    border: 1px solid #222222;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    color: #b6b6b6;
+
+    @include breakpoint($mobile-bp) {
+        max-width: 100%;
+    }
+}
+
+.product-description__example {
+    margin-bottom: 100px;
+}
+
+.product-description__images {
+    width: 1000px;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include breakpoint($mobile-bp) {
+        flex-wrap: nowrap;
+        overflow: auto;
+        padding-bottom: 20px;
+        max-width: 100%;
+    }
+
+}
+
+.product-description__images:first-of-type {
+    margin-bottom: 0px;
+}
+
+.product-description__image.product-description__image-dn {
+    @include breakpoint($mobile-bp) {
+        display: none;
+    }
+
+    @include breakpoint($tablet-bp2) {
+        display: none;
+    }
+}
+
+
+.product-description__image {
+    padding: 10px;
+}
+
+.product-description__image img {
+    width: 150px;
+}
+
+.product-description__image-uran img {
+    margin-right: 15px;
+    width: 90px;
+    border: 3px solid #232323;
+    border-radius: 2px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    cursor: pointer;
+
+    @include breakpoint($mobile-bp) {
+        width: 75px;
+    }
+}
+
+.product-description__image-uran-jpg-modal-div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.product-description__image-uran-jpg-modal {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-description__image-uran img:hover {
+    opacity: 0.9;
+}
+
+.product-description__texture {
+    margin: 5px 0;
+    font-size: 10px;
+}
+
+.product-description__texture-uran {
+    margin: 5px 0;
+    font-size: 15px;
+    width: 170px;
+}
+
+.product-description__texture-uran-text {
+    margin: 5px 0;
+    font-size: 15px;
+    width: 170px;
+
+    @include breakpoint($mobile-bp) {
+        width: 100px;
+        font-size: 12px;
+    }
+}

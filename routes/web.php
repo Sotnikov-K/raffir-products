@@ -139,6 +139,10 @@ Route::get('/mail', function () {
 | 
 */
 
-Route::get('/composites', function(){
+Route::get('/composite', function(){
     return view('pages/composites-page/composites');
+});
+
+Route::get('/wood', function(){
+    return view('pages/wood-page/wood');
 });

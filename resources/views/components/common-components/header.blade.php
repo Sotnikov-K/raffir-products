@@ -15,11 +15,11 @@
                     <a class="nav__link has-subnav" href="/">Материалы</a>
 
                     <ul class="subnav">
-                        <li><a class="subnav__link" href="/composites">Композиты</a></li>
-                        <li><a class="subnav__link" href="/woods">Древесина</a></li>
+                        <li><a class="subnav__link" href="/composite">Композиты</a></li>
+                        <li><a class="subnav__link" href="/wood">Древесина</a></li>
                         <li><a class="subnav__link" href="/mammoth">Бивень и зуб мамонта</a></li>
-                        <li><a class="subnav__link" href="/blades">Ножевые клинки</a></li>
-                        <li><a class="subnav__link" href="/material-info">О материалах</a></li>
+                        <li><a class="subnav__link" href="/blade">Ножевые клинки</a></li>
+                        <li><a class="subnav__link" href="/info">О материалах</a></li>
                         <li><a class="subnav__link" href="/dashboard">Админ панель </a></li>
                     </ul>
 

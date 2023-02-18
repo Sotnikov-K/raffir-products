@@ -249,37 +249,30 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide-wrapper">
-                        <img src="images/pages/wave/offer/slidewave1.jpg" alt="">
-                        <p>Нож от Берёzа найфс</p>
-                        <p>Нобл латунь</p>
+                        <img src="images/product_slider/slide-poplar-1.jpg" alt="">
+                        <p>Ножи Станислава Стругунова</p>
+                        <p>Кап тополя (слева) и пламенный тополь</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-wrapper">
-                        <img src="images/pages/wave/offer/slidewave2.jpg" alt="">
-                        <p>Нож от АИР Златоуст</p>
-                        <p>Нобл бронза латунь</p>
+                        <img src="images/product_slider/slide-poplar-2.jpg" alt="">
+                        <p>Нож Станислава Стругунова</p>
+                        <p>Кап тополя зеленый цвет</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-wrapper">
-                        <img src="images/pages/wave/offer/slidewave5.jpg" alt="">
-                        <p>Нож Станислава Стругунова.</p>
-                        <p>Алюм зелёный цвет.</p>
+                        <img src="images/product_slider/slide-poplar-4.jpg" alt="">
+                        <p>Нож Станислава Стругунова</p>
+                        <p>Кап тополя зеленый цвет</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="slide-wrapper">
-                        <img src="images/pages/wave/offer/slidewave3.jpg" alt="">
-                        <p>Нож от SpiderCo</p>
-                        <p>Нобл бронза латунь</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slide-wrapper">
-                        <img src="images/pages/wave/offer/slidewave4.jpg" alt="">
-                        <p>Нож от Kappeller</p>
-                        <p>Нобл бронза латунь</p>
+                        <img src="images/product_slider/slide-poplar-3.jpg" alt="">
+                        <p>Нож Станислава Стругунова</p>
+                        <p>Тополь зеленый цвет</p>
                     </div>
                 </div>
             </div>
@@ -297,9 +290,53 @@
 
         <div class="gallery">
             <div class="gallery-item">
-                <a data-fslightbox="first-lightbox" href="/images/gallery/composites/wave/wave-1.jpg">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-1.jpg">
                     <div class="gallery-item-content">
-                        <img class="gallery-item-image" src="/images/21.IndexGallery2/thumbs/img1001.jpg" alt="" srcset="">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-1_thumb.jpg" alt="" srcset="">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
+                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-2.jpg">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-2_thumb.jpg" alt="" srcset="">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
+                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-3.jpg">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-3_thumb.jpg" alt="" srcset="">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
+                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-4.jpg">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-4_thumb.jpg" alt="" srcset="">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
+                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-5.jpg">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-5_thumb.jpg" alt="" srcset="">
                     </div>
                     <div class="gallery-item-description">
                         <p class="gallery-item-description-text">Нож Кулкова Алексея</p>

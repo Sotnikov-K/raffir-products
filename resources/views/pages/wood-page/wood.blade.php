@@ -350,6 +350,181 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="title" id="">
+            <div class="title__wrapper">
+                <p class="title__h2">Бук</p>
+                <p class="title__p">
+                    Бруски шпальта бука - продольной и поперечной распиловки, с красивой текстурой шпальта и большим выбором цветов.   
+                </p>
+            </div>
+        </section>
+
+        <section class="texture">
+            <div class="texture__title">
+                <p class="texture__title-h3">
+                    Полный список шпальта Бука
+                </p>
+            </div>
+            <div class="texture__category">
+                <div class="texture__data">
+                    <div class="texture__data-left">
+                        <div class="texture__item-wrapper texture__item-wrapper--title">
+                            <div class="texture__item">
+                                <p class="texture__item-p">Шпальт бука поперечной распиловки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texture__data-right">
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_natural_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Натуральный цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_yellow_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Жёлтый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_orange_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Оранжевый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_green_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Зеленый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_lime_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Лаймовый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_purple_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Фиолетовый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_red_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Красный цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_blue_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Синий цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_brown_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Коричневый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_black_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Чёрный цвет</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="texture__data">
+                    <div class="texture__data-left">
+                        <div class="texture__item-wrapper texture__item-wrapper--title">
+                            <div class="texture__item">
+                                <p class="texture__item-p">Шпальт бука продольной распиловки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texture__data-right">
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_natural_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Натуральный цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_yellow_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Желтый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_orange_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Оранжевый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_green_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Зелёный цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_lime_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Лаймовый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_purple_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Фиолетовый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_red_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Красный цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_blue_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Синий цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_brown_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Коричневый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/beech/beech_black_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Чёрный цвет</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
       
 
 
@@ -361,7 +536,252 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="title" id="">
+            <div class="title__wrapper">
+                <p class="title__h2">Платан</p>
+                <p class="title__p">
+                    Бруски платана - продольной и поперечной распиловки и большим выбором цветов.   
+                </p>
+            </div>
+        </section>
+
+        <section class="texture">
+            <div class="texture__title">
+                <p class="texture__title-h3">
+                    Полный список брусков Платана
+                </p>
+            </div>
+            <div class="texture__category">
+                <div class="texture__data">
+                    <div class="texture__data-left">
+                        <div class="texture__item-wrapper texture__item-wrapper--title">
+                            <div class="texture__item">
+                                <p class="texture__item-p">Платан поперечной распиловки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texture__data-right">
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_green_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Зеленый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_purple_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Фиолетовый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_red_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Красный цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_blue_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Синий цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_black_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Чёрный цвет</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="texture__data">
+                    <div class="texture__data-left">
+                        <div class="texture__item-wrapper texture__item-wrapper--title">
+                            <div class="texture__item">
+                                <p class="texture__item-p">Платан продольной распиловки</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texture__data-right">
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_green_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Зеленый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_purple_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Фиолетовый цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_red_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Красный цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_blue_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Синий цвет</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/platan/platan_black_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Чёрный цвет</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="title" id="">
+            <div class="title__wrapper">
+                <p class="title__h2">Дуб (мореный)</p>
+                <p class="title__p">
+                    Бруски мореного дуба - продольной и поперечной распиловки.   
+                </p>
+            </div>
+        </section>
+
+        <section class="texture">
+            <div class="texture__title">
+                <p class="texture__title-h3">
+                    Полный список брусков Дуба
+                </p>
+            </div>
+            <div class="texture__category">
+                <div class="texture__data">
+                    <div class="texture__data-left">
+                        <div class="texture__item-wrapper texture__item-wrapper--title">
+                            <div class="texture__item">
+                                <p class="texture__item-p">Мореный Дуб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texture__data-right">
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/oak/oak_black_XC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Натуральный цвет XC</p>
+                            </div>
+                        </div>
+                        <div class="texture__item-wrapper">
+                            <div class="texture__item">
+                                <img class="texture__picture" src="images/textures/wood/oak/oak_black_YC_texture_300.jpg" alt="" srcset="">
+                                <p class="product-description__texture">Натуральный цвет YC</p>
+                            </div>
+                        </div>
+
+
+                        
+                       
+                    </div> 
+                </div>
+
+              
+            </div>
+        </section>
+
+
+
+
+
+
+
+
 
         
 
@@ -370,6 +790,17 @@
             var swiper = new Swiper('.swiper', {
                 lazy: true,
                 slidesPerView: 3,
+
+                breakpoints: {
+                    640: {
+                        slidesPerView: 3,
+                    },
+
+                    100: {
+                        slidesPerView: 1,
+                    },
+                },
+
                 centeredSlides: true,
                 spaceBetween: 10,
                 grabCursor: true,
@@ -386,11 +817,15 @@
 
             });
         </script>  
+
+
         <!-- <script>
             fsLightboxInstances["first-lightbox"].props.onOpen = function ()
             {
                 console.log("The first lightbox has opened.");
             }
         </script> -->
+
+
     </main>
 @endsection

@@ -908,6 +908,17 @@
             var swiper = new Swiper('.swiper', {
                 lazy: true,
                 slidesPerView: 3,
+
+                breakpoints: {
+                    640: {
+                        slidesPerView: 3,
+                    },
+
+                    100: {
+                        slidesPerView: 1,
+                    },
+                },
+
                 centeredSlides: true,
                 spaceBetween: 10,
                 grabCursor: true,

@@ -1889,6 +1889,7 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   color: #b6b6b6;
@@ -2159,6 +2160,9 @@ h2 {
 }
 
 .texture__category {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 50px auto;
 }
 
@@ -2199,7 +2203,7 @@ h2 {
 }
 @media screen and (max-width: 770px) {
   .texture__item-wrapper {
-    width: 33.333%;
+    width: 50%;
   }
   .texture__item-wrapper--title {
     width: 100%;
@@ -2223,6 +2227,7 @@ h2 {
 }
 
 .texture__picture {
+  border-radius: 10px;
   border: 1px solid #292929;
   transition: border-color 0.1s ease-in-out;
 }

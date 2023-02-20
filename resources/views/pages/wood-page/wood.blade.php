@@ -290,57 +290,57 @@
 
         <div class="gallery">
             <div class="gallery-item">
-                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-1.jpg">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-1.jpg" alt="фотография Кап тополя - синий цвет">
                     <div class="gallery-item-content">
-                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-1_thumb.jpg" alt="" srcset="">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-1_thumb.jpg" alt="фотография Кап тополя - синий цвет превью">
                     </div>
                     <div class="gallery-item-description">
-                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
-                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                        <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                        <p class="gallery-item-description-text">материал - Кап тополя - синий цвет</p>
                     </div>
                 </a>
             </div>
             <div class="gallery-item">
-                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-2.jpg">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-2.jpg" alt="фотография Тополь - синий цвет">
                     <div class="gallery-item-content">
-                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-2_thumb.jpg" alt="" srcset="">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-2_thumb.jpg" alt="фотография Тополь - синий цвет превью">
                     </div>
                     <div class="gallery-item-description">
-                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
-                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                        <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                        <p class="gallery-item-description-text">материал - Кап тополя - синий цвет</p>
                     </div>
                 </a>
             </div>
             <div class="gallery-item">
-                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-3.jpg">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-3.jpg" alt="фотография Тополь - зеленый цвет">
                     <div class="gallery-item-content">
-                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-3_thumb.jpg" alt="" srcset="">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-3_thumb.jpg" alt="фотография Тополь - зеленый цвет превью">
                     </div>
                     <div class="gallery-item-description">
-                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
-                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                        <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                        <p class="gallery-item-description-text">материал - Тополь - зеленый цвет</p>
                     </div>
                 </a>
             </div>
             <div class="gallery-item">
-                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-4.jpg">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-4.jpg" alt="фотография Тополь - синий цвет">
                     <div class="gallery-item-content">
-                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-4_thumb.jpg" alt="" srcset="">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-4_thumb.jpg" alt="фотография Тополь - синий цвет превью">
                     </div>
                     <div class="gallery-item-description">
-                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
-                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                        <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                        <p class="gallery-item-description-text">материал - Тополь - синий цвет</p>
                     </div>
                 </a>
             </div>
             <div class="gallery-item">
-                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-5.jpg">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/poplar/poplar-5.jpg" alt="фотография Кап тополя - синий цвет">
                     <div class="gallery-item-content">
-                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-5_thumb.jpg" alt="" srcset="">
+                        <img class="gallery-item-image" src="/images/gallery/wood/poplar/poplar-5_thumb.jpg" alt="фотография Кап тополя - синий цвет превью">
                     </div>
                     <div class="gallery-item-description">
-                        <p class="gallery-item-description-text">Нож Кулкова Алексея</p>
-                        <p class="gallery-item-description-text">материал - волна sfx - синий уран</p>
+                        <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                        <p class="gallery-item-description-text">материал - Кап тополя - синий цвет</p>
                     </div>
                 </a>
             </div>
@@ -527,7 +527,70 @@
         </section>
       
 
+        <section class="title-gallery title-gallery__single" id="">
+            <div class="title-gallery__wrapper">
+                <p class="title-gallery__h2">Примеры</p>
+                <p class="title-gallery__p">Фотографии готовых ножей с использованием шпальта Бука Раффир от наших Клиентов.</p>
+            </div>
+        </section>
 
+        <div class="gallery">
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/beech/beech-1.jpg" alt="фотография Шпальт Бука - лимонный цвет">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/beech/beech-1_thumb.jpg" alt="фотография Шпальт Бука - лимонный цвет превью">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Андрея Гилева</p>
+                        <p class="gallery-item-description-text">материал - шпальт бука - лимонный цвет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/beech/beech-2.jpg" alt="фотография Шпальт Бука - красный цвет">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/beech/beech-2_thumb.jpg" alt="фотография Шпальт Бука - красный цвет превью">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                        <p class="gallery-item-description-text">материал - шпальт бука - красный цвет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/beech/beech-4.jpg" alt="фотография Шпальт Бука - коричневый цвет">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/beech/beech-4_thumb.jpg" alt="фотография Шпальт Бука - коричневый цвет превью">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож ???</p>
+                        <p class="gallery-item-description-text">материал - шпальт бука - коричневый цвет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/beech/beech-5.jpg" alt="фотография Шпальт Бука - фиолетовый цвет">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/beech/beech-5_thumb.jpg" alt="фотография Шпальт Бука - фиолетовый цвет превью">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                        <p class="gallery-item-description-text">материал - шпальт бука - фиолетовый цвет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/beech/beech-6.jpg" alt="фотография Шпальт Бука - красный цвет">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/beech/beech-6_thumb.jpg" alt="фотография Шпальт Бука - красный цвет превью">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                        <p class="gallery-item-description-text">материал - шпальт бука - красный цвет</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
 
 
@@ -701,7 +764,48 @@
         </section>
 
       
+        <section class="title-gallery title-gallery__single" id="">
+            <div class="title-gallery__wrapper">
+                <p class="title-gallery__h2">Примеры</p>
+                <p class="title-gallery__p">Фотографии готовых ножей с использованием брусков Платана Раффир от наших Клиентов.</p>
+            </div>
+        </section>
 
+        <div class="gallery">
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/platan/platan-1.jpg" alt="фотография бруска платана - черный цвет">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/platan/platan-1_thumb.jpg" alt="фотография бруска платана - черный цвет превью">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Стругунова Станислава</p>
+                        <p class="gallery-item-description-text">материал - платан - черный цвет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/platan/platan-2.jpg" alt="фотография бруска платана - синий цвет">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/platan/platan-2_thumb.jpg" alt="фотография бруска платана - синий цвет превью">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож компании АиР Златоуст</p>
+                        <p class="gallery-item-description-text">материал - платан - синий цвет</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/platan/platan-3.jpg" alt="фотография бруска платана - зеленый цвет">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/platan/platan-3_thumb.jpg" alt="фотография бруска платана - зеленый цвет превью">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож компании АиР Златоуст</p>
+                        <p class="gallery-item-description-text">материал - платан - зеленый цвет</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
 
 
@@ -775,7 +879,37 @@
             </div>
         </section>
 
+        <section class="title-gallery title-gallery__single" id="">
+            <div class="title-gallery__wrapper">
+                <p class="title-gallery__h2">Примеры</p>
+                <p class="title-gallery__p">Фотографии готовых ножей с использованием брусков мореного дуба от наших Клиентов.</p>
+            </div>
+        </section>
 
+        <div class="gallery">
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/oak/oak-1.jpg">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/oak/oak-1_thumb.jpg" alt="" srcset="">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Стругунова Станислава</p>
+                        <p class="gallery-item-description-text">материал - мореный дуб - натуральный цвет YC</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a data-fslightbox="first-lightbox" href="/images/gallery/wood/oak/oak-2.jpg">
+                    <div class="gallery-item-content">
+                        <img class="gallery-item-image" src="/images/gallery/wood/oak/oak-2_thumb.jpg" alt="" srcset="">
+                    </div>
+                    <div class="gallery-item-description">
+                        <p class="gallery-item-description-text">Нож Стругунова Станислава</p>
+                        <p class="gallery-item-description-text">материал - мореный дуб - натуральный цвет YC</p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
 
 

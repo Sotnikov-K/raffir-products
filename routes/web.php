@@ -70,42 +70,40 @@ Route::get('/contacts', function () {
 });
 
 
-Route::name('user.')->group(function(){
+Route::name('user.')->group(function () {
     Route::view('/dashboard', 'pages/dashboard-page/dashboard')->middleware('auth')->name('dashboard');
 
-    Route::get('/login', function(){
-        if(Auth::check()){
+    Route::get('/login', function () {
+        if (Auth::check()) {
             return redirect(route('user.dashboard'));
         }
         return view('pages/login-page/login');
     })->name('login');
 
     Route::post('/login', [LoginController::Class, 'login']);
-        
 
-    Route::get('/logout', function(){
-        if(Auth::check()){
+
+    Route::get('/logout', function () {
+        if (Auth::check()) {
             Auth::logout();
             return redirect('/');
         }
     })->name('logout');
 
 
-    Route::get('/registration', function(){
-        if(Auth::check()){
+    Route::get('/registration', function () {
+        if (Auth::check()) {
             return redirect(route('user.dashboard'));
         }
         return view('/pages/registration-page/registration');
     })->name('registration');
     Route::post('/registration', [RegisterController::Class, 'save']);
-    
 });
 
 
 
 
-Route::get('/dashboard/create-product-composite', [\App\Http\Controllers\ProductController::class, 'create'])->
-middleware(['auth'])->name('dashboard-create-product-composite');
+Route::get('/dashboard/create-product-composite', [\App\Http\Controllers\ProductController::class, 'create'])->middleware(['auth'])->name('dashboard-create-product-composite');
 Route::post('/dashboard', [\App\Http\Controllers\ProductController::class, 'store']);
 
 Route::get('/dashboard/create-product-wood', function () {
@@ -139,10 +137,14 @@ Route::get('/mail', function () {
 | 
 */
 
-Route::get('/composite', function(){
+Route::get('/composite', function () {
     return view('pages/composites-page/composites');
 });
 
-Route::get('/wood', function(){
+Route::get('/wood', function () {
     return view('pages/wood-page/wood');
+});
+
+Route::get('/mammoth', function () {
+    return view('pages/mammoth-page/mammoth');
 });

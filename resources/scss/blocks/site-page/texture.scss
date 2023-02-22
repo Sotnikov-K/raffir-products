@@ -71,6 +71,11 @@
 
 
 .texture__item-wrapper {
+
+
+
+
+
     display: flex;
     flex-direction: column;
     width: 16.6665%;
@@ -80,6 +85,14 @@
         width: 100%;
         background: none;
     }
+
+    &--texture {
+        cursor: pointer;
+        border: 1px solid black;
+        transition: border-color .1s ease-in-out;
+    }
+
+
 
     @include breakpoint($tablet-bp2) {
 
@@ -93,6 +106,10 @@
     }
 
     &:hover {
+
+        border-color: rgb(214, 214, 214);
+        transition: border-color .1s ease-in-out;
+
         .texture__picture {
             border: 1px solid #3f3f3f;
             transition: border-color .1s ease-in-out;

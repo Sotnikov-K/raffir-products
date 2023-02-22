@@ -47,10 +47,12 @@
 
 .caption__title {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 10px;
+    left: 10px;
     padding: 20px;
+    border-radius: 20px;
     box-shadow: 0 6px 9px #1a1a1a;
+    background-color: #00000045;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
 }
@@ -61,11 +63,13 @@
 }
 
 .caption__title-p1 {
-    opacity: .7;
+    color: white;
+    opacity: .9;
     font-size: 12px;
 }
 
 .caption__title-p2 {
-    opacity: .7;
+    color: white;
+    opacity: .9;
     font-size: 12px;
 }

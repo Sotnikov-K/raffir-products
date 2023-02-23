@@ -163,4 +163,26 @@
             </div>
         </a>
     </div>
+    <div class="gallery-item">
+        <a data-fslightbox="first-lightbox" href="/images/gallery/mammoth/molar-3.jpg" alt="фотография Зуб мамонта - синий цвет">
+            <div class="gallery-item-content">
+                <img class="gallery-item-image" src="/images/gallery//mammoth/molar-3_thumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+            </div>
+            <div class="gallery-item-description">
+                <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                <p class="gallery-item-description-text">материал - Зуб мамонта - синий цвет</p>
+            </div>
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a data-fslightbox="first-lightbox" href="/images/gallery/mammoth/molar-4.jpg" alt="фотография Зуб мамонта - зеленый цвет">
+            <div class="gallery-item-content">
+                <img class="gallery-item-image" src="/images/gallery//mammoth/molar-4_thumb.jpg" alt="фотография Зуб мамонта - зеленый цвет превью">
+            </div>
+            <div class="gallery-item-description">
+                <p class="gallery-item-description-text">Нож Станислава Стругунова</p>
+                <p class="gallery-item-description-text">материал - Зуб мамонта - зеленый цвет</p>
+            </div>
+        </a>
+    </div>
 </div>

@@ -11,6 +11,12 @@
         flex-wrap: wrap;
         padding: 20px;
     }
+
+    @include breakpoint($mobile-bp) {
+        flex-wrap: wrap;
+        padding: 20px;
+        padding-right: 10px;
+    }
 }
 
 .texture__title {

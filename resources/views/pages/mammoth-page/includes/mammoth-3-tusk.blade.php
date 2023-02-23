@@ -89,4 +89,26 @@
             </div>
         </a>
     </div> 
+    <div class="gallery-item">
+        <a data-fslightbox="first-lightbox" href="/images/gallery/mammoth/tusk-2.jpg" alt="фотография фрагмента бивня мамонта - белый цвет">
+            <div class="gallery-item-content">
+                <img class="gallery-item-image" src="/images/gallery/mammoth/tusk-2_thumb.jpg" alt="фотография фрагмента бивня мамонта - белый цвет">
+            </div>
+            <div class="gallery-item-description">
+                <p class="gallery-item-description-text">Ножи Станислава Стругунова</p>
+                <p class="gallery-item-description-text">материал - бивень мамонта (фрагмент) - белый цвет</p>
+            </div>
+        </a>
+    </div> 
+    <div class="gallery-item">
+        <a data-fslightbox="first-lightbox" href="/images/gallery/mammoth/tusk-3.jpg" alt="фотография фрагмента бивня мамонта - коричневый цвет">
+            <div class="gallery-item-content">
+                <img class="gallery-item-image" src="/images/gallery/mammoth/tusk-3_thumb.jpg" alt="фотография фрагмента бивня мамонта - коричневый цвет">
+            </div>
+            <div class="gallery-item-description">
+                <p class="gallery-item-description-text">Ножи Станислава Стругунова</p>
+                <p class="gallery-item-description-text">материал - бивень мамонта (фрагмент) - коричневый цвет</p>
+            </div>
+        </a>
+    </div> 
 </div>

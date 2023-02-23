@@ -1,5 +1,5 @@
 .composites {
-    max-width: 1200px;
+    max-width: $width;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -7,5 +7,9 @@
 
     @include breakpoint($tablet-bp2) {
         margin: 80px auto 50px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        margin: 70px auto 50px;
     }
 }

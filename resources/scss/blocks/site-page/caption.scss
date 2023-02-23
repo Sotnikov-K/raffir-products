@@ -37,6 +37,11 @@
         height: 350px;
         padding: 20px;
     }
+
+    @include breakpoint($mobile-bp) {
+        height: 550px;
+        padding: 20px;
+    }
 }
 
 .caption__image {

@@ -1612,7 +1612,7 @@ h2 {
 }
 
 .composites {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1621,6 +1621,11 @@ h2 {
 @media screen and (max-width: 770px) {
   .composites {
     margin: 80px auto 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .composites {
+    margin: 70px auto 50px;
   }
 }
 
@@ -1666,6 +1671,12 @@ h2 {
     padding: 20px;
   }
 }
+@media screen and (max-width: 575px) {
+  .caption__data {
+    height: 550px;
+    padding: 20px;
+  }
+}
 
 .caption__image {
   height: 100%;
@@ -1706,6 +1717,7 @@ h2 {
 .mover__link-wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 1400px;
   justify-content: left;
   margin-bottom: 50px;
 }
@@ -1790,7 +1802,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  width: 1300px;
+  width: 1400px;
   margin: 0 auto 150px;
   padding: 0 20px 50px;
   background-color: #1f1f1f;
@@ -1928,7 +1940,7 @@ h2 {
 .title-swiper {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 1400px;
   margin: 0px auto;
   padding-bottom: 30px;
   padding-top: 50px;
@@ -1940,7 +1952,8 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   color: #b6b6b6;
 }
@@ -1976,7 +1989,7 @@ h2 {
 .title-gallery {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 1400px;
   margin: 0px auto;
   padding-bottom: 30px;
   padding-top: 100px;
@@ -2137,6 +2150,13 @@ h2 {
   .texture {
     flex-wrap: wrap;
     padding: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .texture {
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-right: 10px;
   }
 }
 
@@ -2442,6 +2462,29 @@ sup {
   .product-description__texture-uran-text {
     width: 100px;
     font-size: 12px;
+  }
+}
+
+.advise {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+}
+@media screen and (max-width: 770px) {
+  .advise {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .advise {
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-right: 10px;
   }
 }
 
@@ -4679,7 +4722,7 @@ textarea::-ms-input-placeholder {
   left: 0;
   right: 0;
   top: 0;
-  max-width: 1000px;
+  max-width: 1200px;
   background-color: #131313;
   z-index: 1000;
 }
@@ -4891,7 +4934,7 @@ textarea::-ms-input-placeholder {
 .footer {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   margin-top: auto;

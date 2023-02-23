@@ -7,7 +7,7 @@
         @include('/pages/mammoth-page/includes/mammoth-1-intro')
         @include('/pages/mammoth-page/includes/mammoth-2-molar')
         @include('/pages/mammoth-page/includes/mammoth-3-tusk')
-        
+        @include('/pages/mammoth-page/includes/mammoth-4-advise')
 
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

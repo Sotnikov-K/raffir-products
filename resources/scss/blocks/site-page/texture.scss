@@ -49,6 +49,10 @@
     flex-direction: column;
     width: 100%;
     margin: 50px auto;
+
+    @include breakpoint($mobile-bp) {
+        margin: 0px auto;
+    }
 }
 
 .texture__data {
@@ -127,7 +131,7 @@
 .texture__item {
     display: flex;
     flex-direction: column;
-    padding: 4px;
+    padding: 10px;
     background-color: #1a1a1a;
 
     @include breakpoint($tablet-bp2) {

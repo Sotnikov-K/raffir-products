@@ -51,13 +51,13 @@
     <a class="mover__link mover__link--three scroll_link" data-link="mammoth">
         <div class="mover__link-data">
             
-            <div class="mover__link-title"><strong>Платан</strong></div>
+            <div class="mover__link-title"><strong>Информация</strong></div>
             <div class="mover__link-desc-wrapper">
-                <p class="mover__link-desc">Стабилизированный платан продольной и поперечной распиловки</p>
+                <p class="mover__link-desc">по работе с материалом</p>
             </div>
         </div>
     </a>
-    <a class="mover__link mover__link--four scroll_link" data-link="divisionss">
+    {{-- <a class="mover__link mover__link--four scroll_link" data-link="divisionss">
         <div class="mover__link-data">
            
             <div class="mover__link-title"><strong>Дуб</strong></div>
@@ -65,5 +65,5 @@
                 <p class="mover__link-desc">Стабилизированный мореный дуб</p>
             </div>
         </div>
-    </a>
+    </a> --}}
 </div>

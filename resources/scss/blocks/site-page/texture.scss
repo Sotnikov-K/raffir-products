@@ -22,7 +22,7 @@
 .texture__title {
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 1200px;
     width: 100%;
     margin: 20px auto;
 }
@@ -70,22 +70,17 @@
 
 .texture__data-left {
     display: flex;
-    width: 30%;
+    width: 40%;
 }
 
 .texture__data-right {
     display: flex;
-    width: 70%;
+    width: 60%;
     flex-wrap: wrap;
 }
 
 
 .texture__item-wrapper {
-
-
-
-
-
     display: flex;
     flex-direction: column;
     width: 16.6665%;
@@ -102,11 +97,7 @@
         transition: border-color .1s ease-in-out;
     }
 
-
-
     @include breakpoint($tablet-bp2) {
-
-        // width: 33.333%;
         width: 50%;
 
         &--title {
@@ -116,7 +107,6 @@
     }
 
     &:hover {
-
         border-color: rgb(214, 214, 214);
         transition: border-color .1s ease-in-out;
 

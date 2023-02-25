@@ -1952,7 +1952,7 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   color: #b6b6b6;
@@ -2010,7 +2010,8 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 1000px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   color: #b6b6b6;
 }
@@ -2169,7 +2170,7 @@ h2 {
 .texture__title {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: 20px auto;
 }
@@ -2220,12 +2221,12 @@ h2 {
 
 .texture__data-left {
   display: flex;
-  width: 30%;
+  width: 40%;
 }
 
 .texture__data-right {
   display: flex;
-  width: 70%;
+  width: 60%;
   flex-wrap: wrap;
 }
 

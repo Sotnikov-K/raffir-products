@@ -20,11 +20,11 @@ class ProductsTable extends Component
     public string $color_name = '';
     public array $colorArray;
     public $product_color;
-    
+
 
     public $imagesAll;
     protected $listeners = ['reloadProducts' => 'reloadProducts'];
-   
+
 
     public function mount()
     {
@@ -34,7 +34,7 @@ class ProductsTable extends Component
         // $this->getSelectedFiters();
     }
 
-    public function add(Request $request, $id) 
+    public function add(Request $request, $id)
     {
         $quantity = $request->input('quantity') ?? 1;
         $this->basket->increase($id, $quantity);
@@ -49,15 +49,15 @@ class ProductsTable extends Component
     {
         $session = session();
 
-        if($selected_category){
+        if ($selected_category) {
             $session->put(['category' => $selected_category]);
-        } 
+        }
 
-        if($selected_color){
+        if ($selected_color) {
             $session->put(['color' => $selected_color]);
         }
 
-        if($selected_price){
+        if ($selected_price) {
             $session->put(['price' => $selected_price]);
         }
 
@@ -67,48 +67,43 @@ class ProductsTable extends Component
 
     public function getProducts()
     {
-        if(session()->has('category') || session()->has('color') || session()->has('price') )
-        {
+        if (session()->has('category') || session()->has('color') || session()->has('price')) {
 
             $selected_category = session()->get('category');
             // dd($selected_category);
 
             $selected_color = session()->get('color');
             $selected_price = session()->get('price');
-           
+
             $products = Product::query();
-       
-            if(!is_null($selected_category) && $selected_category !== 'all' ){
+
+            if (!is_null($selected_category) && $selected_category !== 'all') {
                 $products = $products->where('product_category', '=', $selected_category);
             } else $products->where('product_category', '!=', '');
-    
-            if(!is_null($selected_color) && $selected_color !== 'all'){
+
+            if (!is_null($selected_color) && $selected_color !== 'all') {
                 $products = $products->where('product_color', '=', $selected_color);
             } else $products->where('product_color', '!=', '');
-    
-            
-    
+
+
+
             // фильтр по цене
-            if($selected_price == 'low'){
+            if ($selected_price == 'low') {
                 $this->products = $products->orderBy('product_price', 'ASC')->get();
             } elseif ($selected_price == 'high') {
                 $this->products = $products->orderBy('product_price', 'DESC')->get();
             } else $this->products = $products->get();
-
-
         } else $this->products = Product::all();
-
     }
 
     public function getSelectedFilters()
     {
-
     }
 
 
 
     public function render()
-    { 
+    {
         return view('livewire.products-table');
     }
 }

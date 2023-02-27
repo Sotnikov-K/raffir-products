@@ -44,6 +44,17 @@
                 </div>
             </div>
 
+            <div class="dashboard__control-item">
+                <div class="dashboard__control-links">
+                    <a href="dashboard/edit-products" class="link link--dashboard">
+                        <div class="dashboard__control-link-data">
+                            <p class="link__text">Редактировать товар</p>
+                            <img class="link__icon" src="/images/icons/footer-arrow-circle-right-white.png">
+                        </div>
+                    </a> 
+                </div>
+            </div>
+
             <div class="dashboard__control-title">
                 <p>Выход из панели</p>
             </div>

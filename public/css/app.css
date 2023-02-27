@@ -3716,6 +3716,28 @@ sup {
   }
 }
 
+.dashboard__listing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px;
+}
+
+.dashboard__listing-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 10px;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.dashboard__listing-edit-link {
+  text-decoration: none;
+  color: white;
+}
+
 .dashboard-create {
   margin: 50px auto;
   width: 100%;
@@ -3747,7 +3769,6 @@ sup {
   width: 100%;
   padding: 20px;
   background-color: #334449;
-  border-radius: 15px;
 }
 @media screen and (max-width: 991px) {
   .dashboard-create__control-panel {

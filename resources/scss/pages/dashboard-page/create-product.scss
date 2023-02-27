@@ -30,8 +30,6 @@
     width: 100%;
     padding: 20px;
     background-color: #334449;
-    border-radius: 15px;
-
 
     @include breakpoint($tablet-bp) {
         padding: 0px;

@@ -118,7 +118,8 @@ Route::get('/dashboard/create-product-blade', function () {
     return view('pages/dashboard-page/create-product/create-product-blade');
 });
 
-
+Route::get('/dashboard/edit-products', [\App\Http\Controllers\ProductController::class, 'show'])->middleware(['auth'])->name('dashboard-edit-products');
+Route::get('/dashboard/edit-products/{id}', [\App\Http\Controllers\ProductController::class, 'edit'])->middleware(['auth'])->name('dashboard-edit-product');
 
 
 Route::get('/mail', function () {
@@ -147,4 +148,8 @@ Route::get('/wood', function () {
 
 Route::get('/mammoth', function () {
     return view('pages/mammoth-page/mammoth');
+});
+
+Route::get('/blades', function () {
+    return view('pages/blades-page/blades');
 });

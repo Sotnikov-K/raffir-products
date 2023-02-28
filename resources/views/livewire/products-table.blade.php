@@ -10,7 +10,28 @@
                     </div>    
 
                     <p class="store__product-title">{{$product->product_name}}</p>
-                    <p class="store__product-term">{{$product->product_color}}</p>
+
+
+
+
+
+                    @if($product->product_shape == 'клинок')
+
+                        <p class="store__product-term">{{$product->product_blade_model}}</p>
+
+                    @else
+
+                        <p class="store__product-term">{{$product->product_color}}</p>
+
+                    @endif
+
+                   
+
+
+
+
+
+
                     <p class="store__product-price">{{$product->product_price}} руб.</p>
 
                     <form wire:submit.prevent="add( {{ $product->id }} )">

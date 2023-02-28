@@ -52,7 +52,7 @@ Route::post('/cart/clear', [BasketController::class, 'clear'])->name('basket.cle
 //     return view('/pages/checkout-page/checkout');
 // })->name('basket.checkout');
 
-Route::post('/basket/saveorder', [BasketController::Class, 'saveOrder'])->name('basket.saveorder');
+Route::post('/basket/saveorder', [BasketController::class, 'saveOrder'])->name('basket.saveorder');
 
 
 Route::get('/basket/success', [BasketController::class, 'success'])->name('basket.success');
@@ -80,7 +80,7 @@ Route::name('user.')->group(function () {
         return view('pages/login-page/login');
     })->name('login');
 
-    Route::post('/login', [LoginController::Class, 'login']);
+    Route::post('/login', [LoginController::class, 'login']);
 
 
     Route::get('/logout', function () {
@@ -97,7 +97,7 @@ Route::name('user.')->group(function () {
         }
         return view('/pages/registration-page/registration');
     })->name('registration');
-    Route::post('/registration', [RegisterController::Class, 'save']);
+    Route::post('/registration', [RegisterController::class, 'save']);
 });
 
 
@@ -118,8 +118,10 @@ Route::get('/dashboard/create-product-blade', function () {
     return view('pages/dashboard-page/create-product/create-product-blade');
 });
 
-Route::get('/dashboard/edit-products', [\App\Http\Controllers\ProductController::class, 'show'])->middleware(['auth'])->name('dashboard-edit-products');
+Route::get('/dashboard/edit-products', [\App\Http\Controllers\ProductController::class, 'show'])->middleware(['auth'])->name('dashboardEdit');
 Route::get('/dashboard/edit-products/{id}', [\App\Http\Controllers\ProductController::class, 'edit'])->middleware(['auth'])->name('dashboard-edit-product');
+
+Route::patch('/dashboard/product/update/{id}', [\App\Http\Controllers\ProductController::class, 'update'])->middleware(['auth']);
 
 
 Route::get('/mail', function () {

@@ -14,13 +14,13 @@ return new class extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->string('product_blade-model')->after('product_rating')->nullable();
-            $table->string('product_blade-design')->after('product_rating')->nullable();
+            $table->string('product_blade_model')->after('product_rating')->nullable();
+            $table->string('product_blade_design')->after('product_rating')->nullable();
             $table->unsignedBigInteger('product_thickness')->after('product_rating')->nullable();
-            $table->unsignedBigInteger('product_blade-hardness')->after('product_rating')->nullable();
-            $table->string('product_blade-finish')->after('product_rating')->nullable();
-            $table->string('product_steel-type')->after('product_rating')->nullable();
-            $table->string('product_blade-style')->after('product_rating')->nullable();
+            $table->unsignedBigInteger('product_blade_hardness')->after('product_rating')->nullable();
+            $table->string('product_blade_finish')->after('product_rating')->nullable();
+            $table->string('product_steel_type')->after('product_rating')->nullable();
+            $table->string('product_blade_style')->after('product_rating')->nullable();
         });
     }
 

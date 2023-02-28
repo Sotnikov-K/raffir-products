@@ -67,13 +67,13 @@ class ProductController extends Controller
 
 
 
-            'product_blade-model' => 'max:255',
-            'product_blade-design' => 'max:255',
+            'product_blade_model' => 'max:255',
+            'product_blade_design' => 'max:255',
             'product_thickness' => 'max:255',
-            'product_blade-hardness' => 'max:255',
-            'product_blade-finish' => 'max:255',
-            'product_steel-type' => 'max:255',
-            'product_blade-style' => 'max:255',
+            'product_blade_hardness' => 'max:255',
+            'product_blade_finish' => 'max:255',
+            'product_steel_type' => 'max:255',
+            'product_blade_style' => 'max:255',
 
         ]);
 
@@ -205,11 +205,9 @@ class ProductController extends Controller
     public function edit($id)
     {
 
-        dd($id);
+        // dd($id);
 
         $product = DB::table('products')->where('id', $id)->first();
-
-        dd($product);
 
         return view('pages/dashboard-page/edit-products/edit-product', compact('product'));
     }
@@ -221,9 +219,62 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    // public function update(Request $request, Product $id)
+
+    public function update(Request $request, $id)
     {
-        //
+        $data = $request->validate([
+            'product_index' => 'required',
+            'product_category' => 'required',
+            'product_name' => 'required',
+
+            'product_shape' => 'max:255',
+            'product_pattern' => 'max:255',
+            'product_color' => 'max:255',
+            'product_status' => 'required',
+
+            'product_length' => 'max:255',
+            'product_width' => 'max:255',
+            'product_height' => 'max:255',
+
+            'product_weight' => 'max:255',
+            'product_price' => 'max:255',
+            'product_description' => 'max:255',
+
+            'product_quantity' => 'max:255',
+
+
+            'product_blade_model' => 'max:255',
+            'product_blade_design' => 'max:255',
+            'product_thickness' => 'max:255',
+            'product_blade_hardness' => 'max:255',
+            'product_blade_finish' => 'max:255',
+            'product_steel_type' => 'max:255',
+            'product_blade_style' => 'max:255',
+        ]);
+
+        $item = Product::find($id);
+
+        if (empty($item)) {
+            return back()->withErrors(['msg' => "Запись id=[{$item->id}] не найдена"])->withInput();
+        }
+
+
+        // $result = $item->fill($data)->save();
+        $result = $item->update($data);
+
+        // if ($result) {
+        //     return redirect()
+        //         ->route('blog.admin.categories.edit', $item->id)
+        //         ->with(['success' => 'Успешно сохранено']);
+        // } else {
+        //     return back()
+        //         ->withError(['msg' => 'Ошибка сохранения'])
+        //         ->withInput();
+        // }
+
+        return redirect()
+            ->route('dashboardEdit');
     }
 
     /**

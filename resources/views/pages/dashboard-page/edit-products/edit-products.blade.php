@@ -39,9 +39,39 @@
                             <p>{{$product->product_name}} </p>
                         </div>
 
-                        <div class="dashboard__color">
-                            <p>{{$product->product_color}}</p>
-                        </div>
+
+
+
+
+
+
+
+                       
+
+
+                        @if($product->product_shape == 'клинок')
+
+                            <div class="dashboard__color">
+                                <p>{{$product->product_blade_model}}</p>
+                            </div>
+
+                        @else
+
+                            <div class="dashboard__color">
+                                <p>{{$product->product_color}}</p>
+                            </div>
+                            
+                        @endif
+
+
+
+
+
+
+
+
+
+
 
                         <div class="dashboard__name">
                             <p>{{$product->product_price}} руб.</p>

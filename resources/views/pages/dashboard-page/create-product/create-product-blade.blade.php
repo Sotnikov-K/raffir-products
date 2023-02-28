@@ -57,13 +57,13 @@
                         <!-- Модель клинка -->
                         <div class="form-group lot-create-data__input-wrapper">
                             <label for="product_name" class="dashboard-create__product-title">Модель клинка</label>
-                            <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade-model" placeholder="Модель клинка">
+                            <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade_model" placeholder="Модель клинка">
                         </div>
 
                         <!-- Дизайн клинка -->
                         <div class="form-group lot-create-data__input-wrapper">
                             <label for="product_name" class="dashboard-create__product-title">Дизайн клинка</label>
-                            <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade-design" placeholder="Дизайн клинка">
+                            <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade_design" placeholder="Дизайн клинка">
                         </div>
 
                          <!-- Паттерн товара -->
@@ -120,22 +120,22 @@
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">
                                 <label for="product_weight" class="dashboard-create__product-title">Твердость материала</label>  
-                                <input form="add-product" type="number" class="product-input dashboard-create__product-input" name="product_blade-hardness" placeholder="твердость материала" value="60">          
+                                <input form="add-product" type="number" class="product-input dashboard-create__product-input" name="product_blade_hardness" placeholder="твердость материала" value="60">          
                             </div>
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">
                                 <label for="product_weight" class="dashboard-create__product-title">Обработка материала</label>  
-                                <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade-finish" placeholder="обработка материала" value="протравленный и полированый">          
+                                <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade_finish" placeholder="обработка материала" value="протравленный и полированый">          
                             </div>
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">
                                 <label for="product_weight" class="dashboard-create__product-title">Тип стали</label>  
-                                <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_steel-type" placeholder="тип стали" value="110 слоёв, нержавеющий дамаск, 440С/N690 высоколегированная сталь">          
+                                <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_steel_type" placeholder="тип стали" value="110 слоёв, нержавеющий дамаск, 440С/N690 высоколегированная сталь">          
                             </div>
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">
                                 <label for="product_weight" class="dashboard-create__product-title">Стиль клинка</label>  
-                                <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade-style" placeholder="стиль клинка" value="Пуукко, всадной монтаж">          
+                                <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade_style" placeholder="стиль клинка" value="Пуукко, всадной монтаж">          
                             </div>
 
                         </div>

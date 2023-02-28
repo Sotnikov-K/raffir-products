@@ -118,8 +118,10 @@ Route::get('/dashboard/create-product-blade', function () {
     return view('pages/dashboard-page/create-product/create-product-blade');
 });
 
-Route::get('/dashboard/edit-products', [\App\Http\Controllers\ProductController::class, 'show'])->middleware(['auth'])->name('dashboard-edit-products');
+Route::get('/dashboard/edit-products', [\App\Http\Controllers\ProductController::class, 'show'])->middleware(['auth'])->name('dashboardEdit');
 Route::get('/dashboard/edit-products/{id}', [\App\Http\Controllers\ProductController::class, 'edit'])->middleware(['auth'])->name('dashboard-edit-product');
+
+Route::patch('/dashboard/product/update/{id}', [\App\Http\Controllers\ProductController::class, 'update'])->middleware(['auth']);
 
 
 Route::get('/mail', function () {

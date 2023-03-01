@@ -60,10 +60,51 @@
                         <p class="product__description-title">паттерн</p>
                         <p class="product__description-p">{{$product->product_pattern}}</p>
                     </div> 
-                    <div class="product__description-parameter">
-                        <p class="product__description-title">цвет</p>
-                        <p class="product__description-p">{{$product->product_color}}</p>
-                    </div> 
+
+
+                    @if( $product->product_shape == 'клинок' )
+
+                        <div class="product__description-parameter">
+                            <p class="product__description-title">дизайн</p>
+                            <p class="product__description-p">{{$product->product_blade_design}}</p>
+                        </div>
+
+                        <div class="product__description-parameter">
+                            <p class="product__description-title">модель клинка</p>
+                            <p class="product__description-p">{{$product->product_blade_model}}</p>
+                        </div>
+                    
+                        <div class="product__description-parameter">
+                            <p class="product__description-title">твердость клинка</p>
+                            <p class="product__description-p">{{$product->product_blade_hardness}} HRC</p>
+                        </div>
+
+                        <div class="product__description-parameter">
+                            <p class="product__description-title">обработка клинка</p>
+                            <p class="product__description-p">{{$product->product_blade_finish}}</p>
+                        </div>
+
+                        <div class="product__description-parameter">
+                            <p class="product__description-title">сталь</p>
+                            <p class="product__description-p">{{$product->product_steel_type}}</p>
+                        </div>
+
+                        <div class="product__description-parameter">
+                            <p class="product__description-title">стиль</p>
+                            <p class="product__description-p">{{$product->product_blade_style}}</p>
+                        </div>
+
+                    @else
+
+                        <div class="product__description-parameter">
+                            <p class="product__description-title">цвет</p>
+                            <p class="product__description-p">{{$product->product_color}}</p>
+                        </div>
+
+                    @endif
+
+
+                    
                 </div> 
 
 
@@ -76,9 +117,23 @@
                 <div class="databaseItem__content-noticeWrapper">
                     <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Все материалы разработаны и произведены в Дании.</span></p>
 
-                    <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Стандартный размер одного блока ({{$product->product_length}} x {{$product->product_width}} x {{$product->product_height}}) указаны в сантиметрах.</span></p>
+                    
 
-                    <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Стандартный вес одного блока {{$product->product_weight}} гр.</span></p>
+                    
+                    @if( $product->product_shape == 'клинок' )
+
+                        <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Размер клинка ({{$product->product_length}} x {{$product->product_width}} x {{$product->product_thickness}}) указаны в сантиметрах.</span></p>
+
+                        <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Вес одного клинка  {{$product->product_weight}} гр.</span></p>
+
+                    @else
+
+                        <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Стандартный вес одного блока {{$product->product_weight}} гр.</span></p>
+
+                        <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span">Стандартный размер одного блока ({{$product->product_length}} x {{$product->product_width}} x {{$product->product_height}}) указаны в сантиметрах.</span></p>
+
+                    @endif
+
 
                     <p class="databaseItem__content-notice"><span class="databaseItem__content-notice-span"><a class="databaseItem__content-notice-link" href="/">Информация по стоимости доставки.</a></span></p>
 

@@ -81,9 +81,20 @@
                             <a class="dashboard__listing-edit-link" href="/dashboard/edit-products/{{$product->id}}">Изменить</a>
                         </div>
 
-                        <button class="dashboard__listing-del-btn">
-                            удалить
-                        </button>
+                        
+
+
+                        <div class="dashboard__listing-edit">
+                            <form action="/dashboard/product/delete/{{$product->id}}" method="POST">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit">удалить</button>
+                            </form>
+                        </div>
+
+
+
+                        
 
 
                     </div>

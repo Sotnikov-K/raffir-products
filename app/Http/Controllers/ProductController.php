@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Image;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
 use File;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\ImageIntervention;
@@ -283,8 +284,73 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    // public function destroy(Product $product)
+    public function destroy($id)
     {
-        //
+        $item = Product::find($id);
+
+
+        $imageQuantity = $item->images->count();
+
+        if ($imageQuantity !== 0) {
+            $time = Carbon::parse($item->images[0]['updated_at'])->format('Y-m');
+
+            for ($i = 1; $i <= $imageQuantity; $i++) {
+
+                $curentImageNumber = $i;
+                $imageName = $item['product_category'] . '-' . $item['id'] . '-' . $curentImageNumber . '.' . 'png';
+
+                // large_images
+                // main_images
+                // micro_image
+                // original_images
+                // thumbnail_images
+
+                /**
+                 *  Delete all image files from public path
+                 */
+                if (file_exists(public_path('images\product_images\large_images') . '\\' . $time . '\\' .  $imageName)) {
+                    unlink(public_path('images\product_images\large_images') . '\\' . $time . '\\' .  $imageName);
+                    unlink(public_path('images\product_images\main_images') . '\\' . $time . '\\' .  $imageName);
+                    unlink(public_path('images\product_images\micro_images') . '\\' . $time . '\\' .  $imageName);
+                    unlink(public_path('images\product_images\original_images') . '\\' . $time . '\\' .  $imageName);
+                    unlink(public_path('images\product_images\thumbnail_images') . '\\' . $time . '\\' .  $imageName);
+                }
+
+                if (file_exists(resource_path('images\product_images\large_images') . '\\' . $time . '\\' .  $imageName)) {
+                    unlink(resource_path('images\product_images\large_images') . '\\' . $time . '\\' .  $imageName);
+                    unlink(resource_path('images\product_images\main_images') . '\\' . $time . '\\' .  $imageName);
+                    unlink(resource_path('images\product_images\micro_images') . '\\' . $time . '\\' .  $imageName);
+                    unlink(resource_path('images\product_images\original_images') . '\\' . $time . '\\' .  $imageName);
+                    unlink(resource_path('images\product_images\thumbnail_images') . '\\' . $time . '\\' .  $imageName);
+                }
+            }
+        }
+
+
+        /**
+         *  Delete images data from Image database
+         */
+
+        if (Image::where('product_id', $id)) {
+            $imageData = Image::where('product_id', $id)->get();
+
+            foreach ($imageData as $image) {
+                $image->delete();
+            }
+        }
+
+
+        /**
+         *  Delete product data from Image database
+         */
+
+        if ($item = Product::find($id)) {
+            $item->delete();
+        }
+
+
+
+        return redirect()->route('dashboardEdit');
     }
 }

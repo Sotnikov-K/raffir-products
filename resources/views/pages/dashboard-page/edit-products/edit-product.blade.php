@@ -92,7 +92,7 @@
                                 <!-- Твердость материала -->
                                 <div class="dashboard-edit__form-data-input">
                                     <label for="product_weight" class="dashboard-edit__form-input-title">Твердость материала</label>  
-                                    <input form="add-product" type="number" class="dashboard-edit__form-input" name="product_blade_hardness" placeholder="твердость материала" value="{{$product->product_blade_hardness}}">          
+                                    <input form="add-product" type="text" class="dashboard-edit__form-input" name="product_blade_hardness" placeholder="твердость материала" value="{{$product->product_blade_hardness}}">          
                                 </div>
 
                                 <!-- Обработка материала -->
@@ -151,17 +151,17 @@
 
                                 <div class="dashboard-edit__form-data-input">
                                     <label for="product_length" class="dashboard-edit__form-input-title">Длина</label>  
-                                    <input form="add-product" type="number" class="dashboard-edit__form-input" name="product_length" placeholder="Длина" value="{{$product->product_length}}">          
+                                    <input form="add-product" type="text" class="dashboard-edit__form-input" name="product_length" placeholder="Длина" value="{{$product->product_length}}">          
                                 </div>
 
                                 <div class="dashboard-edit__form-data-input">
                                     <label for="product_width" class="dashboard-edit__form-input-title">Ширина</label>  
-                                    <input form="add-product" type="number" class="dashboard-edit__form-input" name="product_width" placeholder="Ширина" value="{{$product->product_width}}">          
+                                    <input form="add-product" type="text" class="dashboard-edit__form-input" name="product_width" placeholder="Ширина" value="{{$product->product_width}}">          
                                 </div>
 
                                 <div class="dashboard-edit__form-data-input">
                                     <label for="product_height" class="dashboard-edit__form-input-title">Толщина</label>  
-                                    <input form="add-product" type="number" class="dashboard-edit__form-input" name="product_thickness" value="{{$product->product_thickness}}">          
+                                    <input form="add-product" type="text" class="dashboard-edit__form-input" name="product_thickness" value="{{$product->product_thickness}}">          
                                 </div>
                                 
                                 <div class="dashboard-edit__form-data-input">

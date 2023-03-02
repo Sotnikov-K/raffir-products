@@ -105,12 +105,12 @@
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">
                                 <label for="product_width" class="dashboard-create__product-title">Ширина</label>  
-                                <input form="add-product" type="number" class="product-input dashboard-create__product-input" name="product_width" placeholder="Ширина" value="40">          
+                                <input form="add-product" type="number" step="0.01" class="product-input dashboard-create__product-input" name="product_width" placeholder="Ширина" value="40">          
                             </div>
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">
                                 <label for="product_height" class="dashboard-create__product-title">Толщина</label>  
-                                <input form="add-product" type="number" class="product-input dashboard-create__product-input" name="product_thickness" placeholder="толщина" value="25">          
+                                <input form="add-product" type="number" step="0.01" class="product-input dashboard-create__product-input" name="product_thickness" placeholder="толщина" value="25">          
                             </div>
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">
@@ -120,7 +120,7 @@
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">
                                 <label for="product_weight" class="dashboard-create__product-title">Твердость материала</label>  
-                                <input form="add-product" type="number" class="product-input dashboard-create__product-input" name="product_blade_hardness" placeholder="твердость материала" value="60">          
+                                <input form="add-product" type="text" class="product-input dashboard-create__product-input" name="product_blade_hardness" placeholder="твердость материала" value="60">          
                             </div>
 
                             <div class="form-group lot-create-data__input-wrapper dashboard-create__input-wrapper--parameters">

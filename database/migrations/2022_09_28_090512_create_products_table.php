@@ -26,10 +26,10 @@ return new class extends Migration
             $table->string('product_pattern', 50)->nullable();
             $table->string('product_color', 50)->nullable();
             $table->string('product_status', 50)->nullable();
-           
-            $table->unsignedInteger('product_length')->nullable();
-            $table->unsignedInteger('product_width')->nullable();
-            $table->unsignedInteger('product_height')->nullable();
+
+            $table->float('product_length', 6, 2)->nullable();
+            $table->float('product_width', 6, 2)->nullable();
+            $table->float('product_height', 6, 2)->nullable();
             $table->unsignedInteger('product_weight')->nullable();
 
             $table->unsignedInteger('product_price')->nullable();

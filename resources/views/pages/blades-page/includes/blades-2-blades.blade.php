@@ -1,4 +1,4 @@
-<section class="title" id="">
+{{-- <section class="title" id="">
     <div class="title__wrapper">
         <p class="title__h2">Зуб Мамонта</p>
         <p class="title__p">
@@ -185,4 +185,4 @@
             </div>
         </a>
     </div>
-</div>
+</div> --}}

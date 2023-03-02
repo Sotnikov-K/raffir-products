@@ -1,11 +1,11 @@
 <section class="caption">
     <article class="caption__item caption__item--left">
         <div class="caption__data caption__data--composites">   
-            <img class="caption__image" src="/images/product_intro/mammoth/molar-intro-1.jpg" loading="lazy" alt="фотография ножа с зубом мамонта на рукоятке">
+            <img class="caption__image" src="/images/product_intro/blade/blade-intro-1.jpg" loading="lazy" alt="фотография ножа с зубом мамонта на рукоятке">
             <div class="caption__title">
-                <h1 class="caption__title-h1">Стаб. зуб мамонта</h1>
-                <p class="caption__title-p1">Зуб мамонта - синий цвет.</p>
-                <p class="caption__title-p2">Нож Станислава Стругунова.</p>
+                <h1 class="caption__title-h1">Клинок Астрап</h1>
+                <p class="caption__title-p1">Современный скандинавский стиль</p>
+                <p class="caption__title-p2">Нож от </p>
             </div>
             <a href="#" class="link link--offer">
                 <p class="link__text">Смотреть</p>
@@ -15,11 +15,11 @@
     </article>
     <article class="caption__item caption__item--right">
         <div class="caption__data caption__data--composites">
-            <img class="caption__image" src="/images/product_intro/mammoth/molar-intro-2.jpg" loading="lazy" alt="Информация по обработке зуба мамонта">
+            <img class="caption__image" src="/images/product_intro/blade/blade-intro-2.jpg" loading="lazy" alt="Информация по обработке зуба мамонта">
             <div class="caption__title">
-                <h2 class="caption__title-h1">Информация</h2>
-                <p class="caption__title-p1">по работе с зубом мамонта</p>
-                <p class="caption__title-p2">Обработка, шлифовка, полировка</p>
+                <h2 class="caption__title-h1">Клинок Миккельсен</h2>
+                <p class="caption__title-p1">Классический скандинавский стиль</p>
+                <p class="caption__title-p2">Нож от  </p>
             </div>
             <a href="#" class="link link--offer">
                 <p class="link__text">Подробнее</p>

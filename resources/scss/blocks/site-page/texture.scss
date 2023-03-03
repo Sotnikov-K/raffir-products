@@ -97,6 +97,11 @@
         transition: border-color .1s ease-in-out;
     }
 
+    &--blade {
+        cursor: pointer;
+        width: 100%;
+    }
+
     @include breakpoint($tablet-bp2) {
         width: 50%;
 
@@ -130,7 +135,7 @@
 }
 
 .texture__picture {
-    border-radius: 10px;
+    // border-radius: 10px;
     border: 1px solid #292929;
     transition: border-color .1s ease-in-out;
 }

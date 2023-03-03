@@ -5,7 +5,7 @@
             <div class="caption__title">
                 <h1 class="caption__title-h1">Клинок Астрап</h1>
                 <p class="caption__title-p1">Современный скандинавский стиль</p>
-                <p class="caption__title-p2">Нож от </p>
+                <p class="caption__title-p2">Нож от Томми Астрапа</p>
             </div>
             <a href="#" class="link link--offer">
                 <p class="link__text">Смотреть</p>
@@ -19,7 +19,7 @@
             <div class="caption__title">
                 <h2 class="caption__title-h1">Клинок Миккельсен</h2>
                 <p class="caption__title-p1">Классический скандинавский стиль</p>
-                <p class="caption__title-p2">Нож от  </p>
+                <p class="caption__title-p2">Нож от Дженса Миккельсена  </p>
             </div>
             <a href="#" class="link link--offer">
                 <p class="link__text">Подробнее</p>
@@ -33,22 +33,22 @@
     <a class="mover__link mover__link--one scroll_link" data-link="composites">
         <div class="mover__link-data">
             
-            <div class="mover__link-title"><strong>Зуб Мамонта</strong></div>
+            <div class="mover__link-title"><strong>Охотничьи клинки</strong></div>
             <div class="mover__link-desc-wrapper">
-                <p class="mover__link-desc">Стабилизированый зуб мамонта.</p>
+                <p class="mover__link-desc">Скандинавский стиль.</p>
             </div>
         </div>
     </a>
     <a class="mover__link mover__link--two scroll_link" data-link="wood">
         <div class="mover__link-data">
            
-            <div class="mover__link-title"><strong>Бивень</strong></div>
+            <div class="mover__link-title"><strong>Информация</strong></div>
             <div class="mover__link-desc-wrapper">
-                <p class="mover__link-desc">Стабилизированый бивень мамонта.</p>
+                <p class="mover__link-desc">Сравнительная таблица.</p>
             </div>
         </div>
     </a>
-    <a class="mover__link mover__link--three scroll_link" data-link="mammoth">
+    {{-- <a class="mover__link mover__link--three scroll_link" data-link="mammoth">
         <div class="mover__link-data">
             
             <div class="mover__link-title"><strong>Информация</strong></div>
@@ -56,7 +56,7 @@
                 <p class="mover__link-desc">по работе с материалом</p>
             </div>
         </div>
-    </a>
+    </a> --}}
     {{-- <a class="mover__link mover__link--four scroll_link" data-link="divisionss">
         <div class="mover__link-data">
            

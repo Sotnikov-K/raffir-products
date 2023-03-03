@@ -2245,6 +2245,10 @@ h2 {
   border: 1px solid black;
   transition: border-color 0.1s ease-in-out;
 }
+.texture__item-wrapper--blade {
+  cursor: pointer;
+  width: 100%;
+}
 @media screen and (max-width: 770px) {
   .texture__item-wrapper {
     width: 50%;
@@ -2275,7 +2279,6 @@ h2 {
 }
 
 .texture__picture {
-  border-radius: 10px;
   border: 1px solid #292929;
   transition: border-color 0.1s ease-in-out;
 }
@@ -2457,6 +2460,18 @@ sup {
 .product-description__texture {
   margin: 5px 0;
   font-size: 10px;
+}
+.product-description__texture--blade {
+  font-size: 14px;
+  width: 60%;
+  border-bottom: 1px solid rgb(54, 54, 54);
+  padding: 5px 5px;
+}
+.product-description__texture--blade:last-child {
+  margin-bottom: 15px;
+}
+.product-description__texture--blade:first-child {
+  margin-top: 15px;
 }
 
 .product-description__texture-uran {

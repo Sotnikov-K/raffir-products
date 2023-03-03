@@ -33,7 +33,7 @@
     <a class="mover__link mover__link--one scroll_link" data-link="composites">
         <div class="mover__link-data">
             
-            <div class="mover__link-title"><strong>Охотничьи ножи</strong></div>
+            <div class="mover__link-title"><strong>Охотничьи клинки</strong></div>
             <div class="mover__link-desc-wrapper">
                 <p class="mover__link-desc">Скандинавский стиль.</p>
             </div>

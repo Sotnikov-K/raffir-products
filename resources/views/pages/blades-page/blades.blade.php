@@ -6,7 +6,8 @@
         
         @include('/pages/blades-page/includes/blades-1-intro')
         @include('/pages/blades-page/includes/blades-2-blades')
-        @include('/pages/blades-page/includes/blades-3-advise')
+        @include('/pages/blades-page/includes/blades-3-table')
+        @include('/pages/blades-page/includes/blades-4-advise')
 
 
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

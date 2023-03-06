@@ -4238,11 +4238,7 @@ sup {
   width: 100%;
   background: none;
 }
-.blades__item-wrapper--texture {
-  cursor: pointer;
-}
 .blades__item-wrapper--blade {
-  cursor: pointer;
   width: 100%;
 }
 @media screen and (max-width: 770px) {
@@ -4253,10 +4249,10 @@ sup {
     width: 100%;
   }
   .blades__item-wrapper--blade {
-    cursor: pointer;
     width: 100%;
   }
 }
+
 .blades__item {
   display: flex;
   flex-direction: column;
@@ -4301,7 +4297,7 @@ sup {
   display: flex;
   margin: 5px 0;
   font-size: 14px;
-  padding: 5px 5px;
+  padding: 10px 5px;
 }
 .blades__description--title {
   opacity: 0.5;
@@ -4313,9 +4309,11 @@ sup {
 }
 .blades__description--price {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   justify-content: flex-end;
 }
+
 .login {
   margin: 150px auto;
   width: 100%;
@@ -4865,6 +4863,86 @@ textarea::-ms-input-placeholder {
   color: rgb(116, 116, 116);
   font-family: "Roboto", sans-serif;
   letter-spacing: 1.5px;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  font-family: "Play", sans-serif;
+}
+@media screen and (max-width: 991px) {
+  .table {
+    overflow: auto;
+    padding-bottom: 20px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .table {
+    overflow: auto;
+    padding-bottom: 20px;
+    max-width: 100%;
+  }
+}
+
+.table__data {
+  width: 100%;
+}
+
+.table__tr {
+  font-family: "Play";
+  margin-top: 10px;
+  width: 200px;
+  padding-right: 20px;
+}
+
+.table__td {
+  font-family: "Play";
+  font-size: 14px;
+  padding: 15px 25px;
+  border: 1px solid rgb(49, 49, 49);
+}
+@media screen and (max-width: 575px) {
+  .table__td {
+    padding: 20px 20px;
+    font-size: 15px;
+  }
+}
+
+.table__thead {
+  text-align: left;
+  background-color: #2b2b2b;
+  color: rgb(204, 204, 204);
+}
+
+.table__description {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.table__description-text {
+  display: flex;
+  width: 60%;
+  text-align: left;
+  margin: 5px 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: rgb(209, 209, 209);
+}
+@media screen and (max-width: 575px) {
+  .table__description-text {
+    max-width: 70%;
+  }
 }
 
 /*blocks*/

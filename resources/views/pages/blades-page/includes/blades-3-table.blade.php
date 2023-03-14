@@ -1,4 +1,3 @@
-
 <section class="title" id="">
     <div class="title__wrapper">
         <p class="title__h2">Таблица</p>
@@ -9,16 +8,13 @@
 </section>
 
 <section class="blades">
-
     <div class="texture__title">
         <p class="texture__title-h3">
             Клинки уже готовые к монтажу.
         </p>
     </div>
 
-
     <div class="table">
-
         <table class="table__data">
             <thead class="table__thead">
                 <tr class="table__tr">
@@ -67,9 +63,7 @@
                     <td class="table__td">440С/N690, 110 слоев </td>
                 </tr>
             </tbody>
-
         </table>
-
     </div>
 
     <div class="table__description">
@@ -78,17 +72,6 @@
         <p class="table__description-text"><sup>2 </sup> В клинках мы используем 440С/N690 высоколегированную сталь, клинок - нержавеющий дамаск 110 слоев, протравлен и отполирован.
         </p>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
 </section>
 

@@ -1,8 +1,8 @@
-{{-- <section class="title" id="">
+<section class="title" id="">
     <div class="title__wrapper">
         <p class="title__h2">Иформация</p>
         <p class="title__p">
-            Информация и советы по работе с зубом и бивнем мамонта.   
+            Серия охотничих клинков Раффир.   
         </p>
     </div>
 </section>
@@ -22,7 +22,8 @@
                 Зуб мамонта (Raffir Mammoth Molar) сделан из настоящих зубов мамонта последнего ледникового периода (10 000-40 000 лет до нашей эры). 
             </p>
             <p class="advise__p">
-                Мы разработали узкоспециализированные процедуры для укрепления окаменелостей. В результате такой хрупкий материал, наконец, стал пригодным для использования в изготовлении уникальных предметов роскоши. Он популярен в широком спектре изящных ремесел и уникальных продуктов. Хорошо выглядит на тонких письменных ручках, украшениях и инкрустации. Но мы, конечно, рекомендуем использовать его как проставку - декор для ножей.
+                Our new blade series “Scandinavian Hunter” is created in collaboration between Raffir and five distinct Danish knifemakers. We have combined their idea of the ideal blade with over a decade of experience in blade manufacturing.
+We launched the project in 2022 because we now have unique access to a new solid stainless Damascus steel type. This steel meets all the criteria we have been searching for to create a blade series that is strong, corrosion resistant and aesthetically pleasing.
             </p>
         </div>
 
@@ -116,4 +117,4 @@
 
     </div>
 
-</section> --}}
+</section>

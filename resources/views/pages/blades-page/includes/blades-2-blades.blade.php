@@ -25,11 +25,40 @@
                 </div>
             </div>
             <div class="blades__data-right">
+
                 <div class="blades__item-wrapper blades__item-wrapper--blade">
+
                     <div class="blades__item">
                         <div class="blades__picture-wrapper">
                             <img class="blades__picture" src="images/product_intro/blade/page-content/1.jpg" alt="Современный скандинавский клинок - Модель: Рабек ">
                         </div>
+
+
+                        <div class="gallery gallery--blades">
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/Blades-for-Blades-section---gallery--rahbek__standart.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery/blades/Blades-for-Blades-section---gallery--rahbek__tumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Яркое освещение, сильный контраст</p>
+                                    </div>
+                                </a>
+                            </div>   
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/blade-2.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery//blades/blade-2_thumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Умеренное освещение, сильный контраст</p>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
                         <div class="blades__description-wrapper">
                             <p class="blades__description">Современный скандинавский клинок</p>
                             <div class="blades__description-row">
@@ -47,6 +76,7 @@
                             <p class="blades__description blades__description--price">Стоимоть: {{ Illuminate\Support\Facades\DB::table('products')->where('product_blade_model', 'рабек')->value('product_price')}} руб.</p>
                         </div>
                     </div>
+
                 </div>
             </div> 
         </div>
@@ -66,6 +96,67 @@
                         <div class="blades__picture-wrapper">
                             <img class="blades__picture" src="images/product_intro/blade/page-content/2.jpg" alt="Классический скандинавский клинок - Модель: Миккельсен ">
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="gallery gallery--blades">
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/blade-1.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery//blades/Blades-for-Blades-section---gallery--mikkelsen__tumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Яркое освещение, сильный контраст</p>
+                                    </div>
+                                </a>
+                            </div>   
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/blade-2.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery//blades/blade-2_thumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Умеренное освещение, сильный контраст</p>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="blades__description-wrapper">
                             <p class="blades__description">Классический скандинавский клинок</p>
                             <div class="blades__description-row">
@@ -102,6 +193,65 @@
                         <div class="blades__picture-wrapper">
                             <img class="blades__picture" src="images/product_intro/blade/page-content/3.jpg" alt="Скандинавский клинок пуукко - Модель: Кофоед">
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="gallery gallery--blades">
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/Blades-for-Blades-section---gallery--kofoed__standart.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery//blades/Blades-for-Blades-section---gallery--kofoed__tumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Яркое освещение, сильный контраст</p>
+                                    </div>
+                                </a>
+                            </div>   
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/blade-2.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery//blades/blade-2_thumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Умеренное освещение, сильный контраст</p>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
                         <div class="blades__description-wrapper">
                             <p class="blades__description">Скандинавский клинок пуукко</p>
                             <div class="blades__description-row">
@@ -137,6 +287,69 @@
                         <div class="blades__picture-wrapper">
                             <img class="blades__picture" src="images/product_intro/blade/page-content/4.jpg" alt="Современный скандинавский клинок - Модель: Астрап">
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="gallery gallery--blades">
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/Blades-for-Blades-section---gallery--astrup__standart.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery//blades/Blades-for-Blades-section---gallery--astrup__tumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Яркое освещение, сильный контраст</p>
+                                    </div>
+                                </a>
+                            </div>   
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/blade-2.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery//blades/blade-2_thumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Умеренное освещение, сильный контраст</p>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="blades__description-wrapper">
                             <p class="blades__description">Современный скандинавский клинок</p>
                             <div class="blades__description-row">
@@ -173,6 +386,51 @@
                         <div class="blades__picture-wrapper">
                             <img class="blades__picture" src="images/product_intro/blade/page-content/5.jpg" alt="Скандинавский клинок викингов - Модель: Роде">
                         </div>
+
+
+
+
+
+
+
+
+
+                        <div class="gallery gallery--blades">
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/Blades-for-Blades-section---gallery--rohde__standart.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery/blades/Blades-for-Blades-section---gallery--rohde__tumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Яркое освещение, сильный контраст</p>
+                                    </div>
+                                </a>
+                            </div>   
+                            <div class="gallery-item gallery-item--blades">
+                                <a data-fslightbox="first-lightbox" href="/images/gallery/blades/blade-2.jpg" alt="фотография Зуб мамонта - синий цвет">
+                                    <div class="gallery-item-content">
+                                        <img class="gallery-item-image" src="/images/gallery//blades/blade-2_thumb.jpg" alt="фотография Зуб мамонта - синий цвет превью">
+                                    </div>
+                                    <div class="gallery-item-description">
+                                        <p class="gallery-item-description-text">Умеренное освещение, сильный контраст</p>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="blades__description-wrapper">
                             <p class="blades__description">Скандинавский клинок викингов</p>
                             <div class="blades__description-row">

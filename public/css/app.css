@@ -1813,6 +1813,12 @@ h2 {
     padding: 20px 15px;
   }
 }
+.gallery--blades {
+  width: unset;
+  margin: 0px 0px;
+  padding: 0;
+  background-color: unset;
+}
 
 .gallery-item {
   display: flex;
@@ -1827,6 +1833,17 @@ h2 {
   .gallery-item {
     width: 50%;
   }
+}
+.gallery-item--blades {
+  width: 25%;
+}
+@media screen and (max-width: 991px) {
+  .gallery-item--blades {
+    width: 50%;
+  }
+}
+.gallery-item:first-child {
+  padding-left: 0;
 }
 .gallery-item:hover .gallery-item-image {
   opacity: 0.9;

@@ -1699,7 +1699,7 @@ h2 {
 }
 
 .caption__title-h1 {
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -4328,6 +4328,29 @@ sup {
   margin-top: 10px;
   margin-bottom: 10px;
   justify-content: flex-end;
+}
+
+.knives {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+}
+@media screen and (max-width: 770px) {
+  .knives {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .knives {
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-right: 10px;
+  }
 }
 
 .login {

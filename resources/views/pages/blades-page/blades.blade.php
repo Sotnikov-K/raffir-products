@@ -42,12 +42,5 @@
 
             });
         </script>  
-
-        <!-- <script>
-            fsLightboxInstances["first-lightbox"].props.onOpen = function ()
-            {
-                console.log("The first lightbox has opened.");
-            }
-        </script> -->
     </main>
 @endsection

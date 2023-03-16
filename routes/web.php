@@ -155,3 +155,7 @@ Route::get('/mammoth', function () {
 Route::get('/blades', function () {
     return view('pages/blades-page/blades');
 });
+
+Route::get('/knives', function () {
+    return view('pages/knives-page/knives');
+});

@@ -42,6 +42,20 @@
         }
     }
 
+    &--knives {
+        width: 20%;
+        height: unset;
+        margin-bottom: 20px;
+
+        @include breakpoint($tablet-bp) {
+            width: 25%;
+        }
+
+        @include breakpoint($mobile-bp) {
+            width: 50%;
+        }
+    }
+
     &:first-child {
         padding-left: 0;
     }

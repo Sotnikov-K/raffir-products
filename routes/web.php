@@ -159,3 +159,17 @@ Route::get('/blades', function () {
 Route::get('/knives', function () {
     return view('pages/knives-page/knives');
 });
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| Map Routes
+|--------------------------------------------------------------------------
+| 
+*/
+
+Route::get('/sitemap', function () {
+    return view('pages/map-page/map');
+});

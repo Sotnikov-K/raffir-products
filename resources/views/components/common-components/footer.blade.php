@@ -75,16 +75,16 @@
         </div>
         <div class="footer__middle-right">
             <a class="footer__middle-link" href="#">Доставка</a>
-            <a class="footer__middle-link" href="map.html">Карта сайта</a>
+            <a class="footer__middle-link" href="/sitemap">Карта сайта</a>
         </div>
     </div>
    
 
     
    
-    <!-- <div class="toTheTop is-closed">
+    <div class="toTheTop is-closed">
         <div class="toTheTop__triangle"></div>
         <a class="toTheTop__number">Наверх</a>
-    </div> -->
+    </div>
 
 </footer>

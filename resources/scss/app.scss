@@ -3,123 +3,102 @@
 @import "vendor/reset";
 @import 'common-style';
 
+/*
+*   HEADER & FOOTER
+*/
+@import "components/header";
+@import "components/footer";
+/*
+*   END HEADER & FOOTER
+*/
 
-/*pages*/
+
+/*
+*   SITE PAGES
+*/
 @import 'pages/home-page/home';
-
+@import 'pages/composites-page/composites';
+@import 'pages/blades-page/blades';
+@import 'pages/knives-page/knives';
 @import 'pages/store-page/store';
 @import 'pages/product-page/product';
+@import 'pages/contacts-page/contacts';
+@import "pages/map-page/map.scss";
+/*
+*   END SITE PAGES
+*/
 
 
-@import 'pages/composites-page/composites';
-
-/*new Blocks*/
-@import "blocks/site-page/caption.scss";
-@import "blocks/site-page/mover.scss";
-@import "blocks/site-page/gallery.scss";
-@import "blocks/site-page/title.scss";
-
-@import "blocks/site-page/mesh.scss";
-@import "blocks/site-page/texture.scss";
-
-@import "blocks/site-page/comparison";
-@import "blocks/site-page/lumi-comparison";
-
-@import "blocks/site-page/advise";
-
-
-
-@import 'pages/cart-page/cart';
-@import 'pages/checkout-page/checkout';
-@import 'pages/success-page/success';
-
-
-
+/*
+*   ADMIN PAGES
+*/
 @import 'pages/dashboard-page/dashboard';
 @import 'pages/dashboard-page/dashboard-listing';
 @import 'pages/dashboard-page/create-product';
-
 @import 'pages/dashboard-page/edit-product';
-
-
-@import 'pages/contacts-page/contacts';
-@import 'pages/blades-page/blades';
-@import 'pages/knives-page/knives';
-
-
 
 @import 'pages/login-page/login';
 @import 'pages/mail-pages/order-created';
 
+@import 'pages/cart-page/cart';
+@import 'pages/checkout-page/checkout';
+@import 'pages/success-page/success';
+/*
+*   END ADMIN PAGES
+*/
 
 
-@import "components/button";
+/*
+*   COMPONENTS
+*/
+//Выпадающее меню
+@import "components/subnav";
+@import "components/burger";
+@import "components/swiper";
+@import "components/swiper-bundle";
+@import "components/tothetop";
+@import "components/link";
 @import "components/dropdown__button";
+@import "components/modalUran";
+
+//Загрузка страницы круг
+@import "components/pageLoader";
+
+//переписать компонент Кнопки
+@import "components-copy/btn";
+@import "components/button";
+/*
+*   END COMPONENTS
+*/
+
+
+/*
+*   BLOCKS
+*/
+@import "blocks/site-page/caption.scss";
+@import "blocks/site-page/mover.scss";
+@import "blocks/site-page/title.scss";
+@import "blocks/site-page/gallery.scss";
+@import "blocks/site-page/advise";
+@import "blocks/site-page/comparison";
+@import "blocks/site-page/lumi-comparison";
+@import "blocks/site-page/mesh.scss";
+@import "blocks/site-page/texture.scss";
+@import "components/table";
+/*
+*   END BLOCKS
+*/
+
+
+/*
+*   INPUTS
+*/
 @import "components/input";
 @import "components/select";
 @import "components/textarea";
-@import "components/table";
+/*
+*   END INPUTS
+*/
 
-
-
-
-
-/*blocks*/
-@import "components-copy/page";
-@import "components-copy/loader";
-@import "components-copy/pageLoader";
-
-@import "components-copy/header";
-@import "components-copy/footer";
-
-
-
-@import "components-copy/swiper";
-@import "components-copy/swiper-bundle";
-
-@import "components-copy/simplebar";
-
-
-@import "components-copy/knives";
-@import "components-copy/offer";
-@import "components-copy/iconsnav";
-@import "components-copy/storenav";
-
-@import "components-copy/burger";
-@import "components-copy/subnav";
-@import "components-copy/search";
-@import "components-copy/sidebar";
-@import "components-copy/main";
-
-@import "components-copy/profile";
-@import "components-copy/social";
-@import "components-copy/btn";
-@import "components-copy/stories";
-@import "components-copy/add-post";
-@import "components-copy/post";
+//разобраться
 @import "components-copy/embed";
-@import "components-copy/pagination";
-@import "components-copy/related";
-@import "components-copy/comments";
-
-@import "components-copy/form";
-
-@import "components-copy/textures";
-@import "components-copy/tags";
-@import "components-copy/cabinet";
-@import "components-copy/map";
-
-
-
-
-@import "components-copy/auth";
-
-
-@import "components-copy/modalPic";
-@import "components-copy/modalUran";
-
-
-
-
-
-@import "components-copy/link";

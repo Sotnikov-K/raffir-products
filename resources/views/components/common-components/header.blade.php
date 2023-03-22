@@ -71,5 +71,10 @@
         </nav>    
     </div>
 
+    <div class="header__right-mobile">
+        @livewire('cart-counter')
+    </div>
+
+
 </header>
  

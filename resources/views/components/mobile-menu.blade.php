@@ -50,16 +50,35 @@
 
         <ul class="mobile-menu__ul-profile">
 
-            <a class="mobile-menu__a" href="/cart">
-
-                <div class="mobile-menu__shopping-wrapper">
+            <a class="mobile-menu__a" href="/store">
+                <div class="mobile-menu__shopping-wrapper mobile-menu__shopping-wrapper--store">
                     <p class="mobile-menu__shopping-name">Магазин</p>
-                    <p class="mobile-menu__shopping-added">+ 1</p>
+                    <img class="mobile-menu__img" src="images/icons/footer-arrow-circle-right-white.png" alt="arrow-img">
                 </div>
-
             </a>
 
+            <a class="mobile-menu__a" href="/cart">
+                <div class="mobile-menu__shopping-wrapper">
+                    <p class="mobile-menu__shopping-name">Корзина</p>
+                    <img class="mobile-menu__img" src="images/icons/footer-arrow-circle-right-white.png" alt="arrow-img">
+                </div>
+            </a>
+            
+            
+            
 
+
+
+            {{-- <a class="mobile-menu__a" href="/cart">
+                <div class="mobile-menu__shopping-wrapper">
+                    <p class="mobile-menu__shopping-name">Корзина</p>
+                    <p class="mobile-menu__shopping-added">+ 1</p>
+
+                    
+                </div>
+            </a> --}}
+
+            
 
             {{-- <a class="mobile-menu__a" href="/login">
                 <div class="mobile-menu__shopping-wrapper">

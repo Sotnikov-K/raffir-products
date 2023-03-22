@@ -23,6 +23,11 @@
 .cart__logo {
     width: 25px;
     margin: 0 10px;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 .header__left {
@@ -58,18 +63,21 @@
         width: 40%;
         // height: 60px;
     }
+
+}
+
+.header__right-mobile {
+    display: none;
+
+    @include breakpoint($tablet-bp) {
+        display: flex;
+    }
 }
 
 
 .header__right li {
     list-style: none;
 }
-
-
-
-
-
-
 
 .header__cart {
     padding: 0 20px;
@@ -88,11 +96,16 @@
     padding-right: 20px;
     color: white;
     opacity: .9;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 .header__cart-quantity-wrapper {
     position: absolute;
-    left: 106px;
+    right: 20px;
     top: 10px;
     line-height: 0px;
     display: flex;
@@ -104,11 +117,28 @@
     overflow: hidden;
 
     background-color: #334449;
+
+    @include breakpoint($tablet-bp) {
+        position: inherit;
+        font-size: 17px;
+        font-weight: 600;
+        color: rgb(32, 32, 32);
+        background-color: rgb(214, 214, 214);
+        padding: 5px 30px;
+        border-radius: 10px;
+    }
 }
 
 .header__cart-quantity {
     color: white;
     padding: 10px 0px;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 17px;
+        font-weight: 600;
+        font-style: italic;
+        color: rgb(32, 32, 32);
+    }
 }
 
 
@@ -174,6 +204,13 @@
 
     }
 
+
+    &--mobile {
+        position: inherit;
+        display: flex;
+        padding: 10px;
+    }
+
 }
 
 .nav__link {
@@ -211,6 +248,8 @@
         padding-right: 0;
 
         font-size: 1.6rem;
+
+        padding: 0;
     }
 
     @include breakpoint($mobile-bp) {
@@ -223,14 +262,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    @include breakpoint($tablet-bp) {
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 0;
+    }
 }
 
 .nav__link1 {
-    // position: absolute;
-    // display: block;
     display: flex;
-    // top: 20px;
-    // left: 56px;
 
     @include breakpoint($tablet-bp) {
         width: 70px;
@@ -258,15 +299,11 @@
     text-transform: uppercase;
     color: $white;
     text-decoration: none;
-
     transition: background-color .2s linear;
-
-
 
     @include breakpoint($tablet-bp) {
         padding-left: 0;
         padding-right: 0;
-
         font-size: 1.6rem;
     }
 }

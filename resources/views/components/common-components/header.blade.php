@@ -1,6 +1,6 @@
 <header class="header">
     <div class="header__left">
-        
+
         <nav class="nav">
 
             <ul class="nav__list">
@@ -42,16 +42,17 @@
 
         </nav>
 
-        <a class="nav__link1" href="index.html">
+        <a class="nav__link1" href="/">
             <img class="logo" src="/images/logo/logotype_raffir.svg" alt="logo">
         </a>
 
-        <button class="burger active" type="button" id="sidebarToggle">
-            <span>
-                открыть навигацию
-            </span>
-        </button>
+        <div class="header__burger-btn">
+            <span class="header__burger-span header__burger-span-1"></span>
+            <span class="header__burger-span header__burger-span-2"></span>
+        </div>
 
+
+        
     </div>
 
     <div class="header__right">
@@ -67,9 +68,8 @@
                 @livewire('cart-counter')
 
             </ul>
-        </nav>
-
-            
+        </nav>    
     </div>
+
 </header>
  

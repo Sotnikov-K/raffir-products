@@ -19,19 +19,15 @@
         
     </head>
 
-    <body>
+    <body class="body body__preload">
         <div class="page">
-            
+            @include('components/overlay')
             @include('components/common-components/header')
-
+            @include('components/mobile-menu')
             @yield('content')
-
             @include('components/common-components/footer')
 
-            
             <script src="{{ mix('/js/app.js') }}"></script>
-           
-
             @livewireScripts
         </div>
     </body>

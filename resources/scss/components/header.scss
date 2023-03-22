@@ -6,11 +6,13 @@
     left: 0;
     right: 0;
     top: 0;
-
     max-width: $width_nav;
-
     background-color: #131313;
     z-index: 1000;
+
+    // @include breakpoint($tablet-bp) {
+    //     height: 60px;
+    // }
 }
 
 .logo {
@@ -32,7 +34,12 @@
 
     @include breakpoint($tablet-bp) {
         width: 40%;
-        height: 60px;
+        // height: 60px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        width: 60%;
+        // height: 60px;
     }
 }
 
@@ -45,6 +52,11 @@
 
     @include breakpoint($tablet-bp) {
         width: 60%;
+    }
+
+    @include breakpoint($mobile-bp) {
+        width: 40%;
+        // height: 60px;
     }
 }
 
@@ -214,10 +226,18 @@
 }
 
 .nav__link1 {
-    position: absolute;
-    top: 20px;
-    left: 56px;
-    display: block;
+    // position: absolute;
+    // display: block;
+    display: flex;
+    // top: 20px;
+    // left: 56px;
+
+    @include breakpoint($tablet-bp) {
+        width: 70px;
+        height: 60px;
+        margin-left: 15px;
+    }
+
 }
 
 .nav__link1 img {

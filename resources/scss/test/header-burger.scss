@@ -1,0 +1,55 @@
+.header__burger-btn {
+    display: none;
+    position: relative;
+    height: 40px;
+    width: 140px;
+    // border: none;
+    border-radius: 15px;
+    background-color: rgb(0 0 0 / 10%);
+    border: 3px solid brown;
+    cursor: pointer;
+
+    @include breakpoint($tablet-bp) {
+        display: flex;
+
+    }
+}
+
+
+.header__burger-span-1 {
+    top: 15px;
+    left: 28px;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #b6b6b6;
+
+    transform: translateY(-4px);
+    transition: transform $transition-fast $transition;
+}
+
+.header__burger-span-2 {
+    top: 16px;
+    left: 28px;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #b6b6b6;
+
+    transform: translateY(4px);
+    transition: transform $transition-fast $transition;
+}
+
+
+.header__burger-span-1-close {
+    transform: rotateZ(-45deg);
+    top: 16px;
+    left: 38px;
+    width: 20px;
+}
+
+.header__burger-span-2-close {
+    transform: rotateZ(45deg);
+    left: 38px;
+    width: 20px;
+}

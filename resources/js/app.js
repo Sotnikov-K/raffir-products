@@ -9,7 +9,7 @@ require('./itemGallery');
 require('./dropdown-input');
 require('./selectSaver');
 require('./fslightbox');
-
+require('./mobile-menu');
 
 
 // минин

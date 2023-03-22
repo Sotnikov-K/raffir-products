@@ -100,6 +100,7 @@
 
 .home__product-category-right {
     width: 50%;
+    z-index: 0;
 
     @include breakpoint($mobile-bp) {
         width: 100%;

@@ -1,0 +1,121 @@
+.mobile-menu {
+    background-color: #131313;
+
+
+
+
+    backdrop-filter: blur(5px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-width: 400px;
+    width: 81%;
+    height: 100vh;
+    z-index: 1;
+    box-shadow: 5px 0 15px -5px rgb(0 0 0 / 30%);
+
+    transform: translateX(-150vw);
+    transition: transform 0.3s $transition;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+
+.mobile-menu__active {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.3s $transition;
+}
+
+.mobile-menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0 10px;
+    border-top: 1px solid #363636;
+}
+
+.mobile-menu__ul {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.mobile-menu__ul-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    // margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+}
+
+.mobile-menu__a {
+    text-decoration: none;
+}
+
+.mobile-menu__li {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+.mobile-menu__p {
+    color: rgb(214 214 214);
+    font-size: 15px;
+}
+
+.mobile-menu__img {
+    margin-left: auto;
+    height: 23px;
+    opacity: .3;
+    transition: opacity $transition-time $transition, transform $transition-time $transition;
+
+    @include breakpoint($mobile-bp) {
+        margin-left: none;
+    }
+}
+
+.mobile-menu__shopping-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+    // border-radius: 15px;
+    // border: 1px solid rgb(70 70 70);
+}
+
+.mobile-menu__shopping-name {
+    display: flex;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(214, 214, 214);
+}
+
+.mobile-menu__shopping-added {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(32, 32, 32);
+    background-color: rgb(214, 214, 214);
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+.mobile-menu__shopping-icon {
+    display: flex;
+    height: 18px;
+}
+
+.mobile-menu__online-status {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(32, 32, 32);
+    background-color: rgb(167, 243, 192);
+    padding: 0 15px;
+    border-radius: 10px;
+}
